@@ -1,5 +1,4 @@
-python-dotenv
-requests
-playsound==1.2.2
-psutil
-pytest
+# requirements.txt
+
+# Test runner
+pytest>=7.0.0
