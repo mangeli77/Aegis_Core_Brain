@@ -1,5 +1,10 @@
-python-dotenv
-requests
-playsound==1.2.2
-psutil
-pytest
+# requirements.txt
+
+# Test runner
+pytest>=7.0.0
+
+# Linter
+flake8>=5.0.4
+
+# Install package (and dev tools)
+-e .[dev]
