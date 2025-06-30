@@ -2,3 +2,6 @@
 
 # Test runner
 pytest>=7.0.0
+
+# Linter
+flake8>=5.0.4
