@@ -1,0 +1,7 @@
+README.md
+setup.py
+aegiscore.egg-info/PKG-INFO
+aegiscore.egg-info/SOURCES.txt
+aegiscore.egg-info/dependency_links.txt
+aegiscore.egg-info/requires.txt
+aegiscore.egg-info/top_level.txt

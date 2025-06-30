@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: aegiscore
+Version: 0.1.0
+Summary: Core brain logic for the Aegis AI assistant
+Home-page: UNKNOWN
+Author: Your Name
+Author-email: you@example.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Provides-Extra: dev
+
+UNKNOWN
+
