@@ -1,0 +1,26 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.env
+.env.*
+venv/
+env/
+
+# Pytest cache
+.pytest_cache/
+
+# ElevenLabs audio output
+output.mp3
+
+# Memory file (if you don’t want to commit runtime logs)
+memory.json
+
+# IDE / Editor configs
+.vscode/
+.idea/
+
+# macOS
+.DS_Store
