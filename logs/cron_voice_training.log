@@ -6033,3 +6033,21 @@ TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Re
 }
 
 Node.js v18.20.8
+[dotenv@17.2.1] injecting env (11) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+⚠️ Failed to fetch from: https://api.quotable.io/quotes/random?limit=1
+⚠️ Failed to fetch from: https://type.fit/api/quotes
+node:internal/errors:496
+    ErrorCaptureStackTrace(err);
+    ^
+
+TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received undefined
+    at new NodeError (node:internal/errors:405:5)
+    at validateString (node:internal/validators:162:11)
+    at Object.isAbsolute (node:path:1174:5)
+    at speak (file:///Users/Aegis/Aegis/core/voice/utils/tts_router.mjs:78:20)
+    at generateTrainingLine (file:///Users/Aegis/Aegis/scripts/maintenance/generate_voice_training_loop.mjs:63:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 'ERR_INVALID_ARG_TYPE'
+}
+
+Node.js v18.20.8
