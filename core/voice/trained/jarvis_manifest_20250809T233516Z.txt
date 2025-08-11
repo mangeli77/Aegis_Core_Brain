@@ -1,0 +1,6 @@
+dataset_root=/Users/Aegis/Aegis/voice/wav_training
+sample_rate=22050
+total_seconds=20
+wavs=19
+clips=19
+tarball=/Users/Aegis/Aegis/voice/trained/jarvis_dataset_20250809T233511Z.tar.gz

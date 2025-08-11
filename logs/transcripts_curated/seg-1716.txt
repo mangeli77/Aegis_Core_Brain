@@ -1,0 +1,6 @@
+[2025-07-06T00:00:1715Z] (neutral)  [#?? 3. run a post-install diagnostic #seg-1716]
+[2025-07-06T00:00:1715Z] (neutral) node diagnostic.js [#system #seg-1716]
+[2025-07-06T00:00:1715Z] (neutral)  [#?? 3. run a post-install diagnostic #seg-1716]
+[2025-07-06T00:00:1715Z] (neutral) node diagnostic.js [#system #seg-1716]
+[2025-07-06T00:00:1715Z] (neutral)  [#?? 3. run a post-install diagnostic #seg-1716]
+[2025-07-06T00:00:1715Z] (neutral) node diagnostic.js [#system #seg-1716]

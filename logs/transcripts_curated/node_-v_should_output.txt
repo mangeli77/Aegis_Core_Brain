@@ -1,0 +1,3 @@
+[2025-07-06T00:00:1500Z] (neutral) v16.20.2 arch # Should output: i386 [#node -v # should output #seg-1501]
+[2025-07-06T00:00:1500Z] (neutral) v16.20.2 arch # Should output: i386 [#node -v # should output #seg-1501]
+[2025-07-06T00:00:1500Z] (neutral) v16.20.2 arch # Should output: i386 [#node -v # should output #seg-1501]

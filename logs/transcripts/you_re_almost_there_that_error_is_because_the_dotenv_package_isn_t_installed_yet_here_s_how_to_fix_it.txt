@@ -1,0 +1,1 @@
+[2025-07-06T00:00:968Z] (neutral)  [#you're almost there ñ that error is because theêdotenvêpackage isn't installed yet. here's how to fix it #seg-969]

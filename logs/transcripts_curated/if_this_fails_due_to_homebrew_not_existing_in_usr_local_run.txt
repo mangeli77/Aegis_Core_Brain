@@ -1,0 +1,3 @@
+[2025-07-06T00:00:1816Z] (neutral)  [#if this fails due to homebrew not existing inê/usr/local, run #seg-1817]
+[2025-07-06T00:00:1816Z] (neutral)  [#if this fails due to homebrew not existing inê/usr/local, run #seg-1817]
+[2025-07-06T00:00:1816Z] (neutral)  [#if this fails due to homebrew not existing inê/usr/local, run #seg-1817]

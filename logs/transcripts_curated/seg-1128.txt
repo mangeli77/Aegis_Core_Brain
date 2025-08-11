@@ -1,0 +1,6 @@
+[2025-07-06T00:00:1127Z] (neutral) Ready when you are, Marcus. Type the first thing into Aegis and let him speak. [#system #seg-1128]
+[2025-07-06T00:00:1127Z] (neutral)  [#you said #seg-1128]
+[2025-07-06T00:00:1127Z] (neutral) Ready when you are, Marcus. Type the first thing into Aegis and let him speak. [#system #seg-1128]
+[2025-07-06T00:00:1127Z] (neutral)  [#you said #seg-1128]
+[2025-07-06T00:00:1127Z] (neutral) Ready when you are, Marcus. Type the first thing into Aegis and let him speak. [#system #seg-1128]
+[2025-07-06T00:00:1127Z] (neutral)  [#you said #seg-1128]

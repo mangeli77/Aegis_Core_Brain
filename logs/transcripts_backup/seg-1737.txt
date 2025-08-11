@@ -1,0 +1,6 @@
+[2025-07-06T00:00:1736Z] (neutral)  [#?? root problem (confirmed again) #seg-1737]
+[2025-07-06T00:00:1736Z] (neutral) The failure is happening while trying toÊbuildÊffi-napi, which is a native module required byÊvosk. The build system usesÊnode-gyp, which relies on PythonÕsÊdistutilsÊmoduleÑand that module isÊmissingfrom your Rosetta-installed Python. [#system #seg-1737]
+[2025-07-06T00:00:1736Z] (neutral)  [#?? root problem (confirmed again) #seg-1737]
+[2025-07-06T00:00:1736Z] (neutral) The failure is happening while trying toÊbuildÊffi-napi, which is a native module required byÊvosk. The build system usesÊnode-gyp, which relies on PythonÕsÊdistutilsÊmoduleÑand that module isÊmissingfrom your Rosetta-installed Python. [#system #seg-1737]
+[2025-07-06T00:00:1736Z] (neutral)  [#?? root problem (confirmed again) #seg-1737]
+[2025-07-06T00:00:1736Z] (neutral) The failure is happening while trying toÊbuildÊffi-napi, which is a native module required byÊvosk. The build system usesÊnode-gyp, which relies on PythonÕsÊdistutilsÊmoduleÑand that module isÊmissingfrom your Rosetta-installed Python. [#system #seg-1737]

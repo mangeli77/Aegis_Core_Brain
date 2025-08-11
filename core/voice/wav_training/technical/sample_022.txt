@@ -1,0 +1,1 @@
+The microcontroller operates at 3.3 volts.

@@ -1,0 +1,40 @@
+// scripts/test/test_ollama.mjs
+import { requireEnv } from '../../voice/utils/env_guard.mjs';
+
+async function main() {
+  // Pull required vars and provide safe defaults if you like
+  // (if you prefer to force presence, remove the || fallbacks here and set them in .env)
+  let { OLLAMA_HOST, OLLAMA_MODEL } = requireEnv('OLLAMA_HOST', 'OLLAMA_MODEL');
+  OLLAMA_HOST ||= 'http://127.0.0.1:11434';
+  OLLAMA_MODEL ||= 'llama2:latest';
+
+  try {
+    // Quick health check
+    const tagsRes = await fetch(`${OLLAMA_HOST}/api/tags`);
+    if (!tagsRes.ok) throw new Error(`HTTP ${tagsRes.status}`);
+    const tags = await tagsRes.json();
+    console.log('✓ Ollama connection OK. Available models:', tags);
+
+    // Tiny generation test (no downloads here—assumes model exists)
+    const genRes = await fetch(`${OLLAMA_HOST}/api/generate`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        model: OLLAMA_MODEL,
+        prompt: 'Say: Hello from the Ollama test.',
+        stream: false
+      })
+    });
+
+    if (!genRes.ok) throw new Error(`HTTP ${genRes.status}`);
+    const gen = await genRes.json();
+    console.log('✓ Model test response:', gen?.response?.slice(0, 200) ?? gen);
+
+    process.exit(0);
+  } catch (err) {
+    console.error('✘ Ollama test failed:', err.message);
+    process.exit(1);
+  }
+}
+
+main();

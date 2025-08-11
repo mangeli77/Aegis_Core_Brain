@@ -1,0 +1,102 @@
+- 2025-08-06T21:00:23.982Z: `Everyday you can take a tiny step in the right direction.`
+- 2025-08-06T21:03:36.299Z: `Once a decision was made, I didn't worry about it afterward.`
+- 2025-08-06T21:07:08.390Z → This is a backup training line.
+- 2025-08-06T21:10:01.643Z → This is a backup training line.
+- 2025-08-06T21:11:43.171Z → This is a backup training line.
+- 2025-08-06T21:20:01.376Z → This is a backup training line.
+- 2025-08-06T21:26:15.408Z: `Make your life a mission - not an intermission.`
+- 2025-08-06T21:30:42.438Z: `We have a choice everyday regarding the attitude we will embrace for that day.`
+- 2025-08-06T21:40:57.268Z: `It is passion that makes man live; wisdom makes one only last.`
+- 2025-08-06T21:50:39.357Z: `People who bite the hand that feeds them usually lick the boot that kicks them.`
+- 2025-08-06T22:00:33.002Z: `Be where your enemy is not.`
+- 2025-08-06T22:10:27.098Z: `For every minute you are angry you lose sixty seconds of happiness.`
+- 2025-08-06T22:20:59.339Z: `Enjoy every minute of life. Never second-guess life.`
+- 2025-08-06T22:30:48.754Z: `You cannot always control what goes on outside. But you can always control what goes on inside.`
+- 2025-08-06T22:40:11.124Z: `Success comes from knowing that you did your best to become the best that you are capable of becoming.`
+- 2025-08-06T22:50:29.965Z: `Success is the sum of small efforts, repeated day in and day out.`
+- 2025-08-06T23:00:17.862Z: `No matter what happens, always be yourself.`
+- 2025-08-06T23:10:15.825Z: `Know yourself and you will win all battles.`
+- 2025-08-06T23:20:55.531Z: `We are all faced with a series of great opportunities brilliantly disguised as impossible situations.`
+- 2025-08-06T23:30:23.495Z: `When the world pushes you to your knees, you're in the perfect position to pray.`
+- 2025-08-06T23:40:31.405Z: `Life was meant to be lived, and curiosity must be kept alive. One must never, for whatever reason, turn his back on life.`
+- 2025-08-06T23:50:09.580Z: `A man is great not because he hasn't failed; a man is great because failure hasn't stopped him.`
+- 2025-08-07T00:00:15.762Z: `Being wrong opens us up to the possibility of change.`
+- 2025-08-07T00:10:13.986Z: `What you do today can improve all your tomorrows.`
+- 2025-08-07T00:21:00.668Z: `Have the courage to be ignorant of a great number of things, in order to avoid the calamity of being ignorant of everything.`
+- 2025-08-07T00:30:23.559Z: `Disobedience is the true foundation of liberty. The obedient must be slaves.`
+- 2025-08-07T00:40:37.595Z: `Stress happens when the mind resists what is.`
+- 2025-08-07T00:50:52.373Z: `Try all things, hold fast that which is good.`
+- 2025-08-07T01:20:33.904Z: `The greater the impact you want to make, the greater your influence needs to be.`
+- 2025-08-07T01:34:11.849Z: `Even a hare will bite when it is cornered.`
+- 2025-08-07T01:40:39.092Z: `Before you speak, ask yourself, is it kind, is it necessary, is it true, does it improve the silence?`
+- 2025-08-07T01:54:49.399Z: `Your happiness is what truly matters most. Do what you have to do in order to be happy.`
+- 2025-08-07T02:00:20.603Z: `Truth will always be truth, regardless of lack of understanding, disbelief or ignorance.`
+- 2025-08-07T02:10:18.372Z: `To be happy we need something to solve. Happiness is therefore a form of action.`
+- 2025-08-07T02:20:10.193Z: `Preoccupied with a single leaf you won't see the tree.`
+- 2025-08-07T02:30:03.476Z: `Adventure is not outside man; it is within.`
+- 2025-08-07T02:40:47.373Z: `Sometimes it is harder to deprive oneself of a pain than of a pleasure.`
+- 2025-08-07T02:50:49.513Z: `It's easy to be a critic, but being a doer requires effort, risk, and change.`
+- 2025-08-07T03:00:44.629Z: `Each problem has a positive side.`
+- 2025-08-07T03:10:35.077Z: `The meaning of life is just to be alive. It is so plain and so obvious and so simple.`
+- 2025-08-07T03:20:46.930Z: `Light a candle instead of cursing the darkness.`
+- 2025-08-07T03:31:00.490Z: `Men are equal; it is not birth but virtue that makes the difference.`
+- 2025-08-07T03:40:01.299Z: `No one returns from a long journey the same person they were before.`
+- 2025-08-07T03:50:38.054Z: `The wise learn many things from their enemies.`
+- 2025-08-07T04:00:45.740Z: `The face is the mirror of the mind, and eyes without speaking confess the secrets of the heart.`
+- 2025-08-07T04:10:40.178Z: `As mortals, we're ruled by conditions, not by ourselves.`
+- 2025-08-07T04:20:36.657Z: `Optimism is the one quality more associated with success and happiness than any other.`
+- 2025-08-07T04:30:04.886Z: `Everybody needs a passion. That's what keeps life interesting.`
+- 2025-08-07T04:40:29.604Z: `Feelings come and go like clouds in a windy sky. Conscious breathing is my anchor.`
+- 2025-08-07T04:51:00.704Z: `It is very obvious that we are not influenced by 'facts' but by our interpretation of the facts.`
+- 2025-08-07T05:00:46.690Z: `Very little is needed to make a happy life; it is all within yourself, in your way of thinking.`
+- 2025-08-07T05:10:26.730Z: `Every moment is a fresh beginning.`
+- 2025-08-07T05:20:42.620Z: `None are more hopelessly enslaved than those who falsely believe they are free.`
+- 2025-08-07T05:30:38.070Z: `Originality is the fine art of remembering what you hear but forgetting where you heard it.`
+- 2025-08-07T05:40:16.137Z: `Everyone wants to go to Heaven, but no one wants to die.`
+- 2025-08-07T05:50:37.691Z: `A pessimist is one who makes difficulties of his opportunities and an optimist is one who makes opportunities of his difficulties.`
+- 2025-08-07T06:00:30.625Z: `You may think I'm small, but I have a universe inside my mind.`
+- 2025-08-07T06:10:55.502Z: `The people who are crazy enough to think they can change the world are the ones who do.`
+- 2025-08-07T06:20:57.388Z: `Kind words can be short and easy to speak, but their echoes are truly endless.`
+- 2025-08-07T06:30:59.188Z: `Human beings believe just as they breathe - in order to survive.`
+- 2025-08-07T06:40:49.151Z: `No idea, no matter how good, will work if it doesn't get used.`
+- 2025-08-07T06:50:11.842Z: `The fact of the matter is that there will be nothing learned from any challenge in which we don't try our hardest.`
+- 2025-08-07T10:08:38.143Z: `It's not what you've got; it's what you do that makes the difference.`
+- 2025-08-07T13:26:51.996Z: `Do not allow your inner doubts to keep you from achieving what you can do.`
+- 2025-08-07T17:14:21.384Z: `The river that flows in you also flows in me.`
+- 2025-08-07T18:06:08.451Z: `Disobedience is the true foundation of liberty. The obedient must be slaves.`
+- 2025-08-07T18:39:46.908Z: `Your silence is your soul speaking.`
+- 2025-08-07T18:40:14.071Z: `Your silence is your soul speaking.`
+- 2025-08-07T22:05:58.478Z: `Your silence is your soul speaking.`
+- 2025-08-07T22:30:54.118Z: `Your silence is your soul speaking.`
+- 2025-08-07T22:40:15.479Z: `Your silence is your soul speaking.`
+- 2025-08-07T22:50:22.307Z: `Your silence is your soul speaking.`
+- 2025-08-07T23:01:00.444Z: `Your silence is your soul speaking.`
+- 2025-08-07T23:10:23.442Z: `Your silence is your soul speaking.`
+- 2025-08-07T23:20:25.968Z: `Your silence is your soul speaking.`
+- 2025-08-07T23:30:56.128Z: `Your silence is your soul speaking.`
+- 2025-08-07T23:40:40.087Z: `Your silence is your soul speaking.`
+- 2025-08-07T23:50:27.251Z: `Your silence is your soul speaking.`
+- 2025-08-08T00:00:56.459Z: `Your silence is your soul speaking.`
+- 2025-08-08T00:11:00.628Z: `Your silence is your soul speaking.`
+- 2025-08-08T00:20:48.218Z: `Your silence is your soul speaking.`
+- 2025-08-08T00:30:13.767Z: `Your silence is your soul speaking.`
+- 2025-08-08T00:40:15.781Z: `Your silence is your soul speaking.`
+- 2025-08-08T00:50:37.480Z: `Your silence is your soul speaking.`
+- 2025-08-08T01:00:04.253Z: `Your silence is your soul speaking.`
+- 2025-08-08T01:10:50.614Z: `Your silence is your soul speaking.`
+- 2025-08-08T01:20:42.318Z: `Your silence is your soul speaking.`
+- 2025-08-08T01:30:51.883Z: `Your silence is your soul speaking.`
+- 2025-08-08T01:40:23.791Z: `Your silence is your soul speaking.`
+- 2025-08-08T01:50:15.527Z: `Your silence is your soul speaking.`
+- 2025-08-08T02:00:39.145Z: `Your silence is your soul speaking.`
+- 2025-08-08T02:10:12.931Z: `Your silence is your soul speaking.`
+- 2025-08-08T02:20:04.882Z: `Your silence is your soul speaking.`
+- 2025-08-08T02:32:25.252Z: `Your silence is your soul speaking.`
+- 2025-08-08T03:58:44.768Z: `Your silence is your soul speaking.`
+- 2025-08-08T05:23:05.344Z: `Your silence is your soul speaking.`
+- 2025-08-08T05:30:49.260Z: `Give more than you think you can, trusting that you are richer than you think.`
+- 2025-08-08T05:46:39.606Z: `Life is either a daring adventure, or it is nothing.`
+- 2025-08-08T05:50:20.072Z: `The fewer the words, the better the prayer.`
+- 2025-08-09T07:10:58.245Z: `It's your road, and yours alone, others may walk it with you, but no one can walk it for you.`
+- 2025-08-09T07:20:51.273Z: `A man sooner or later discovers that he is the master-gardener of his soul, the director of his life.`
+- 2025-08-09T07:33:30.239Z: `Learning never exhausts the mind.`

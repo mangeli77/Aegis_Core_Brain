@@ -1,0 +1,261 @@
+// scripts/maintenance/transcribe_variation_files.mjs
+// Scan variation_tests and create any missing *.txt next to *.mp3|*.wav
+// Prefers local util (voice/utils/whisper_transcriber.mjs); otherwise falls
+// back to the 'whisper' CLI (Homebrew) or `python3 -m whisper`.
+
+import fs from "node:fs/promises";
+import fssync from "node:fs";
+import path from "node:path";
+import os from "node:os";
+import { exec as _exec } from "node:child_process";
+import { fileURLToPath, pathToFileURL } from "node:url";
+import { setTimeout as sleep } from "node:timers/promises";
+const exec = (cmd, opts = {}) =>
+  new Promise((res, rej) =>
+    _exec(cmd, { maxBuffer: 1024 * 1024 * 100, ...opts }, (e, so, se) =>
+      e ? rej(Object.assign(e, { so, se })) : res({ so, se })
+    )
+  );
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+const ROOT = path.resolve(__dirname, "../../voice/output/variation_tests");
+const EMOTIONS = [
+  "apologetic",
+  "assertive",
+  "bonding",
+  "charismatic",
+  "compassionate",
+  "confident",
+  "defensive",
+  "frustrated",
+  "humorous",
+  "neutral",
+  "reflective",
+  "sarcastic",
+  "technical",
+];
+
+const CONCURRENCY = Number(process.env.TRANSCRIBE_CONCURRENCY || 3);
+const MODEL = process.env.WHISPER_MODEL || "base";
+const LANG = process.env.WHISPER_LANG || "en";
+
+function log(...a) {
+  console.log("[transcribe]", ...a);
+}
+
+async function exists(p) {
+  try {
+    await fs.access(p);
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+/* ---------- Attempt to load local util (preferred) ---------- */
+let localTranscriber = null;
+try {
+  // This util name matches what you’ve had previously
+  const utilPath = path.resolve(__dirname, "../../voice/utils/whisper_transcriber.mjs");
+  if (fssync.existsSync(utilPath)) {
+    const mod = await import(pathToFileURL(utilPath).href);
+    // Accept common names
+    localTranscriber =
+      mod.transcribeFile ||
+      mod.transcribeWav ||
+      mod.default ||
+      null;
+    if (localTranscriber) {
+      log("Using local whisper transcriber:", utilPath);
+    }
+  }
+} catch (e) {
+  // ignore; we’ll fall back to CLI
+}
+
+/* ---------- Fallbacks: whisper CLI or python whisper ---------- */
+async function findWhisperCLI() {
+  // common paths first
+  const candidates = [
+    "/opt/homebrew/bin/whisper",
+    "/usr/local/bin/whisper",
+    "/usr/bin/whisper",
+  ];
+  for (const c of candidates) {
+    if (await exists(c)) return c;
+  }
+  try {
+    const { so } = await exec("which whisper");
+    const p = so.trim();
+    if (p) return p;
+  } catch {}
+  return null;
+}
+
+async function ensureDir(p) {
+  await fs.mkdir(p, { recursive: true });
+}
+
+/* ---------- Transcribe using best available backend ---------- */
+async function transcribeToText(audioPath) {
+  // If we have a local util, prefer it
+  if (localTranscriber) {
+    try {
+      const outText = await localTranscriber(audioPath, { model: MODEL, lang: LANG });
+      // If util returns a path, read it. If returns text, use it.
+      if (typeof outText === "string" && fssync.existsSync(outText)) {
+        return await fs.readFile(outText, "utf8");
+      }
+      if (typeof outText === "string") return outText;
+      if (outText && typeof outText.text === "string") return outText.text;
+    } catch (e) {
+      log("Local transcriber failed, will try CLI:", e.message);
+    }
+  }
+
+  // CLI path
+  const whisperBin = await findWhisperCLI();
+  const tmpDir = await fs.mkdtemp(path.join(os.tmpdir(), "aegis-whisper-"));
+  try {
+    if (whisperBin) {
+      // whisper <audio> --model base --language en --output_dir <tmp> --output_format txt
+      const cmd = [
+        `"${whisperBin}"`,
+        `"${audioPath}"`,
+        `--model ${MODEL}`,
+        `--language ${LANG}`,
+        `--output_dir "${tmpDir}"`,
+        `--output_format txt`,
+        "--no_speech_threshold 0.6",
+      ].join(" ");
+
+      await exec(cmd);
+      // whisper writes <audio>.txt in output_dir
+      const base = path.parse(audioPath).name;
+      // whisper may strip extensions; search *.txt in tmpDir
+      const txtPaths = (await fs.readdir(tmpDir))
+        .filter((f) => f.endsWith(".txt"))
+        .map((f) => path.join(tmpDir, f));
+
+      let candidate = txtPaths.find((p) => path.parse(p).name.includes(base));
+      if (!candidate && txtPaths.length === 1) candidate = txtPaths[0];
+
+      if (!candidate) {
+        throw new Error("Whisper CLI produced no .txt");
+      }
+      return await fs.readFile(candidate, "utf8");
+    }
+
+    // Final fallback: python module
+    log("Falling back to python3 -m whisper …");
+    // Write output in tmpDir, then read the txt like above
+    const cmd = [
+      "python3 -m whisper",
+      `"${audioPath}"`,
+      `--model ${MODEL}`,
+      `--language ${LANG}`,
+      `--output_dir "${tmpDir}"`,
+      `--output_format txt`,
+    ].join(" ");
+    await exec(cmd);
+    const txtPaths = (await fs.readdir(tmpDir))
+      .filter((f) => f.endsWith(".txt"))
+      .map((f) => path.join(tmpDir, f));
+    if (!txtPaths.length) throw new Error("python whisper produced no .txt");
+    // Try to pick the most relevant file
+    const base = path.parse(audioPath).name;
+    let candidate = txtPaths.find((p) => path.parse(p).name.includes(base));
+    if (!candidate && txtPaths.length === 1) candidate = txtPaths[0];
+    return await fs.readFile(candidate, "utf8");
+  } finally {
+    // best effort cleanup
+    try {
+      await fs.rm(tmpDir, { recursive: true, force: true });
+    } catch {}
+  }
+}
+
+/* ---------- Work queue ---------- */
+async function* walkVariationMp3() {
+  const lines = await fs.readdir(ROOT, { withFileTypes: true }).catch(() => []);
+  for (const d of lines) {
+    if (!d.isDirectory()) continue;
+    if (!/^line_\d+/.test(d.name)) continue;
+    const lineDir = path.join(ROOT, d.name);
+    for (const emo of EMOTIONS) {
+      const mp3 = path.join(lineDir, `${emo}_sample.mp3`);
+      const wav = path.join(lineDir, `${emo}_sample.wav`);
+      const txt = path.join(lineDir, `${emo}_sample.txt`);
+      const audioPath = (await exists(mp3)) ? mp3 : (await exists(wav)) ? wav : null;
+      if (!audioPath) continue;
+      const hasTxt = await exists(txt);
+      yield { lineDir, line: d.name, emo, audioPath, txt, hasTxt };
+    }
+  }
+}
+
+async function main() {
+  log("Scanning:", ROOT);
+  const tasks = [];
+  for await (const item of walkVariationMp3()) {
+    tasks.push(item);
+  }
+
+  const missing = tasks.filter((t) => !t.hasTxt);
+  if (!tasks.length) {
+    log("No audio files found.");
+    return;
+  }
+  if (!missing.length) {
+    log("All MP3/WAV already have TXT.");
+    return;
+  }
+
+  log(`Found ${missing.length} audio files missing transcripts. Starting…`);
+  let active = 0;
+  let idx = 0;
+  let ok = 0;
+  let fail = 0;
+
+  const next = async () => {
+    if (idx >= missing.length) return;
+    const me = missing[idx++];
+    active++;
+    const label = `${me.line}/${me.emo}`;
+    try {
+      log(`Transcribing ${label} …`);
+      const text = await transcribeToText(me.audioPath);
+      await ensureDir(path.dirname(me.txt));
+      await fs.writeFile(me.txt, (text || "").trim() + "\n", "utf8");
+      ok++;
+      log(`✓ Wrote ${path.relative(process.cwd(), me.txt)}`);
+    } catch (e) {
+      fail++;
+      console.error(`✗ Failed ${label}:`, e?.message || e);
+    } finally {
+      active--;
+    }
+  };
+
+  const runners = [];
+  for (let i = 0; i < CONCURRENCY; i++) runners.push(next());
+
+  // pump
+  while (active > 0 || idx < missing.length) {
+    while (active < CONCURRENCY && idx < missing.length) {
+      runners.push(next());
+    }
+    await sleep(50);
+  }
+
+  log(`Done. OK: ${ok}  Fail: ${fail}`);
+}
+
+if (import.meta.main) {
+  main().catch((err) => {
+    console.error("Fatal:", err);
+    process.exitCode = 1;
+  });
+}

@@ -1,0 +1,6 @@
+[2025-07-06T00:00:2359Z] (neutral) ??? presence/                 # Motion sensor, IR, presence detection [#system #seg-2360]
+[2025-07-06T00:00:2359Z] (neutral) ?   ??? proximity-scan.js [#system #seg-2360]
+[2025-07-06T00:00:2359Z] (neutral) ??? presence/                 # Motion sensor, IR, presence detection [#system #seg-2360]
+[2025-07-06T00:00:2359Z] (neutral) ?   ??? proximity-scan.js [#system #seg-2360]
+[2025-07-06T00:00:2359Z] (neutral) ??? presence/                 # Motion sensor, IR, presence detection [#system #seg-2360]
+[2025-07-06T00:00:2359Z] (neutral) ?   ??? proximity-scan.js [#system #seg-2360]

@@ -1,0 +1,1 @@
+[2025-07-06T00:00:1999Z] (neutral)  [#to check which python version is installed and active, run the following command in your terminalêinside yourêaegis-venvêenvironment #seg-2000]

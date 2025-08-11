@@ -1,0 +1,76 @@
+import '../../_env.mjs';
+
+// cognition/loops/voice_cognition_core.mjs
+// Validate artifacts, score tone, inject memory
+
+// ─── Auto-load .env from repo root ──────────────────────────────────────────
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+import dotenv from "dotenv";
+const __filename = fileURLToPath(import.meta.url);
+const __dirname  = path.dirname(__filename);
+dotenv.config({ path: path.resolve(__dirname, "../../.env") });
+
+// ─── Imports ────────────────────────────────────────────────────────────────
+import fs from "fs";
+import fsp from "fs/promises";
+import { analyzeTone } from "../../voice/utils/emotion_weights.mjs";      // your analyzer
+import { injectMemory } from "../../core/memory/memory_injector.mjs";     // your injector
+
+// ─── Config ────────────────────────────────────────────────────────────────
+const ROOT = path.resolve(__dirname, "../../voice/output/variation_tests");
+const MIN_MP3_BYTES = 2048;
+const MIN_TXT_BYTES = 8;
+
+async function fileOk(p,min){ try{const s=await fsp.stat(p); return s.isFile() && s.size>=min;}catch{return false;} }
+
+async function processSample(dir, base){
+  const mp3 = path.join(dir, base + ".mp3");
+  const txt = path.join(dir, base + ".wav.txt");
+
+  const haveMp3 = await fileOk(mp3, MIN_MP3_BYTES);
+  const haveTxt = await fileOk(txt, MIN_TXT_BYTES);
+
+  if (!haveMp3 || !haveTxt){
+    console.warn(`⚠️  Skipping ${base} (mp3:${haveMp3?'✓':'—'} txt:${haveTxt?'✓':'—'})`);
+    return { skipped:true };
+  }
+
+  const transcript = (await fsp.readFile(txt, "utf8")).trim();
+  const toneScore  = analyzeTone(transcript);   // implement as you wish
+
+  await injectMemory({
+    type: "voice_training",
+    sample: base,
+    path: dir,
+    transcript,
+    tone: toneScore,
+    at: new Date().toISOString()
+  });
+
+  return { ok:true };
+}
+
+(async function main(){
+  const lines = (await fsp.readdir(ROOT, { withFileTypes:true }))
+    .filter(d=>d.isDirectory() && /^line_\d+$/i.test(d.name))
+    .map(d=>path.join(ROOT, d.name));
+
+  let ok=0, skipped=0;
+  for (const line of lines){
+    const files = await fsp.readdir(line);
+    const bases = [...new Set(
+      files
+        .filter(f => /_sample\.mp3$|_sample\.wav\.txt$/i.test(f))
+        .map(f => f.replace(/\.mp3$|\.wav\.txt$/i, ""))
+    )];
+
+    console.log(`\n🧠 Voice cognition on ${path.basename(line)}…`);
+    for (const b of bases){
+      const r = await processSample(line, b);
+      if (r.ok) ok++; else skipped++;
+    }
+  }
+
+  console.log(`\n—— Cognition Summary ——\n✅ OK: ${ok}   ⏭️ Skipped (missing artifacts): ${skipped}\n`);
+})().catch(e=>{ console.error("\nFatal in voice_cognition_core:", e); process.exit(1); });

@@ -1,0 +1,6 @@
+[2025-07-06T00:00:2107Z] (neutral)  [#chatgpt said #seg-2108]
+[2025-07-06T00:00:2107Z] (neutral) Perfect. The environment is in great shape now Ñ we're just missing the fileÊspeechbrain-test.py, which the terminal canÕt find in theÊscripts/Êdirectory. [#system #seg-2108]
+[2025-07-06T00:00:2107Z] (neutral)  [#chatgpt said #seg-2108]
+[2025-07-06T00:00:2107Z] (neutral) Perfect. The environment is in great shape now Ñ we're just missing the fileÊspeechbrain-test.py, which the terminal canÕt find in theÊscripts/Êdirectory. [#system #seg-2108]
+[2025-07-06T00:00:2107Z] (neutral)  [#chatgpt said #seg-2108]
+[2025-07-06T00:00:2107Z] (neutral) Perfect. The environment is in great shape now Ñ we're just missing the fileÊspeechbrain-test.py, which the terminal canÕt find in theÊscripts/Êdirectory. [#system #seg-2108]

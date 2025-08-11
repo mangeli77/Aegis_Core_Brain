@@ -1,0 +1,2 @@
+[2025-07-06T00:00:1615Z] (neutral)  [#it looks like you installed the fullêvosk api repo, butêthe node.js package is a separate project #seg-1616]
+[2025-07-06T00:00:1615Z] (neutral)  [#it looks like you installed the fullêvosk api repo, butêthe node.js package is a separate project #seg-1616]

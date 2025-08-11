@@ -1,0 +1,6 @@
+[2025-07-06T00:00:1813Z] (neutral) Full Hard Reset for Voice Install (Rosetta/M1) [#?êstep-by-step #seg-1814]
+[2025-07-06T00:00:1813Z] (neutral) This versionÊdoes not require screenshots. Just follow these in order andÊpaste terminal output only if asked. [#system #seg-1814]
+[2025-07-06T00:00:1813Z] (neutral) Full Hard Reset for Voice Install (Rosetta/M1) [#?êstep-by-step #seg-1814]
+[2025-07-06T00:00:1813Z] (neutral) This versionÊdoes not require screenshots. Just follow these in order andÊpaste terminal output only if asked. [#system #seg-1814]
+[2025-07-06T00:00:1813Z] (neutral) Full Hard Reset for Voice Install (Rosetta/M1) [#?êstep-by-step #seg-1814]
+[2025-07-06T00:00:1813Z] (neutral) This versionÊdoes not require screenshots. Just follow these in order andÊpaste terminal output only if asked. [#system #seg-1814]

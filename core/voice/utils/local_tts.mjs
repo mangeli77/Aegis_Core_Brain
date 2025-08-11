@@ -1,0 +1,26 @@
+import { requireEnv } from '../../core/voice/utils/env_guard.mjs';
+import '../../_env.mjs';
+// voice/utils/local_tts.mjs
+
+import { execSync } from 'child_process';
+import path from 'path';
+import dotenv from 'dotenv';
+dotenv.config();
+
+const VOICE_OUTPUT = process.env.VOICE_OUTPUT_PATH || 'voice/output/test.wav';
+const TTS_BIN = '/Users/Aegis/Aegis/aegis-tts-env/bin/tts'; // ✅ full path to `tts`
+
+const MODEL = 'tts_models/en/ljspeech/glow-tts';
+const VOCODER = 'vocoder_models/en/ljspeech/hifigan_v2';
+
+export async function speak(text = '') {
+  if (!text || typeof text !== 'string') return;
+
+  try {
+    const cmd = `${TTS_BIN} --text "${text}" --model_name ${MODEL} --vocoder_name ${VOCODER} --out_path ${VOICE_OUTPUT}`;
+    console.log(`🗣️ Synthesizing locally: "${text}"...`);
+    execSync(cmd, { stdio: 'inherit' });
+  } catch (err) {
+    console.error('❌ Local TTS failed:', err.message);
+  }
+}

@@ -1,0 +1,1 @@
+[2025-07-06T00:00:1529Z] (neutral)  [#thanks for the screenshot. you're seeing the infamousêffi-napiêbuild failure again ñ and yes, it's a beast on m1/m2 macs even in rosetta. here's what weõll do now #seg-1530]

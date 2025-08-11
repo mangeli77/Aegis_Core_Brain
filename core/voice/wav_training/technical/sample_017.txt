@@ -1,0 +1,1 @@
+TLS 1.2 must be enabled for secure connections.

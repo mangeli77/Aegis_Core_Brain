@@ -1,0 +1,1 @@
+Reference the device's datasheet for pin configuration.

@@ -1,0 +1,2 @@
+[2025-07-06T00:00:1893Z] (neutral)  [#after 10 seconds, the mic auto-stops. you should see a console output like #seg-1894]
+[2025-07-06T00:00:1893Z] (neutral)  [#after 10 seconds, the mic auto-stops. you should see a console output like #seg-1894]

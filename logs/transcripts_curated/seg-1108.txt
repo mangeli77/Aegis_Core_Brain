@@ -1,0 +1,6 @@
+[2025-07-06T00:00:1107Z] (neutral)  [#chatgpt said #seg-1108]
+[2025-07-06T00:00:1107Z] (neutral) The error in your screenshot confirms thatÊcreateLlamaPromptÊisÊnot exportedÊfromÊtest-llama-query.js. This is why theÊsoul-console.jsÊscript throws a syntax error. [#system #seg-1108]
+[2025-07-06T00:00:1107Z] (neutral)  [#chatgpt said #seg-1108]
+[2025-07-06T00:00:1107Z] (neutral) The error in your screenshot confirms thatÊcreateLlamaPromptÊisÊnot exportedÊfromÊtest-llama-query.js. This is why theÊsoul-console.jsÊscript throws a syntax error. [#system #seg-1108]
+[2025-07-06T00:00:1107Z] (neutral)  [#chatgpt said #seg-1108]
+[2025-07-06T00:00:1107Z] (neutral) The error in your screenshot confirms thatÊcreateLlamaPromptÊisÊnot exportedÊfromÊtest-llama-query.js. This is why theÊsoul-console.jsÊscript throws a syntax error. [#system #seg-1108]

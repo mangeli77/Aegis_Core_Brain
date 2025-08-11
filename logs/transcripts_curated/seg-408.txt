@@ -1,0 +1,6 @@
+[2025-07-06T00:00:407Z] (neutral) 5. ?ÊUpdate VS Code Workspace (Optional but smart) [#system #seg-408]
+[2025-07-06T00:00:407Z] (neutral) If youÕre using aÊ.code-workspaceÊfile or have saved projects, rename that toÊaegis-soul.code-workspace. [#system #seg-408]
+[2025-07-06T00:00:407Z] (neutral) 5. ?ÊUpdate VS Code Workspace (Optional but smart) [#system #seg-408]
+[2025-07-06T00:00:407Z] (neutral) If youÕre using aÊ.code-workspaceÊfile or have saved projects, rename that toÊaegis-soul.code-workspace. [#system #seg-408]
+[2025-07-06T00:00:407Z] (neutral) 5. ?ÊUpdate VS Code Workspace (Optional but smart) [#system #seg-408]
+[2025-07-06T00:00:407Z] (neutral) If youÕre using aÊ.code-workspaceÊfile or have saved projects, rename that toÊaegis-soul.code-workspace. [#system #seg-408]

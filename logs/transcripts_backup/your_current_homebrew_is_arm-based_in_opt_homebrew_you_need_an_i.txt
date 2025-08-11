@@ -1,0 +1,2 @@
+[2025-07-06T00:00:1743Z] (neutral)  [#your current homebrew is arm-based inê/opt/homebrew. you need an intel (x86) version for rosetta builds #seg-1744]
+[2025-07-06T00:00:1743Z] (neutral)  [#your current homebrew is arm-based inê/opt/homebrew. you need an intel (x86) version for rosetta builds #seg-1744]

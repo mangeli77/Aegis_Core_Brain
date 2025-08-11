@@ -1,0 +1,3 @@
+[2025-07-06T00:00:1184Z] (neutral) speak is not a functionÊmeans your system is trying to call a function calledÊspeak, but: [#? got it. the error messageê? error #seg-1185]
+[2025-07-06T00:00:1184Z] (neutral) speak is not a functionÊmeans your system is trying to call a function calledÊspeak, but: [#? got it. the error messageê? error #seg-1185]
+[2025-07-06T00:00:1184Z] (neutral) speak is not a functionÊmeans your system is trying to call a function calledÊspeak, but: [#? got it. the error messageê? error #seg-1185]

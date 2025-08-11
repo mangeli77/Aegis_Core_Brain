@@ -1,0 +1,2 @@
+[2025-07-06T00:00:1678Z] (neutral)  [#if you installed the vosk api manually and just need a shim to expose it from the repo (which you cloned), here's a simple module bridge #seg-1679]
+[2025-07-06T00:00:1678Z] (neutral)  [#if you installed the vosk api manually and just need a shim to expose it from the repo (which you cloned), here's a simple module bridge #seg-1679]

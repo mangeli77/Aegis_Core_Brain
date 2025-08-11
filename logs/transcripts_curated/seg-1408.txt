@@ -1,0 +1,6 @@
+[2025-07-06T00:00:1407Z] (neutral) Install Python + Pip (for SpeechBrain) [#? step 3 #seg-1408]
+[2025-07-06T00:00:1407Z] (neutral) brew install python [#system #seg-1408]
+[2025-07-06T00:00:1407Z] (neutral) Install Python + Pip (for SpeechBrain) [#? step 3 #seg-1408]
+[2025-07-06T00:00:1407Z] (neutral) brew install python [#system #seg-1408]
+[2025-07-06T00:00:1407Z] (neutral) Install Python + Pip (for SpeechBrain) [#? step 3 #seg-1408]
+[2025-07-06T00:00:1407Z] (neutral) brew install python [#system #seg-1408]

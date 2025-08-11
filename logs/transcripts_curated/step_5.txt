@@ -1,0 +1,6 @@
+[2025-07-06T00:00:1335Z] (neutral) Reinstall Vosk [#?êstep 5 #seg-1336]
+[2025-07-06T00:00:1409Z] (neutral) Fix Native Dependencies for Apple Silicon (if needed) [#? step 5 #seg-1410]
+[2025-07-06T00:00:1335Z] (neutral) Reinstall Vosk [#?êstep 5 #seg-1336]
+[2025-07-06T00:00:1409Z] (neutral) Fix Native Dependencies for Apple Silicon (if needed) [#? step 5 #seg-1410]
+[2025-07-06T00:00:1335Z] (neutral) Reinstall Vosk [#?êstep 5 #seg-1336]
+[2025-07-06T00:00:1409Z] (neutral) Fix Native Dependencies for Apple Silicon (if needed) [#? step 5 #seg-1410]

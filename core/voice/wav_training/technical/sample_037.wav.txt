@@ -1,0 +1,1 @@
+Firmware updates must not interrupt system processes.

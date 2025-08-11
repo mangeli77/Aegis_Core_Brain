@@ -1,0 +1,6 @@
+[2025-07-06T00:00:1531Z] (neutral) RemoveÊffi-napiÊ(broken) [#? step 1 #seg-1532]
+[2025-07-06T00:00:1531Z] (neutral) npm uninstall ffi-napi [#system #seg-1532]
+[2025-07-06T00:00:1531Z] (neutral) RemoveÊffi-napiÊ(broken) [#? step 1 #seg-1532]
+[2025-07-06T00:00:1531Z] (neutral) npm uninstall ffi-napi [#system #seg-1532]
+[2025-07-06T00:00:1531Z] (neutral) RemoveÊffi-napiÊ(broken) [#? step 1 #seg-1532]
+[2025-07-06T00:00:1531Z] (neutral) npm uninstall ffi-napi [#system #seg-1532]

@@ -1,0 +1,3 @@
+[2025-07-06T00:00:1999Z] (neutral) Êsetup-aegis-env.sh [#? your script is ready #seg-2000]
+[2025-07-06T00:00:1999Z] (neutral) Êsetup-aegis-env.sh [#? your script is ready #seg-2000]
+[2025-07-06T00:00:1999Z] (neutral) Êsetup-aegis-env.sh [#? your script is ready #seg-2000]

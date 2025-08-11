@@ -1,0 +1,3 @@
+[2025-07-06T00:00:517Z] (neutral) engaged [#visual      2025-07-01t... | [signal] waveform #seg-518]
+[2025-07-06T00:00:517Z] (neutral) engaged [#visual      2025-07-01t... | [signal] waveform #seg-518]
+[2025-07-06T00:00:517Z] (neutral) engaged [#visual      2025-07-01t... | [signal] waveform #seg-518]

@@ -1,0 +1,1 @@
+[2025-07-06T00:00:1992Z] (neutral)  [#it tells vs code to use the newly createdê.aegis-venvêas the default python interpreter for this workspace. this will #seg-1993]

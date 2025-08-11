@@ -1,0 +1,1 @@
+Static IP addresses must fall within the reserved subnet.

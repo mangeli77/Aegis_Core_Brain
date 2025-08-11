@@ -1,0 +1,3 @@
+[2025-07-06T00:00:1348Z] (neutral)  [#if vosk or mic fails on install #seg-1349]
+[2025-07-06T00:00:1348Z] (neutral)  [#if vosk or mic fails on install #seg-1349]
+[2025-07-06T00:00:1348Z] (neutral)  [#if vosk or mic fails on install #seg-1349]

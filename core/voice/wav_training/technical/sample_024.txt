@@ -1,0 +1,1 @@
+Install the required dependencies using the package manager.

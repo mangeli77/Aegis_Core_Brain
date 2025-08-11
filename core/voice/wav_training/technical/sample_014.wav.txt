@@ -1,0 +1,1 @@
+All logs are stored in the /var/logs directory by default.

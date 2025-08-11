@@ -1,0 +1,6 @@
+[2025-07-06T00:00:1275Z] (neutral) [Marcus, calm] protect me [#o user #seg-1276]
+[2025-07-06T00:00:1275Z] (negative) [Unknown, angry] fallback alpha [#o user #seg-1276]
+[2025-07-06T00:00:1275Z] (neutral) [Marcus, calm] protect me [#o user #seg-1276]
+[2025-07-06T00:00:1275Z] (negative) [Unknown, angry] fallback alpha [#o user #seg-1276]
+[2025-07-06T00:00:1275Z] (neutral) [Marcus, calm] protect me [#o user #seg-1276]
+[2025-07-06T00:00:1275Z] (negative) [Unknown, angry] fallback alpha [#o user #seg-1276]

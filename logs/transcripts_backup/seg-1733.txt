@@ -1,0 +1,6 @@
+[2025-07-06T00:00:1732Z] (neutral)  [#chatgpt said #seg-1733]
+[2025-07-06T00:00:1732Z] (neutral) Gorgeous. ?ÊsetuptoolsÊis now satisfied under the correct Python (ARM64), which means your ffi-napi build should no longer collapse like a sad souffl. [#system #seg-1733]
+[2025-07-06T00:00:1732Z] (neutral)  [#chatgpt said #seg-1733]
+[2025-07-06T00:00:1732Z] (neutral) Gorgeous. ?ÊsetuptoolsÊis now satisfied under the correct Python (ARM64), which means your ffi-napi build should no longer collapse like a sad souffl. [#system #seg-1733]
+[2025-07-06T00:00:1732Z] (neutral)  [#chatgpt said #seg-1733]
+[2025-07-06T00:00:1732Z] (neutral) Gorgeous. ?ÊsetuptoolsÊis now satisfied under the correct Python (ARM64), which means your ffi-napi build should no longer collapse like a sad souffl. [#system #seg-1733]

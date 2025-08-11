@@ -1,0 +1,6 @@
+[2025-07-06T00:00:1054Z] (neutral) Cannot find package 'fs.js' [#err_module_not_found #seg-1055]
+[2025-07-06T00:00:1645Z] (neutral) Cannot find module '../vosk-api/nodejs/index.js' [#err_module_not_found #seg-1646]
+[2025-07-06T00:00:1054Z] (neutral) Cannot find package 'fs.js' [#err_module_not_found #seg-1055]
+[2025-07-06T00:00:1645Z] (neutral) Cannot find module '../vosk-api/nodejs/index.js' [#err_module_not_found #seg-1646]
+[2025-07-06T00:00:1054Z] (neutral) Cannot find package 'fs.js' [#err_module_not_found #seg-1055]
+[2025-07-06T00:00:1645Z] (neutral) Cannot find module '../vosk-api/nodejs/index.js' [#err_module_not_found #seg-1646]

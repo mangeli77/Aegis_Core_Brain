@@ -1,0 +1,3 @@
+[2025-07-06T00:00:1658Z] (neutral) ffi-napi build error [#??êfirst major roadblock #seg-1659]
+[2025-07-06T00:00:1658Z] (neutral) ffi-napi build error [#??êfirst major roadblock #seg-1659]
+[2025-07-06T00:00:1658Z] (neutral) ffi-napi build error [#??êfirst major roadblock #seg-1659]

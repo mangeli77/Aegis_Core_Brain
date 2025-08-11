@@ -1,0 +1,1 @@
+The circuit requires a 220-ohm resistor to prevent overcurrent.

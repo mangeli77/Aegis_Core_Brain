@@ -1,0 +1,1 @@
+Latency must remain below 50 milliseconds for optimal performance.

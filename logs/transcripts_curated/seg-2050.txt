@@ -1,0 +1,6 @@
+[2025-07-06T00:00:2049Z] (neutral)  [#chatgpt said #seg-2050]
+[2025-07-06T00:00:2049Z] (neutral)  [#thanks ñ this is extremely helpful. youêdefinitely have sounddevice installed, but pythonêcanõt find it, which means one of two things #seg-2050]
+[2025-07-06T00:00:2049Z] (neutral)  [#chatgpt said #seg-2050]
+[2025-07-06T00:00:2049Z] (neutral)  [#thanks ñ this is extremely helpful. youêdefinitely have sounddevice installed, but pythonêcanõt find it, which means one of two things #seg-2050]
+[2025-07-06T00:00:2049Z] (neutral)  [#chatgpt said #seg-2050]
+[2025-07-06T00:00:2049Z] (neutral)  [#thanks ñ this is extremely helpful. youêdefinitely have sounddevice installed, but pythonêcanõt find it, which means one of two things #seg-2050]

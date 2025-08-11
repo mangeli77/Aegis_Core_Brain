@@ -1,0 +1,2 @@
+[2025-07-06T00:00:1032Z] (neutral)  [#replace anyêrequire()êstatements with esmêimportêequivalents. here's the full corrected script to drop in #seg-1033]
+[2025-07-06T00:00:1032Z] (neutral)  [#replace anyêrequire()êstatements with esmêimportêequivalents. here's the full corrected script to drop in #seg-1033]

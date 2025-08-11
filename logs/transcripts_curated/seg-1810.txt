@@ -1,0 +1,6 @@
+[2025-07-06T00:00:1809Z] (neutral) ?? 4. Install dependencies [#system #seg-1810]
+[2025-07-06T00:00:1809Z] (neutral) brew install pkg-config npm install -g node-gyp [#system #seg-1810]
+[2025-07-06T00:00:1809Z] (neutral) ?? 4. Install dependencies [#system #seg-1810]
+[2025-07-06T00:00:1809Z] (neutral) brew install pkg-config npm install -g node-gyp [#system #seg-1810]
+[2025-07-06T00:00:1809Z] (neutral) ?? 4. Install dependencies [#system #seg-1810]
+[2025-07-06T00:00:1809Z] (neutral) brew install pkg-config npm install -g node-gyp [#system #seg-1810]

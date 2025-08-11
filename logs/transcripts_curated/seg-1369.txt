@@ -1,0 +1,6 @@
+[2025-07-06T00:00:1368Z] (neutral) Let me know when you're done withÊnpm installÊÑ and IÕll help reactivate Vosk + SpeechBrain + Reflex logic on this device. [#system #seg-1369]
+[2025-07-06T00:00:1368Z] (neutral)  [#you said #seg-1369]
+[2025-07-06T00:00:1368Z] (neutral) Let me know when you're done withÊnpm installÊÑ and IÕll help reactivate Vosk + SpeechBrain + Reflex logic on this device. [#system #seg-1369]
+[2025-07-06T00:00:1368Z] (neutral)  [#you said #seg-1369]
+[2025-07-06T00:00:1368Z] (neutral) Let me know when you're done withÊnpm installÊÑ and IÕll help reactivate Vosk + SpeechBrain + Reflex logic on this device. [#system #seg-1369]
+[2025-07-06T00:00:1368Z] (neutral)  [#you said #seg-1369]
