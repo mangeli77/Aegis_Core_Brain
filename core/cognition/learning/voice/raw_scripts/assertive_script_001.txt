@@ -1,0 +1,4 @@
+// Tone: ASSERTIVE
+// Prompt: State a firm command to a team during a crisis situation.
+
+"State a firm command to a team during a crisis situation."

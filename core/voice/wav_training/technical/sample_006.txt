@@ -1,0 +1,1 @@
+Voltage fluctuations exceeding 5% should trigger a failsafe.

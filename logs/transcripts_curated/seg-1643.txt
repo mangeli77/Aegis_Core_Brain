@@ -1,0 +1,6 @@
+[2025-07-06T00:00:1642Z] (neutral) ?? Why This Works [#system #seg-1643]
+[2025-07-06T00:00:1642Z] (neutral) Since Vosk is not published to npm and is locally cloned into your repo, you must useÊdirect relative importsÊto access itÑjust like you do forÊ./utils/speechbrain.jsÊandÊ./soul-core.js. [#system #seg-1643]
+[2025-07-06T00:00:1642Z] (neutral) ?? Why This Works [#system #seg-1643]
+[2025-07-06T00:00:1642Z] (neutral) Since Vosk is not published to npm and is locally cloned into your repo, you must useÊdirect relative importsÊto access itÑjust like you do forÊ./utils/speechbrain.jsÊandÊ./soul-core.js. [#system #seg-1643]
+[2025-07-06T00:00:1642Z] (neutral) ?? Why This Works [#system #seg-1643]
+[2025-07-06T00:00:1642Z] (neutral) Since Vosk is not published to npm and is locally cloned into your repo, you must useÊdirect relative importsÊto access itÑjust like you do forÊ./utils/speechbrain.jsÊandÊ./soul-core.js. [#system #seg-1643]

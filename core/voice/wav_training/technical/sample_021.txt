@@ -1,0 +1,1 @@
+Response time should not exceed 200ms under load.

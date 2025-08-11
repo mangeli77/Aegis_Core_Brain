@@ -1,0 +1,6 @@
+[2025-07-06T00:00:785Z] (neutral) ÊF15 chassisÊ(2014Ð2018 X5 series) [#* platform #seg-786]
+[2025-07-06T00:00:2093Z] (neutral) Linux (glibc 2.36) [#* platform #seg-2094]
+[2025-07-06T00:00:785Z] (neutral) ÊF15 chassisÊ(2014Ð2018 X5 series) [#* platform #seg-786]
+[2025-07-06T00:00:2093Z] (neutral) Linux (glibc 2.36) [#* platform #seg-2094]
+[2025-07-06T00:00:785Z] (neutral) ÊF15 chassisÊ(2014Ð2018 X5 series) [#* platform #seg-786]
+[2025-07-06T00:00:2093Z] (neutral) Linux (glibc 2.36) [#* platform #seg-2094]

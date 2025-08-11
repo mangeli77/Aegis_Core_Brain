@@ -1,0 +1,1 @@
+Be sure to terminate each line in the config with a semicolon.

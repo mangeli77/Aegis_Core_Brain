@@ -1,0 +1,1 @@
+[2025-07-06T00:00:1161Z] (neutral) ${input}\nAegis: ${response}\n`, { append: true }); [#import { safewrite } from '../utils/file-ops.js'; const memorylogpath = resolve(__dirname, '../memory/aegis_memory.txt'); await safewrite(memorylogpath, `user #seg-1162]

@@ -1,0 +1,6 @@
+[2025-07-06T00:00:1603Z] (neutral) Êi386Ê(Rosetta ?) [#* arch #seg-1604]
+[2025-07-06T00:00:1759Z] (neutral) /usr/local/Homebrew/bin/python3 isn't executable [#arch #seg-1760]
+[2025-07-06T00:00:1603Z] (neutral) Êi386Ê(Rosetta ?) [#* arch #seg-1604]
+[2025-07-06T00:00:1759Z] (neutral) /usr/local/Homebrew/bin/python3 isn't executable [#arch #seg-1760]
+[2025-07-06T00:00:1603Z] (neutral) Êi386Ê(Rosetta ?) [#* arch #seg-1604]
+[2025-07-06T00:00:1759Z] (neutral) /usr/local/Homebrew/bin/python3 isn't executable [#arch #seg-1760]

@@ -1,0 +1,2 @@
+[2025-07-06T00:00:1482Z] (neutral)  [#yes, please ñ sending theêfull-screen screenshotê(especially with the latest terminal output at the bottom) helps me catch #seg-1483]
+[2025-07-06T00:00:1482Z] (neutral)  [#yes, please ñ sending theêfull-screen screenshotê(especially with the latest terminal output at the bottom) helps me catch #seg-1483]

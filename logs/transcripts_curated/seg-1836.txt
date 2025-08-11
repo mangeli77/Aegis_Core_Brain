@@ -1,0 +1,6 @@
+[2025-07-06T00:00:1835Z] (neutral) ?? 1. Create a Dedicated Python Virtual Environment [#system #seg-1836]
+[2025-07-06T00:00:1835Z] (neutral) python3 -m venv ~/.aegis-venv source ~/.aegis-venv/bin/activate [#system #seg-1836]
+[2025-07-06T00:00:1835Z] (neutral) ?? 1. Create a Dedicated Python Virtual Environment [#system #seg-1836]
+[2025-07-06T00:00:1835Z] (neutral) python3 -m venv ~/.aegis-venv source ~/.aegis-venv/bin/activate [#system #seg-1836]
+[2025-07-06T00:00:1835Z] (neutral) ?? 1. Create a Dedicated Python Virtual Environment [#system #seg-1836]
+[2025-07-06T00:00:1835Z] (neutral) python3 -m venv ~/.aegis-venv source ~/.aegis-venv/bin/activate [#system #seg-1836]

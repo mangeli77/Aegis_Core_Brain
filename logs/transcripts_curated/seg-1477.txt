@@ -1,0 +1,6 @@
+[2025-07-06T00:00:1476Z] (neutral) STEP 5 Ñ Launch Soft Boot [#system #seg-1477]
+[2025-07-06T00:00:1476Z] (neutral) node scripts/soul-entry.js [#system #seg-1477]
+[2025-07-06T00:00:1476Z] (neutral) STEP 5 Ñ Launch Soft Boot [#system #seg-1477]
+[2025-07-06T00:00:1476Z] (neutral) node scripts/soul-entry.js [#system #seg-1477]
+[2025-07-06T00:00:1476Z] (neutral) STEP 5 Ñ Launch Soft Boot [#system #seg-1477]
+[2025-07-06T00:00:1476Z] (neutral) node scripts/soul-entry.js [#system #seg-1477]

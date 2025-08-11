@@ -1,0 +1,1 @@
+The hash function produces a 256-bit output.

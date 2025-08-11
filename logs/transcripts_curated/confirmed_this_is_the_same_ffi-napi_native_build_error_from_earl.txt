@@ -1,0 +1,2 @@
+[2025-07-06T00:00:1717Z] (neutral)  [#confirmed ñ this is the sameêffi-napiênative build error from earlier, despite being in rosetta (darwin | x64). that narrows it down to one likely cause #seg-1718]
+[2025-07-06T00:00:1717Z] (neutral)  [#confirmed ñ this is the sameêffi-napiênative build error from earlier, despite being in rosetta (darwin | x64). that narrows it down to one likely cause #seg-1718]

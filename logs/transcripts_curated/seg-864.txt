@@ -1,0 +1,6 @@
+[2025-07-06T00:00:863Z] (neutral) med-core.js [#system #seg-864]
+[2025-07-06T00:00:863Z] (neutral) Emergency, childbirth, livestock, diagnostics [#system #seg-864]
+[2025-07-06T00:00:863Z] (neutral) med-core.js [#system #seg-864]
+[2025-07-06T00:00:863Z] (neutral) Emergency, childbirth, livestock, diagnostics [#system #seg-864]
+[2025-07-06T00:00:863Z] (neutral) med-core.js [#system #seg-864]
+[2025-07-06T00:00:863Z] (neutral) Emergency, childbirth, livestock, diagnostics [#system #seg-864]

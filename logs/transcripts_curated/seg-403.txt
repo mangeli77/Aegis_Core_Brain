@@ -1,0 +1,6 @@
+[2025-07-06T00:00:402Z] (neutral)  [#?? here's what likely broke and how to fix it #seg-403]
+[2025-07-06T00:00:402Z] (neutral) ÊAll internal file imports, paths, and relative references still assume the folder isÊaegis-core, notÊaegis-soul. [#??êproblem #seg-403]
+[2025-07-06T00:00:402Z] (neutral)  [#?? here's what likely broke and how to fix it #seg-403]
+[2025-07-06T00:00:402Z] (neutral) ÊAll internal file imports, paths, and relative references still assume the folder isÊaegis-core, notÊaegis-soul. [#??êproblem #seg-403]
+[2025-07-06T00:00:402Z] (neutral)  [#?? here's what likely broke and how to fix it #seg-403]
+[2025-07-06T00:00:402Z] (neutral) ÊAll internal file imports, paths, and relative references still assume the folder isÊaegis-core, notÊaegis-soul. [#??êproblem #seg-403]

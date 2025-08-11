@@ -1,0 +1,26 @@
+import '../../../_env.mjs';
+
+// voice/utils/whisper_transcriber.mjs
+
+import { execSync } from 'child_process';
+import path from 'path';
+import fs from 'fs';
+
+export function transcribeWav(filePath) {
+  const absPath = path.resolve(filePath);
+  const dir = path.dirname(absPath);
+  const base = path.basename(absPath);
+  const command = `whisper "${base}" --model base --output_format txt --language en`;
+
+  try {
+    console.log(`🎙️ Transcribing: ${filePath}`);
+    execSync(command, { cwd: dir, stdio: 'ignore' });
+
+    const transcriptPath = absPath.replace(/\.(mp3|wav)$/i, '.txt');
+    const transcript = fs.readFileSync(transcriptPath, 'utf-8').trim();
+    return transcript;
+  } catch (err) {
+    console.error('❌ Whisper transcription failed:', err);
+    return '';
+  }
+}

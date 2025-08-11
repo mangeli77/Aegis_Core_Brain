@@ -1,0 +1,4 @@
+// Tone: NEUTRAL
+// Prompt: Read a public transit update in an unbiased tone.
+
+"Read a public transit update in an unbiased tone."

@@ -1,0 +1,3 @@
+[2025-07-06T00:00:1579Z] (neutral) Node is trying toÊimport { Model } from 'vosk'Êbut theÊvoskmodule isnÕt resolvable viaÊnode_modules. [#* ? thatõs why your error persists #seg-1580]
+[2025-07-06T00:00:1579Z] (neutral) Node is trying toÊimport { Model } from 'vosk'Êbut theÊvoskmodule isnÕt resolvable viaÊnode_modules. [#* ? thatõs why your error persists #seg-1580]
+[2025-07-06T00:00:1579Z] (neutral) Node is trying toÊimport { Model } from 'vosk'Êbut theÊvoskmodule isnÕt resolvable viaÊnode_modules. [#* ? thatõs why your error persists #seg-1580]

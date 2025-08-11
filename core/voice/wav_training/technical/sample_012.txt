@@ -1,0 +1,1 @@
+The REST API requires authentication via a bearer token.

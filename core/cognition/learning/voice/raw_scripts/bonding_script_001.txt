@@ -1,0 +1,4 @@
+// Tone: BONDING
+// Prompt: Express gratitude with warmth and sincerity.
+
+"Express gratitude with warmth and sincerity."

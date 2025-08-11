@@ -1,0 +1,83 @@
+// scripts/diagnostics/run_system_check.mjs
+import { requireEnv, summarizeEnv } from '../../core/voice/utils/env_guard.mjs';
+import chalk from 'chalk';
+
+// Load/validate the env we need for this check
+const { OPENAI_API_KEY, ELEVENLABS_API_KEY, ELEVENLABS_VOICE_ID, OLLAMA_MODEL } =
+  requireEnv(['OPENAI_API_KEY','ELEVENLABS_API_KEY','ELEVENLABS_VOICE_ID','OLLAMA_MODEL']);
+
+function printHeader(title) {
+  console.log(chalk.cyan(`\n— ${title} —`));
+}
+
+async function checkOpenAI() {
+  printHeader('OpenAI');
+  try {
+    const { OpenAI } = await import('openai');
+    const client = new OpenAI({ apiKey: OPENAI_API_KEY });
+
+    const list = await client.models.list();
+    const names = list.data?.map(m => m.id).slice(0, 25) ?? [];
+    console.log(chalk.green('✓ OpenAI key is valid.'));
+    console.log('Available models:', names);
+  } catch (err) {
+    console.log(chalk.red('✗ OpenAI probe failed.'));
+    console.error(String(err?.message || err));
+  }
+}
+
+async function checkElevenLabs() {
+  printHeader('ElevenLabs');
+  try {
+    // very lightweight probe: just show masked env confirmation
+    const masked = summarizeEnv('ELEVENLABS_API_KEY', 'ELEVENLABS_VOICE_ID');
+    console.log(chalk.green('✓ ElevenLabs env OK — loaded (no callable export)'));
+    console.log(masked);
+  } catch (err) {
+    console.log(chalk.red('✗ ElevenLabs probe failed.'));
+    console.error(String(err?.message || err));
+  }
+}
+
+async function checkOllama() {
+  printHeader('Ollama');
+  try {
+    const { OLLAMA_HOST } = process.env;
+    if (!OLLAMA_HOST) throw new Error('OLLAMA_HOST not set');
+
+    const ctl = new AbortController();
+    const t = setTimeout(() => ctl.abort(), 5000);
+
+    const res = await fetch(`${OLLAMA_HOST}/api/tags`, { signal: ctl.signal });
+    clearTimeout(t);
+
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const tags = await res.json();
+
+    console.log(chalk.green('✓ Ollama connection OK.'));
+    console.log('Available models:', tags?.models?.map(m => m.name) ?? []);
+  } catch (err) {
+    console.log(chalk.red('✗ Ollama probe failed.'));
+    console.error(String(err?.message || err));
+  }
+}
+
+async function main() {
+  // Show masked env snapshot up top
+  const envSnap = summarizeEnv(
+    'OPENAI_API_KEY', 'ELEVENLABS_API_KEY', 'ELEVENLABS_VOICE_ID',
+    'OLLAMA_MODEL', 'OLLAMA_HOST'
+  );
+  console.log(chalk.gray('Env snapshot:'), envSnap);
+
+  await checkOpenAI();
+  await checkElevenLabs();
+  await checkOllama();
+
+  console.log(chalk.green('\n✓ System check complete.'));
+}
+
+main().catch(err => {
+  console.error(chalk.red('System check crashed:'), err);
+  process.exit(1);
+});

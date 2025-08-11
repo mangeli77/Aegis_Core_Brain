@@ -1,0 +1,6 @@
+[2025-07-06T00:00:2131Z] (neutral)  [#? the fix #seg-2132]
+[2025-07-06T00:00:2227Z] (neutral) manually set the Python path for node-gyp [#? the fix #seg-2228]
+[2025-07-06T00:00:2131Z] (neutral)  [#? the fix #seg-2132]
+[2025-07-06T00:00:2227Z] (neutral) manually set the Python path for node-gyp [#? the fix #seg-2228]
+[2025-07-06T00:00:2131Z] (neutral)  [#? the fix #seg-2132]
+[2025-07-06T00:00:2227Z] (neutral) manually set the Python path for node-gyp [#? the fix #seg-2228]

@@ -1,0 +1,6 @@
+[2025-07-06T00:00:1411Z] (neutral) Install SpeechBrain Python Dependencies [#? step 7 #seg-1412]
+[2025-07-06T00:00:1411Z] (neutral) pip3 install speechbrain numpy torch torchaudio [#system #seg-1412]
+[2025-07-06T00:00:1411Z] (neutral) Install SpeechBrain Python Dependencies [#? step 7 #seg-1412]
+[2025-07-06T00:00:1411Z] (neutral) pip3 install speechbrain numpy torch torchaudio [#system #seg-1412]
+[2025-07-06T00:00:1411Z] (neutral) Install SpeechBrain Python Dependencies [#? step 7 #seg-1412]
+[2025-07-06T00:00:1411Z] (neutral) pip3 install speechbrain numpy torch torchaudio [#system #seg-1412]

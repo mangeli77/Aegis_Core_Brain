@@ -1,0 +1,2 @@
+[2025-07-06T00:00:1283Z] (neutral)  [#perfect. now that you've downloadedêvosk-model-en-us-0.22, iõll integrate the complete local voice cognition pipeline using itñthis includes #seg-1284]
+[2025-07-06T00:00:1283Z] (neutral)  [#perfect. now that you've downloadedêvosk-model-en-us-0.22, iõll integrate the complete local voice cognition pipeline using itñthis includes #seg-1284]

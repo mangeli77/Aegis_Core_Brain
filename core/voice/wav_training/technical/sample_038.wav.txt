@@ -1,0 +1,1 @@
+Ensure isolation between high-voltage and logic-level components.

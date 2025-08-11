@@ -1,0 +1,55 @@
+import { requireEnv } from '../../core/voice/utils/env_guard.mjs';
+import '../../_env.mjs';
+
+// scripts/maintenance/synthesize_variation_batches.mjs
+
+import fs from 'fs';
+import path from 'path';
+import { speak } from '../../core/voice/utils/tts_router.mjs';
+
+const BASE_DIR = path.resolve('voice/output/variation_tests');
+const EMOTIONS = [
+  'neutral',
+  'reflective',
+  'assertive',
+  'technical',
+  'bonding',
+  'confident',
+  'defensive',
+  'compassionate',
+  'humorous',
+  'sarcastic',
+  'charismatic',
+  'frustrated',
+  'apologetic'
+];
+function getPromptText(dirPath) {
+  const mdPath = path.join(dirPath, 'prompt.md');
+  const txtPath = path.join(dirPath, 'prompt.txt');
+  if (fs.existsSync(mdPath)) return fs.readFileSync(mdPath, 'utf-8').trim();
+  if (fs.existsSync(txtPath)) return fs.readFileSync(txtPath, 'utf-8').trim();
+  return '';
+}
+
+async function synthesizeAll() {
+  const folders = fs.readdirSync(BASE_DIR).filter(f => f.startsWith('line_'));
+  for (const folder of folders) {
+    const linePath = path.join(BASE_DIR, folder);
+    const prompt = getPromptText(linePath);
+
+    if (!prompt) {
+      console.warn(`⚠️  No prompt file found in ${folder}`);
+      continue;
+    }
+
+    for (const emotion of EMOTIONS) {
+      const filename = `${emotion}_sample.mp3`;
+      const filepath = path.join(linePath, filename);
+      await speak(prompt, filepath, emotion);
+    }
+  }
+
+  console.log('✅ All variation batches synthesized.');
+}
+
+synthesizeAll();

@@ -1,0 +1,1 @@
+Thermal throttling will initiate once the CPU exceeds 90 degrees Celsius.

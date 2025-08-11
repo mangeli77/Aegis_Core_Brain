@@ -1,0 +1,6 @@
+import '../../_env.mjs';
+// scripts/test/test_elevenlabs_tts_direct.mjs
+
+import { speak } from '../../voice/utils/elevenlabs_tts.mjs';
+
+await speak("Testing your ElevenLabs voice pipeline. This is Aegis speaking.");

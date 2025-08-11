@@ -1,0 +1,6 @@
+[2025-07-06T00:00:1530Z] (neutral) SwapÊffi-napiÊwithÊ@ffi-napi/quickjs-compatibleshim [#? final fix #seg-1531]
+[2025-07-06T00:00:1530Z] (neutral) SinceÊvoskÊdepends onÊffi-napi, and that package refuses to build cleanly, we'll bypass it using a known stable workaround. [#system #seg-1531]
+[2025-07-06T00:00:1530Z] (neutral) SwapÊffi-napiÊwithÊ@ffi-napi/quickjs-compatibleshim [#? final fix #seg-1531]
+[2025-07-06T00:00:1530Z] (neutral) SinceÊvoskÊdepends onÊffi-napi, and that package refuses to build cleanly, we'll bypass it using a known stable workaround. [#system #seg-1531]
+[2025-07-06T00:00:1530Z] (neutral) SwapÊffi-napiÊwithÊ@ffi-napi/quickjs-compatibleshim [#? final fix #seg-1531]
+[2025-07-06T00:00:1530Z] (neutral) SinceÊvoskÊdepends onÊffi-napi, and that package refuses to build cleanly, we'll bypass it using a known stable workaround. [#system #seg-1531]

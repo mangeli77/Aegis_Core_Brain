@@ -1,0 +1,6 @@
+[2025-07-06T00:00:2045Z] (neutral)  [#chatgpt said #seg-2046]
+[2025-07-06T00:00:2045Z] (neutral) Thanks for the screenshot Ñ this confirms thatÊsounddeviceÊstill isnÕt available inside your virtual environment, even though you previously installed it. [#system #seg-2046]
+[2025-07-06T00:00:2045Z] (neutral)  [#chatgpt said #seg-2046]
+[2025-07-06T00:00:2045Z] (neutral) Thanks for the screenshot Ñ this confirms thatÊsounddeviceÊstill isnÕt available inside your virtual environment, even though you previously installed it. [#system #seg-2046]
+[2025-07-06T00:00:2045Z] (neutral)  [#chatgpt said #seg-2046]
+[2025-07-06T00:00:2045Z] (neutral) Thanks for the screenshot Ñ this confirms thatÊsounddeviceÊstill isnÕt available inside your virtual environment, even though you previously installed it. [#system #seg-2046]

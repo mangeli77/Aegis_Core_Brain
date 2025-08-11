@@ -1,0 +1,1 @@
+Ensure redundancy is active before deploying.

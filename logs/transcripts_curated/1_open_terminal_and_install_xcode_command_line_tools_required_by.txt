@@ -1,0 +1,2 @@
+[2025-07-06T00:00:1398Z] (neutral)  [#1. open terminal and installêxcode command line toolsê(required by homebrew and native bindings) #seg-1399]
+[2025-07-06T00:00:1398Z] (neutral)  [#1. open terminal and installêxcode command line toolsê(required by homebrew and native bindings) #seg-1399]

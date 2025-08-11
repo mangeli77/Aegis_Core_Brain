@@ -1,0 +1,3 @@
+[2025-07-06T00:00:1573Z] (neutral) Always verifies the speaker return true; } export function analyzeEmotion(data) { // TEMP STUB: Always returns "neutral" return "neutral"; } [#export function verifyspeaker(data) { // temp stub #seg-1574]
+[2025-07-06T00:00:1573Z] (neutral) Always verifies the speaker return true; } export function analyzeEmotion(data) { // TEMP STUB: Always returns "neutral" return "neutral"; } [#export function verifyspeaker(data) { // temp stub #seg-1574]
+[2025-07-06T00:00:1573Z] (neutral) Always verifies the speaker return true; } export function analyzeEmotion(data) { // TEMP STUB: Always returns "neutral" return "neutral"; } [#export function verifyspeaker(data) { // temp stub #seg-1574]

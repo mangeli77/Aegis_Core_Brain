@@ -1,0 +1,1 @@
+Use shielded cable to avoid signal degradation.

@@ -1,0 +1,86 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# == Upgrade requireEnv calls: varargs -> array ==
+# - Works on the two known files, and generically upgrades any other varargs usages it finds
+# - Creates .bak.envimport backups next to modified files
+# - DRY=1 to preview without writing
+
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
+cd "$ROOT"
+
+DRY="${DRY:-0}"
+
+# Files we know need fixing (add more if you discover them)
+CANDIDATES=(
+  "scripts/test/test_ollama.mjs"
+  "scripts/diagnostics/run_system_check.mjs"
+)
+
+# Also scan repo for any requireEnv(varargs...) that slipped through
+# Exclude node_modules and the guard itself
+while IFS= read -r hit; do
+  CANDIDATES+=("$hit")
+done < <(grep -RIl --exclude-dir=node_modules --exclude='env_guard.mjs' "requireEnv(" . | sort -u)
+
+# Deduplicate list
+mapfile -t CANDIDATES < <(printf "%s\n" "${CANDIDATES[@]}" | awk '!seen[$0]++')
+
+echo "== Upgrading requireEnv calls (varargs -> array) =="
+echo "Repo: $ROOT"
+echo "DRY mode: $DRY"
+echo
+
+changed=0
+scanned=0
+
+for f in "${CANDIDATES[@]}"; do
+  [[ -f "$f" ]] || continue
+  scanned=$((scanned+1))
+
+  before="$(cat "$f")"
+
+  # 1) Specific known patterns
+  #    requireEnv(['OLLAMA_HOST','OLLAMA_MODEL']) -> requireEnv(['OLLAMA_HOST','OLLAMA_MODEL'])
+  after="$before"
+  after="$(printf "%s" "$after" | node -e '
+    const fs = require("fs");
+    let s = fs.readFileSync(0, "utf8");
+
+    // Helper: wrap any comma-separated quoted tokens into an array
+    function upgradeAllVarargs(str) {
+      // Matches: requireEnv(["A","B","C"])
+      // Captures: the inner comma-separated list
+      return str.replace(
+        /requireEnv\s*\(\s*((?:"[A-Z0-9_]+"|'\''[A-Z0-9_]+'\'')(?:\s*,\s*(?:"[A-Z0-9_]+"|'\''[A-Z0-9_]+'\''))*)\s*\)/g,
+        (_m, list) => {
+          // normalize spacing: "A","B","C"
+          const normalized = list.replace(/\s*,\s*/g, ",");
+          return `requireEnv([${normalized}])`;
+        }
+      );
+    }
+
+    s = upgradeAllVarargs(s);
+    process.stdout.write(s);
+  ')"
+
+  if [[ "$after" != "$before" ]]; then
+    echo "• updating: $f"
+    if [[ "$DRY" == "1" ]]; then
+      echo "  (dry-run) would write ${f}.bak.envimport and new content"
+    else
+      cp -p "$f" "${f}.bak.envimport"
+      printf "%s" "$after" > "$f"
+      changed=$((changed+1))
+    fi
+  fi
+done
+
+echo
+echo "Done. Scanned $scanned files. Updated $changed. (DRY=$DRY)"
+echo
+echo "Tip:"
+echo "  • Backups saved with suffix .bak.envimport"
+echo "  • Review changes: git diff"
+echo "  • Clean backups when satisfied: find . -name \"*.bak.envimport\" -delete"

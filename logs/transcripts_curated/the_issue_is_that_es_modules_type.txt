@@ -1,0 +1,3 @@
+[2025-07-06T00:00:1013Z] (neutral) "module"Êin yourÊpackage.json) donÕt supportÊrequire()Ñyou must useÊimport. [#the issue is that es modules ("type" #seg-1014]
+[2025-07-06T00:00:1013Z] (neutral) "module"Êin yourÊpackage.json) donÕt supportÊrequire()Ñyou must useÊimport. [#the issue is that es modules ("type" #seg-1014]
+[2025-07-06T00:00:1013Z] (neutral) "module"Êin yourÊpackage.json) donÕt supportÊrequire()Ñyou must useÊimport. [#the issue is that es modules ("type" #seg-1014]

@@ -1,0 +1,133 @@
+import { requireEnv } from '../../core/voice/utils/env_guard.mjs';
+import '../../_env.mjs';
+/* --- injected by apply_voice_env_and_transcribe_fix.sh --- */
+function __isAudioExt(p) {
+  const ext = (p.split('.').pop() || '').toLowerCase();
+  return ['mp3','wav','m4a','flac','aac','ogg','webm'].includes(ext);
+}
+/* --- end injection --- */
+
+
+// scripts/maintenance/transcribe_variation_files.mjs
+// ESM-safe, no stray EOF, robust dynamic-import of local whisper transcriber.
+
+import fs from "node:fs/promises";
+import path from "node:path";
+import { fileURLToPath, pathToFileURL } from "node:url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+// Where we look for mp3s
+const VARIATION_ROOT = path.resolve(__dirname, "../../voice/output/variation_tests");
+
+// Where your local transcriber lives
+const LOCAL_TRANSCRIBER = path.resolve(__dirname, "../../voice/utils/whisper_transcriber.mjs");
+
+// Utility: does a file exist?
+async function exists(p) {
+  try {
+    await fs.access(p);
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+// Utility: recursive directory walk collecting *.mp3
+async function collectMp3s(root) {
+  const out = [];
+  async function walk(dir) {
+    const entries = await fs.readdir(dir, { withFileTypes: true });
+    for (const e of entries) {
+      const full = path.join(dir, e.name);
+      if (e.isDirectory()) {
+        await walk(full);
+      } else if (e.isFile() && e.name.toLowerCase().endsWith(".mp3")) {
+        out.push(full);
+      }
+    }
+  }
+  await walk(root);
+  return out.sort();
+}
+
+// Load transcriber module and pick a callable
+async function loadTranscriber() {
+  const url = pathToFileURL(LOCAL_TRANSCRIBER).href;
+  console.log(`[transcribe] Using local whisper transcriber: ${LOCAL_TRANSCRIBER}`);
+  const mod = await import(url);
+
+  const fn =
+    mod.transcribeWav ||
+    mod.transcribeFile ||
+    mod.transcribe ||
+    mod.default;
+
+  if (typeof fn !== "function") {
+    throw new Error(
+      `Could not find a transcribe function in ${LOCAL_TRANSCRIBER}. ` +
+      `Expected one of: transcribeWav, transcribeFile, transcribe, default.`
+    );
+  }
+  return fn;
+}
+
+async function main() {
+  console.log(`\n🎙️  Scanning for mp3s under: ${VARIATION_ROOT}\n`);
+
+  const transcribe = await loadTranscriber();
+  const mp3s = await collectMp3s(VARIATION_ROOT);
+
+  if (mp3s.length === 0) {
+    console.log("No mp3 files found. Nothing to do.");
+    return;
+  }
+
+  let created = 0;
+  let skipped = 0;
+
+  for (const mp3 of mp3s) {
+    const dir = path.dirname(mp3);
+    const base = path.basename(mp3, ".mp3");
+
+    const transcriptPath = path.join(dir, `${base}.transcript.txt`);
+    const whisperPath    = path.join(dir, `${base}.whisper.txt`);
+
+    // If both present, skip quickly
+    if ((await exists(transcriptPath)) && (await exists(whisperPath))) {
+      skipped++;
+      continue;
+    }
+
+    console.log(`🎧 Transcribing: ${mp3}`);
+
+    // Call your transcriber. Most implementations accept (filePath, opts) and return a string.
+    // If your transcriber returns an object, you can adapt the two writes below accordingly.
+    const text = await transcribe(mp3, { format: "text" });
+    const raw  = typeof text === "string" ? text : (text?.text ?? "");
+
+    // Write the human-readable transcript
+    if (!(await exists(transcriptPath))) {
+      await fs.writeFile(transcriptPath, raw);
+      console.log(`   ✓ wrote ${path.relative(VARIATION_ROOT, transcriptPath)}`);
+      created++;
+    }
+
+    // Write an alternate/raw copy for debugging/comparison
+    if (!(await exists(whisperPath))) {
+      await fs.writeFile(whisperPath, raw);
+      console.log(`   ✓ wrote ${path.relative(VARIATION_ROOT, whisperPath)}`);
+      created++;
+    }
+  }
+
+  console.log(
+    `\n[transcribe] Done. mp3 scanned: ${mp3s.length}, transcripts created: ${created}, already-present skipped: ${skipped}\n`
+  );
+}
+
+main().catch((err) => {
+  console.error("[transcribe] Fatal:", err?.stack || err);
+  process.exit(1);
+});

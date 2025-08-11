@@ -1,0 +1,1 @@
+The backup interval is configurable via cron.

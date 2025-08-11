@@ -1,0 +1,6 @@
+[2025-07-06T00:00:1718Z] (neutral) ?? Your current version of Node (v18.20.8) fromÊnvmÊis still too new forÊffi-napito compile reliably. [#system #seg-1719]
+[2025-07-06T00:00:1718Z] (neutral) We need toÊdrop to Node v16.20.2, which we confirmed earlier is stable for this exact use case. [#system #seg-1719]
+[2025-07-06T00:00:1718Z] (neutral) ?? Your current version of Node (v18.20.8) fromÊnvmÊis still too new forÊffi-napito compile reliably. [#system #seg-1719]
+[2025-07-06T00:00:1718Z] (neutral) We need toÊdrop to Node v16.20.2, which we confirmed earlier is stable for this exact use case. [#system #seg-1719]
+[2025-07-06T00:00:1718Z] (neutral) ?? Your current version of Node (v18.20.8) fromÊnvmÊis still too new forÊffi-napito compile reliably. [#system #seg-1719]
+[2025-07-06T00:00:1718Z] (neutral) We need toÊdrop to Node v16.20.2, which we confirmed earlier is stable for this exact use case. [#system #seg-1719]

@@ -1,0 +1,6 @@
+[2025-07-06T00:00:1725Z] (neutral) $PATH"' >> ~/.zshrc source ~/.zshrc [#echo 'export path="/opt/homebrew/opt/python@3.11/bin #seg-1726]
+[2025-07-06T00:00:1730Z] (neutral) $PATH"' >> ~/.zshrc source ~/.zshrc [#echo 'export path="/opt/homebrew/opt/python@3.11/bin #seg-1731]
+[2025-07-06T00:00:1725Z] (neutral) $PATH"' >> ~/.zshrc source ~/.zshrc [#echo 'export path="/opt/homebrew/opt/python@3.11/bin #seg-1726]
+[2025-07-06T00:00:1730Z] (neutral) $PATH"' >> ~/.zshrc source ~/.zshrc [#echo 'export path="/opt/homebrew/opt/python@3.11/bin #seg-1731]
+[2025-07-06T00:00:1725Z] (neutral) $PATH"' >> ~/.zshrc source ~/.zshrc [#echo 'export path="/opt/homebrew/opt/python@3.11/bin #seg-1726]
+[2025-07-06T00:00:1730Z] (neutral) $PATH"' >> ~/.zshrc source ~/.zshrc [#echo 'export path="/opt/homebrew/opt/python@3.11/bin #seg-1731]

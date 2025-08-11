@@ -1,0 +1,6 @@
+[2025-07-06T00:00:1499Z] (neutral)  [#chatgpt said #seg-1500]
+[2025-07-06T00:00:1499Z] (neutral) i386)Ñbut thatÕs not enough. The compilationÊis still happeningÊbecauseÊffi-napiÊhas no compatible prebuilt binaryÊfor your environment under Node 18. [#confirmed. you'reêstill on node v18.20.8ê(arch #seg-1500]
+[2025-07-06T00:00:1499Z] (neutral)  [#chatgpt said #seg-1500]
+[2025-07-06T00:00:1499Z] (neutral) i386)Ñbut thatÕs not enough. The compilationÊis still happeningÊbecauseÊffi-napiÊhas no compatible prebuilt binaryÊfor your environment under Node 18. [#confirmed. you'reêstill on node v18.20.8ê(arch #seg-1500]
+[2025-07-06T00:00:1499Z] (neutral)  [#chatgpt said #seg-1500]
+[2025-07-06T00:00:1499Z] (neutral) i386)Ñbut thatÕs not enough. The compilationÊis still happeningÊbecauseÊffi-napiÊhas no compatible prebuilt binaryÊfor your environment under Node 18. [#confirmed. you'reêstill on node v18.20.8ê(arch #seg-1500]

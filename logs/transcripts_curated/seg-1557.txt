@@ -1,0 +1,6 @@
+[2025-07-06T00:00:1556Z] (neutral)  [#?? then install the wasm-compatible package #seg-1557]
+[2025-07-06T00:00:1556Z] (neutral) npm install vosk-browser [#system #seg-1557]
+[2025-07-06T00:00:1556Z] (neutral)  [#?? then install the wasm-compatible package #seg-1557]
+[2025-07-06T00:00:1556Z] (neutral) npm install vosk-browser [#system #seg-1557]
+[2025-07-06T00:00:1556Z] (neutral)  [#?? then install the wasm-compatible package #seg-1557]
+[2025-07-06T00:00:1556Z] (neutral) npm install vosk-browser [#system #seg-1557]

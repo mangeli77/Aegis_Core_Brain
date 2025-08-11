@@ -1,0 +1,6 @@
+[2025-07-06T00:00:1787Z] (neutral)  [#chatgpt said #seg-1788]
+[2025-07-06T00:00:1787Z] (neutral) Perfect. Thanks Ñ this confirms that the x86_64 Python 3.11 binary isÊnot linked at allÊinÊ/usr/local/bin/python3, which is why Rosetta-compatible modules likeÊffi-napiÊwonÕt build. [#system #seg-1788]
+[2025-07-06T00:00:1787Z] (neutral)  [#chatgpt said #seg-1788]
+[2025-07-06T00:00:1787Z] (neutral) Perfect. Thanks Ñ this confirms that the x86_64 Python 3.11 binary isÊnot linked at allÊinÊ/usr/local/bin/python3, which is why Rosetta-compatible modules likeÊffi-napiÊwonÕt build. [#system #seg-1788]
+[2025-07-06T00:00:1787Z] (neutral)  [#chatgpt said #seg-1788]
+[2025-07-06T00:00:1787Z] (neutral) Perfect. Thanks Ñ this confirms that the x86_64 Python 3.11 binary isÊnot linked at allÊinÊ/usr/local/bin/python3, which is why Rosetta-compatible modules likeÊffi-napiÊwonÕt build. [#system #seg-1788]

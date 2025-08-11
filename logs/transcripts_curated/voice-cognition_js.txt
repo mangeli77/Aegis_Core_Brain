@@ -1,0 +1,3 @@
+[2025-07-06T00:00:2510Z] (neutral) Node 18+ sometimes breaks mic module bindings (workaround isÊnpx, downgrade, or rewrite using modern streams) [#* voice-cognition.js #seg-2511]
+[2025-07-06T00:00:2510Z] (neutral) Node 18+ sometimes breaks mic module bindings (workaround isÊnpx, downgrade, or rewrite using modern streams) [#* voice-cognition.js #seg-2511]
+[2025-07-06T00:00:2510Z] (neutral) Node 18+ sometimes breaks mic module bindings (workaround isÊnpx, downgrade, or rewrite using modern streams) [#* voice-cognition.js #seg-2511]

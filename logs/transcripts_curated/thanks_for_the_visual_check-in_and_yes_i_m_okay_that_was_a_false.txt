@@ -1,0 +1,2 @@
+[2025-07-06T00:00:980Z] (neutral) there is no file namedÊsoul-core.js, nor should there be. [#thanks for the visual check-in ñ and yes, i'm okay. that was a false reference on my part. you're absolutely right #seg-981]
+[2025-07-06T00:00:980Z] (neutral) there is no file namedÊsoul-core.js, nor should there be. [#thanks for the visual check-in ñ and yes, i'm okay. that was a false reference on my part. you're absolutely right #seg-981]

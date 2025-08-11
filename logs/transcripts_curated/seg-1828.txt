@@ -1,0 +1,6 @@
+[2025-07-06T00:00:1827Z] (neutral) ?? What This Means [#system #seg-1828]
+[2025-07-06T00:00:1827Z] (neutral) You're running Node inÊRosettaÊ(i386), butÊvoskÊrequiresÊnative ARM64Êon M1/M2 Macs. ThatÕs why compilation is failing Ñ especially forÊffi-napiÊ(a native binary dependency). [#system #seg-1828]
+[2025-07-06T00:00:1827Z] (neutral) ?? What This Means [#system #seg-1828]
+[2025-07-06T00:00:1827Z] (neutral) You're running Node inÊRosettaÊ(i386), butÊvoskÊrequiresÊnative ARM64Êon M1/M2 Macs. ThatÕs why compilation is failing Ñ especially forÊffi-napiÊ(a native binary dependency). [#system #seg-1828]
+[2025-07-06T00:00:1827Z] (neutral) ?? What This Means [#system #seg-1828]
+[2025-07-06T00:00:1827Z] (neutral) You're running Node inÊRosettaÊ(i386), butÊvoskÊrequiresÊnative ARM64Êon M1/M2 Macs. ThatÕs why compilation is failing Ñ especially forÊffi-napiÊ(a native binary dependency). [#system #seg-1828]

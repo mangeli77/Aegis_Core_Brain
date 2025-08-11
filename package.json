@@ -1,0 +1,47 @@
+{
+  "name": "aegis",
+  "version": "1.0.0",
+  "description": "Aegis voice + cognition system",
+  "main": "index.js",
+  "scripts": {
+    "start": "node core/core.mjs",
+    "verify:imports": "node tools/verify-imports.mjs",
+    "build": "echo \"Build step not required (ESM)\" && exit 0",
+    "diagnostics": "node tools/repo_status.sh || true",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:ollama": "node scripts/test/test_ollama.mjs",
+    "doctor": "bash scripts/diagnostics/run_doctor.sh",
+    "doctor:quiet": "NODE_NO_WARNINGS=1 QUIET=1 scripts/diagnostics/run_doctor.sh",
+    "doctor:ci": "QUIET=1 FAIL_FAST=1 bash scripts/diagnostics/run_doctor.sh",
+    "full:pipeline": "bash scripts/diagnostics/full_voice_pipeline_check.sh && bash scripts/diagnostics/rotate_logs.sh logs/voice/full_pipeline 10",
+    "checkpoint": "bash scripts/diagnostics/run_checkpoint.sh",
+    "checkpoint:push": "PUSH_TAG=1 bash scripts/diagnostics/run_checkpoint.sh",
+    "restore:latest": "bash scripts/diagnostics/restore_checkpoint.sh $(ls -t checkpoints/*.zip | head -n 1)",
+    "clean:smoke": "rm -rf voice/output/_smoke",
+    "clean:batch": "rm -rf voice/output/batch_*",
+    "clean:all": "npm run clean:smoke && npm run clean:batch",
+    "validate-and-checkpoint": "npm run full:pipeline && npm run checkpoint",
+    "syscheck": "node scripts/diagnostics/run_system_check.mjs",
+    "syscheck:ci": "QUIET=1 FAIL_FAST=1 node scripts/diagnostics/run_system_check.mjs",
+    "baseline": "bash scripts/diagnostics/make_baseline.sh",
+    "patch:env-guard-calls": "bash scripts/patches/upgrade_env_guard_calls.sh",
+    "patch:env-guard-calls:dry": "DRY=1 bash scripts/patches/upgrade_env_guard_calls.sh",
+    "tree": "node scripts/diagnostics/print_repo_tree.mjs",
+    "tree:deep": "node scripts/diagnostics/print_repo_tree.mjs --depth=12",
+    "tree:png": "node scripts/diagnostics/print_repo_tree.mjs --png=true"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.0.0",
+    "dotenv": "^17.2.1",
+    "openai": "^5.11.0"
+  },
+  "devDependencies": {
+    "dependency-cruiser": "^16.10.4",
+    "graphviz": "^0.0.9",
+    "jscodeshift": "^17.3.0"
+  },
+  "type": "module"
+}

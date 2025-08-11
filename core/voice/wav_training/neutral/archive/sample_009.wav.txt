@@ -1,0 +1,1 @@
+R9. Module latency. Negligible. Drift 0.

@@ -1,0 +1,6 @@
+[2025-07-06T00:00:1789Z] (neutral)  [#chatgpt said #seg-1790]
+[2025-07-06T00:00:1789Z] (neutral) Got it Ñ that still confirms Python isÊlinked in the ARM (M1) Homebrew path, not underÊ/usr/local/binÊwhere Rosetta expects it. ThatÕs why the x86_64 build fails. [#system #seg-1790]
+[2025-07-06T00:00:1789Z] (neutral)  [#chatgpt said #seg-1790]
+[2025-07-06T00:00:1789Z] (neutral) Got it Ñ that still confirms Python isÊlinked in the ARM (M1) Homebrew path, not underÊ/usr/local/binÊwhere Rosetta expects it. ThatÕs why the x86_64 build fails. [#system #seg-1790]
+[2025-07-06T00:00:1789Z] (neutral)  [#chatgpt said #seg-1790]
+[2025-07-06T00:00:1789Z] (neutral) Got it Ñ that still confirms Python isÊlinked in the ARM (M1) Homebrew path, not underÊ/usr/local/binÊwhere Rosetta expects it. ThatÕs why the x86_64 build fails. [#system #seg-1790]

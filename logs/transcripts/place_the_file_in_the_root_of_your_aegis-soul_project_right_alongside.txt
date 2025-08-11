@@ -1,0 +1,1 @@
+[2025-07-06T00:00:1693Z] (neutral)  [#place the file in theêroot of your aegis-soul project, right alongside #seg-1694]

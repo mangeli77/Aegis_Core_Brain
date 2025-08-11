@@ -1,0 +1,1 @@
+[2025-07-06T00:00:422Z] (neutral)  [#yes ñ now that you've renamed the outer folder toêsoul/êand stabilized the internalêaegis-core/, hereõs aêfinal cleanup + optimization passêto tighten everything up and future-proof your build #seg-423]

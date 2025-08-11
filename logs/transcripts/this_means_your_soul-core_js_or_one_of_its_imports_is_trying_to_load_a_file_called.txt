@@ -1,0 +1,1 @@
+[2025-07-06T00:00:542Z] (neutral)  [#this means yourêsoul-core.jsê(or one of its imports) is trying to load a file called #seg-543]

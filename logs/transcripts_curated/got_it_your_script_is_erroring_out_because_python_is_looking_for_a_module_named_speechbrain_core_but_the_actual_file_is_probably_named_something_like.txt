@@ -1,0 +1,1 @@
+[2025-07-06T00:00:1945Z] (neutral)  [#got it ñ your script is erroring out because python is looking for a module namedêspeechbrain_core, but the actual file is probably named something like #seg-1946]

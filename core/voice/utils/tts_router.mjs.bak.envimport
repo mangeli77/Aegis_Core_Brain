@@ -1,0 +1,95 @@
+import '../../../_env.mjs';
+// voice/utils/tts_router.mjs
+
+import fs from 'node:fs/promises';
+import path from 'node:path';
+
+// ---- Env
+const API_KEY  = process.env.ELEVENLABS_API_KEY || process.env.ELEVENLABS_KEY || '';
+const VOICE_ID = process.env.ELEVENLABS_VOICE_ID || '';
+const MODEL_ID = process.env.ELEVENLABS_MODEL_ID || 'eleven_multilingual_v2';
+
+// Provider toggle (optional): "elevenlabs" | "local"
+const TTS_PROVIDER = (process.env.TTS_PROVIDER || 'elevenlabs').toLowerCase();
+
+// --- super-simple local stub (fallback)
+async function synthLocal(text, outPath) {
+  const SILENT_MP3 = Buffer.from([0x49,0x44,0x33,0x03,0,0,0,0,0,0x21]); // tiny ID3 header
+  await fs.mkdir(path.dirname(outPath), { recursive: true });
+  await fs.writeFile(outPath, SILENT_MP3);
+}
+
+async function elevenlabsSpeak(text, outPath, voiceId = VOICE_ID, apiKey = API_KEY) {
+  if (!apiKey) throw new Error('ElevenLabs: missing ELEVENLABS_API_KEY');
+  if (!voiceId) throw new Error('ElevenLabs: missing ELEVENLABS_VOICE_ID');
+
+  const url = `https://api.elevenlabs.io/v1/text-to-speech/${encodeURIComponent(voiceId)}`;
+
+  const body = {
+    text,
+    model_id: MODEL_ID,
+    voice_settings: {
+      stability: 0.35,
+      similarity_boost: 0.75,
+      style: 0.0,
+      use_speaker_boost: true
+    }
+  };
+
+  // Debug (without leaking the key)
+  if (process.env.DEBUG) {
+    console.log('[router:el] POST', url);
+    console.log('[router:el] keyLen', String(apiKey).length, 'voiceId', voiceId, 'model', body.model_id);
+  }
+
+  const res = await fetch(url, {
+    method: 'POST',
+    headers: {
+      'xi-api-key': apiKey,
+      'Content-Type': 'application/json',
+      'Accept': 'audio/mpeg'
+    },
+    body: JSON.stringify(body)
+  });
+
+  if (!res.ok) {
+    let txt = '';
+    try { txt = await res.text(); } catch {}
+    const err = new Error(`ElevenLabs TTS failed: ${res.status} ${res.statusText} :: ${txt}`);
+    err.status = res.status;
+    err.details = txt;
+    throw err;
+  }
+
+  const mp3 = Buffer.from(await res.arrayBuffer());
+  await fs.mkdir(path.dirname(outPath), { recursive: true });
+  await fs.writeFile(outPath, mp3);
+  return outPath;
+}
+
+/**
+ * Unified entry
+ * @param {string} text
+ * @param {string} outPath
+ * @param {{provider?: 'elevenlabs'|'local', voiceId?: string}} [opts]
+ */
+export async function speak(text, outPath, opts = {}) {
+  const provider = (opts.provider || TTS_PROVIDER).toLowerCase();
+  const abs = path.isAbsolute(outPath) ? outPath : path.resolve(process.cwd(), outPath);
+
+  if (!text?.trim()) throw new Error('speak(): text is empty');
+
+  if (provider === 'elevenlabs') {
+    try {
+      return await elevenlabsSpeak(text, abs, opts.voiceId || VOICE_ID, API_KEY);
+    } catch (err) {
+      console.error('❌ ElevenLabs error:', err.message || err);
+      console.warn('↪︎ Falling back to local TTS for this line.');
+      await synthLocal(text, abs);
+      return abs;
+    }
+  }
+
+  await synthLocal(text, abs);
+  return abs;
+}

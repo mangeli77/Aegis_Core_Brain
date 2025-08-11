@@ -1,0 +1,6 @@
+[2025-07-06T00:00:1470Z] (neutral) Use Rosetta TerminalÊexclusivelyÊwhen working with Aegis [#? recommended #seg-1471]
+[2025-07-06T00:00:1470Z] (neutral) Most of your errors are from compiling native bindings (ffi-napi) in ARM (arm64) instead of x86_64. Libraries likeÊffi-napiÊstill expect the x86_64 toolchain. [#system #seg-1471]
+[2025-07-06T00:00:1470Z] (neutral) Use Rosetta TerminalÊexclusivelyÊwhen working with Aegis [#? recommended #seg-1471]
+[2025-07-06T00:00:1470Z] (neutral) Most of your errors are from compiling native bindings (ffi-napi) in ARM (arm64) instead of x86_64. Libraries likeÊffi-napiÊstill expect the x86_64 toolchain. [#system #seg-1471]
+[2025-07-06T00:00:1470Z] (neutral) Use Rosetta TerminalÊexclusivelyÊwhen working with Aegis [#? recommended #seg-1471]
+[2025-07-06T00:00:1470Z] (neutral) Most of your errors are from compiling native bindings (ffi-napi) in ARM (arm64) instead of x86_64. Libraries likeÊffi-napiÊstill expect the x86_64 toolchain. [#system #seg-1471]

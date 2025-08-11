@@ -1,0 +1,3 @@
+[2025-07-06T00:00:670Z] (neutral) Feed prompt via STDIN instead [#?? fast fix #seg-671]
+[2025-07-06T00:00:670Z] (neutral) Feed prompt via STDIN instead [#?? fast fix #seg-671]
+[2025-07-06T00:00:670Z] (neutral) Feed prompt via STDIN instead [#?? fast fix #seg-671]

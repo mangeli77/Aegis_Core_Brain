@@ -1,0 +1,2 @@
+[2025-07-06T00:00:938Z] (neutral)  [#red file label = error or unsaved changesêñ and in your case, itõs a syntax error because of the placeholder spread operators #seg-939]
+[2025-07-06T00:00:938Z] (neutral)  [#red file label = error or unsaved changesêñ and in your case, itõs a syntax error because of the placeholder spread operators #seg-939]

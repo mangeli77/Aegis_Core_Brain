@@ -1,0 +1,1 @@
+[2025-07-06T00:00:999Z] (neutral) "??", warn: "??", error: "??", debug: "??" }[type] || "??"; console.log(`${icon} [${timestamp}] ${message}`); } module.exports = { log }; [#// utils/logger.js function log(message, type = "info") { const timestamp = new date().toisostring(); const icon = { info #seg-1000]

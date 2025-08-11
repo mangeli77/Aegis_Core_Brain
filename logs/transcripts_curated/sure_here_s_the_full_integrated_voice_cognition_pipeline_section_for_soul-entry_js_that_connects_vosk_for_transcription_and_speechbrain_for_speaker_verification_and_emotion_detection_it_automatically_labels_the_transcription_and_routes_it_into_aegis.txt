@@ -1,0 +1,1 @@
+[2025-07-06T00:00:1285Z] (neutral)  [#sure! here's the full integrated voice cognition pipeline section forêsoul-entry.jsêthat connects vosk (for transcription) and speechbrain (for speaker verification and emotion detection). it automatically labels the transcription and routes it into aegis #seg-1286]

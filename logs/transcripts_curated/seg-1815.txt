@@ -1,0 +1,6 @@
+[2025-07-06T00:00:1814Z] (neutral) 1. ?? Delete your currentÊnode_modulesÊand cache [#system #seg-1815]
+[2025-07-06T00:00:1814Z] (neutral) cd ~/aegis-soul rm -rf node_modules package-lock.json npm cache clean --force [#system #seg-1815]
+[2025-07-06T00:00:1814Z] (neutral) 1. ?? Delete your currentÊnode_modulesÊand cache [#system #seg-1815]
+[2025-07-06T00:00:1814Z] (neutral) cd ~/aegis-soul rm -rf node_modules package-lock.json npm cache clean --force [#system #seg-1815]
+[2025-07-06T00:00:1814Z] (neutral) 1. ?? Delete your currentÊnode_modulesÊand cache [#system #seg-1815]
+[2025-07-06T00:00:1814Z] (neutral) cd ~/aegis-soul rm -rf node_modules package-lock.json npm cache clean --force [#system #seg-1815]

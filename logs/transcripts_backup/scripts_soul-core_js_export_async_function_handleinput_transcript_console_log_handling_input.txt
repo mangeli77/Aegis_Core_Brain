@@ -1,0 +1,1 @@
+[2025-07-06T00:00:1880Z] (neutral) "${transcript}"`); // In production, route to perception modules, logging, memory, etc. } [#// scripts/soul-core.js export async function handleinput(transcript) { console.log(`?? handling input #memory #seg-1881]
