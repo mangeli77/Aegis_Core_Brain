@@ -1,98 +1,79 @@
 // tools/fix_env_guard_paths.mjs
-import fs from "node:fs/promises";
-import { execSync } from "node:child_process";
+import fs from "node:fs";
 import path from "node:path";
 
-const REPO_ROOT = process.cwd();
-const TARGET_ABS = path.resolve(REPO_ROOT, "core/voice/utils/env_guard.mjs");
-const exts = new Set([".js", ".mjs", ".cjs", ".ts", ".tsx"]);
+/** Absolute target we want every import to reference */
+const TARGET_ABS = path.resolve("core/voice/utils/env_guard.mjs");
 
-function listTrackedFiles() {
-  const out = execSync("git ls-files -z", { encoding: "utf8" });
-  return out
-    .split("\0")
-    .filter(Boolean)
-    .filter((p) => !p.startsWith("node_modules/"))
-    .filter((p) => exts.has(path.extname(p)));
+/** Directories to skip completely */
+const SKIP = new Set(["node_modules", ".git", "logs", "core/cognition/learning/voice/raw_scripts"]);
+
+/** Which file extensions to process */
+const FILE_RE = /\.(?:m?js|cjs|ts|tsx)$/i;
+
+/** Regexes that find any env_guard.mjs import (static or dynamic) */
+const RX_FROM = /(from\s*['"])([^'"]*?env_guard\.mjs(?:[?#][^'"]*)?)(['"])/g;
+const RX_DYN  = /(import\(\s*['"])([^'"]*?env_guard\.mjs(?:[?#][^'"]*)?)(['"]\s*\))/g;
+
+function shouldSkipDir(dir) {
+  return SKIP.has(path.basename(dir));
 }
 
-function toPosix(p) {
-  return p.replace(/\\/g, "/");
-}
-
-function ensureDotPrefix(rel) {
-  // make `foo/bar.mjs` -> `./foo/bar.mjs`
-  if (!rel.startsWith(".") && !rel.startsWith("/")) return "./" + rel;
-  return rel;
-}
-
-function dedupeSegments(p) {
-  // collapse /core/core/ or /voice/voice/
-  return p.replace(/\/(core|voice)\/\1\//g, "/$1/");
-}
-
-function buildReplacer(relPosix) {
-  // Match:
-  //   import X from '<...env_guard.mjs>';
-  //   export * from '<...env_guard.mjs>';
-  //   import('<...env_guard.mjs>')
-  //   require('<...env_guard.mjs>')
-  //
-  // We purposely allow anything before env_guard.mjs to replace wrong paths.
-  const fromRe = /(from\s*['"])([^'"]*env_guard\.mjs)(['"])/g;
-  const exportFromRe = /(export\s+\*\s+from\s*['"])([^'"]*env_guard\.mjs)(['"])/g;
-  const dynImportRe = /(import\s*\(\s*['"])([^'"]*env_guard\.mjs)(['"]\s*\))/g;
-  const requireRe = /(require\s*\(\s*['"])([^'"]*env_guard\.mjs)(['"]\s*\))/g;
-
-  const replacer = (_m, a, _b, c) => `${a}${relPosix}${c}`;
-
-  return (text) =>
-    text
-      .replace(fromRe, replacer)
-      .replace(exportFromRe, replacer)
-      .replace(dynImportRe, replacer)
-      .replace(requireRe, replacer);
-}
-
-async function fixFile(f) {
-  const abs = path.resolve(REPO_ROOT, f);
-  let text = await fs.readFile(abs, "utf8");
-  if (!/env_guard\.mjs/.test(text)) return { changed: false };
-
-  // Compute correct relative path from this file to TARGET
-  let rel = path.relative(path.dirname(abs), TARGET_ABS);
-  rel = ensureDotPrefix(toPosix(rel));
-  rel = dedupeSegments(rel);
-
-  const apply = buildReplacer(rel);
-  let fixed = apply(text);
-
-  // Also de-dupe lingering duplicate segments anywhere in path strings
-  fixed = fixed.replace(/\/(core|voice)\/\1\//g, "/$1/");
-
-  if (fixed !== text) {
-    await fs.writeFile(abs, fixed, "utf8");
-    return { changed: true };
-  }
-  return { changed: false };
-}
-
-async function main() {
-  const files = listTrackedFiles();
-  let changed = 0;
-
-  for (const f of files) {
-    const res = await fixFile(f);
-    if (res.changed) {
-      changed++;
-      console.log("✅ fixed:", f);
+function walk(dir, out) {
+  const ents = fs.readdirSync(dir, { withFileTypes: true });
+  for (const e of ents) {
+    const p = path.join(dir, e.name);
+    if (e.isDirectory()) {
+      if (!shouldSkipDir(p)) walk(p, out);
+    } else if (FILE_RE.test(e.name)) {
+      out.push(p);
     }
   }
-  console.log(changed ? `\nDone. Updated ${changed} file(s).`
-                      : "\nDone. No changes needed.");
 }
 
-main().catch((err) => {
-  console.error(err);
-  process.exit(1);
-});
+function toUnix(p) { return p.replace(/\\/g, "/"); }
+function withDot(rel) { return rel.startsWith(".") ? rel : "./" + rel; }
+
+function computeRel(fromFile) {
+  const rel = toUnix(path.relative(path.dirname(fromFile), TARGET_ABS));
+  return withDot(rel);
+}
+
+function normalizeOne(file) {
+  const text = fs.readFileSync(file, "utf8");
+  if (!text.includes("env_guard.mjs")) return false;
+
+  const want = computeRel(file);
+
+  let changed = false;
+  const replacer = (_m, a, _oldPath, c) => {
+    changed = true;
+    return `${a}${want}${c}`;
+  };
+
+  let out = text.replace(RX_FROM, replacer);
+  out = out.replace(RX_DYN, replacer);
+
+  if (changed && out !== text) {
+    fs.writeFileSync(file, out, "utf8");
+    return true;
+  }
+  return false;
+}
+
+function main() {
+  console.log("🔎  scanning…");
+  const files = [];
+  walk(process.cwd(), files);
+
+  let updated = 0;
+  for (const f of files) {
+    if (normalizeOne(f)) {
+      updated++;
+      console.log(`✅ fixed: ${toUnix(path.relative(process.cwd(), f))}`);
+    }
+  }
+  console.log(`\n✨ done. updated ${updated} file(s).`);
+}
+
+main();

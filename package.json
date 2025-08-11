@@ -4,6 +4,8 @@
   "description": "Aegis voice + cognition system",
   "main": "index.js",
   "scripts": {
+    "fix:env-guards": "node tools/fix_all_env_guard_paths.mjs",
+    "audit:env-guards": "bash -lc \"grep -RIn --exclude-dir=node_modules --exclude-dir=.git --exclude-dir=logs --exclude-dir='core/cognition/learning/voice/raw_scripts' -P 'from\\s+[\\\"\\'](?!\\./env_guard\\.mjs|(?:\\.\\./)+voice/utils/env_guard\\.mjs)[\\\"\\'][^\\\"\\']*env_guard\\.mjs' . || true\"",
     "start": "node core.mjs",
     "fix_env_guard_paths": "node tools/fix_env_paths.mjs",
     "verify:imports": "node tools/verify-imports.mjs",

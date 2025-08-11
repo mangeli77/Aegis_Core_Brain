@@ -10,7 +10,7 @@ import { spawn } from 'node:child_process';
 let requireEnv = (names = []) => names; // noop default
 try {
   // For modules outside /voice that expect this exact string:
-  ({ requireEnv } = await import('../../voice/utils/env_guard.mjs'));
+  ({ requireEnv } = await import('./env_guard.mjs'));
 } catch {
   try {
     // For modules inside /voice/utils:
