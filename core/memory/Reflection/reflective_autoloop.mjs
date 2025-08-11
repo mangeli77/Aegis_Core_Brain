@@ -1,4 +1,4 @@
-import { requireEnv } from '../../core/voice/utils/env_guard.mjs';
+import { requireEnv } from '../../voice/utils/env_guard.mjs';
 // reflective_autoloop.mjs — Final path-corrected
 
 import { appendFile } from 'fs/promises';

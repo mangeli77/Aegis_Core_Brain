@@ -1,4 +1,4 @@
-import { requireEnv } from '../../core/voice/utils/env_guard.mjs';
+import { requireEnv } from './env_guard.mjs';
 import '../../_env.mjs';
 // voice/utils/emotion_weights.mjs
 

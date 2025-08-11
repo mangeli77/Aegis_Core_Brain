@@ -1,8 +1,7 @@
-import { requireEnv } from '../../core/voice/utils/env_guard.mjs';
+import { requireEnv } from './env_guard.mjs';
 // voice/utils/tts_router.mjs
 
 // --- Load env from project root
-import '../../_env.mjs';
 
 import fs from 'node:fs/promises';
 import path from 'node:path';

@@ -1,4 +1,4 @@
-import { requireEnv } from '../../core/voice/utils/env_guard.mjs';
+import { requireEnv } from './utils/env_guard.mjs';
 // Voice Emotion Weights – Rev 5
 export const emotionProfiles = {
   calm: { stability: 0.7, similarity_boost: 0.9 },

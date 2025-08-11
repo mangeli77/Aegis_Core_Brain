@@ -1,4 +1,4 @@
-import { requireEnv } from '../../core/voice/utils/env_guard.mjs';
+import { requireEnv } from '../../voice/utils/env_guard.mjs';
 // cognition/engine/memory_injector.mjs
 
 import fs from 'fs';

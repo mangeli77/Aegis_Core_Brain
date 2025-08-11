@@ -1,4 +1,4 @@
-import { requireEnv } from '../../core/voice/utils/env_guard.mjs';
+import { requireEnv } from './env_guard.mjs';
 // voice/utils/elevenlabs_tts.mjs
 import fs from 'node:fs/promises';
 import path from 'node:path';

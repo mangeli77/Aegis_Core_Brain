@@ -4,7 +4,8 @@
   "description": "Aegis voice + cognition system",
   "main": "index.js",
   "scripts": {
-    "start": "node core/core.mjs",
+    "start": "node core.mjs",
+    "fix_env_guard_paths": "node tools/fix_env_paths.mjs",
     "verify:imports": "node tools/verify-imports.mjs",
     "build": "echo \"Build step not required (ESM)\" && exit 0",
     "diagnostics": "node tools/repo_status.sh || true",
@@ -28,7 +29,8 @@
     "patch:env-guard-calls:dry": "DRY=1 bash scripts/patches/upgrade_env_guard_calls.sh",
     "tree": "node scripts/diagnostics/print_repo_tree.mjs",
     "tree:deep": "node scripts/diagnostics/print_repo_tree.mjs --depth=12",
-    "tree:png": "node scripts/diagnostics/print_repo_tree.mjs --png=true"
+    "tree:png": "node scripts/diagnostics/print_repo_tree.mjs --png=true",
+    "fix:envguard": "node tools/fix_env_guard_paths.mjs"
   },
   "keywords": [],
   "author": "",

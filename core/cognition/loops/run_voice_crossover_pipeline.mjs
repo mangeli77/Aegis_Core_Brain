@@ -1,4 +1,4 @@
-import { requireEnv } from '../../core/voice/utils/env_guard.mjs';
+import { requireEnv } from '../../voice/utils/env_guard.mjs';
 // cognition/loops/run_voice_crossover_pipeline.mjs
 
 import path from 'path';

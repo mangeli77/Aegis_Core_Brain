@@ -1,4 +1,4 @@
-import { requireEnv } from '../../core/voice/utils/env_guard.mjs';
+import { requireEnv } from '../voice/utils/env_guard.mjs';
 // llm-router.mjs — Rev 5 w/ debug + .env loading
 import 'dotenv/config';
 import fetch from 'node-fetch';

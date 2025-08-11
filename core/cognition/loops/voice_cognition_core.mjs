@@ -1,6 +1,6 @@
 // core/cognition/loops/voice_cognition_core.mjs
 import OpenAI from 'openai';
-import { requireEnv } from '../../core/voice/utils/env_guard.mjs'; // ✅
+import { requireEnv } from '../../voice/utils/env_guard.mjs'; // ✅
 
 // Optional: if your tts router default-exports a speak() helper:
 import speak from '../../core/voice/utils/tts_router.mjs';
