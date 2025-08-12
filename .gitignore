@@ -11,3 +11,6 @@ voice
 _archive/remote_pipeline/
 # safety: ignore any future remote-pipeline scratch dirs
 **/_archive/remote_pipeline/**
+
+# Archived remote/GPU pipeline
+_archive/remote_pipeline/
