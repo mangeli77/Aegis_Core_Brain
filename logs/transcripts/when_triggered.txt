@@ -1,3 +1,0 @@
-[2025-07-06T00:00:1233Z] (neutral)  [#when triggered #seg-1234]
-[2025-07-06T00:00:1233Z] (neutral)  [#when triggered #seg-1234]
-[2025-07-06T00:00:1233Z] (neutral)  [#when triggered #seg-1234]

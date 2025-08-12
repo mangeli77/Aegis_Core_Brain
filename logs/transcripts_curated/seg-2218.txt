@@ -1,6 +1,0 @@
-[2025-07-06T00:00:2217Z] (neutral) Ready to test? Or want to runÊvoice_diagnostic.pyÊfirst to confirm mic input is clean? [#system #seg-2218]
-[2025-07-06T00:00:2217Z] (neutral)  [#you said #seg-2218]
-[2025-07-06T00:00:2217Z] (neutral) Ready to test? Or want to runÊvoice_diagnostic.pyÊfirst to confirm mic input is clean? [#system #seg-2218]
-[2025-07-06T00:00:2217Z] (neutral)  [#you said #seg-2218]
-[2025-07-06T00:00:2217Z] (neutral) Ready to test? Or want to runÊvoice_diagnostic.pyÊfirst to confirm mic input is clean? [#system #seg-2218]
-[2025-07-06T00:00:2217Z] (neutral)  [#you said #seg-2218]

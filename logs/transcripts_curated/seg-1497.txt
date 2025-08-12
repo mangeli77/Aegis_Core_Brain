@@ -1,6 +1,0 @@
-[2025-07-06T00:00:1496Z] (neutral)  [#? 3. run it #seg-1497]
-[2025-07-06T00:00:1496Z] (neutral) node scripts/soul-entry.js [#system #seg-1497]
-[2025-07-06T00:00:1496Z] (neutral)  [#? 3. run it #seg-1497]
-[2025-07-06T00:00:1496Z] (neutral) node scripts/soul-entry.js [#system #seg-1497]
-[2025-07-06T00:00:1496Z] (neutral)  [#? 3. run it #seg-1497]
-[2025-07-06T00:00:1496Z] (neutral) node scripts/soul-entry.js [#system #seg-1497]

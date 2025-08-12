@@ -1,6 +1,0 @@
-[2025-07-06T00:00:1724Z] (neutral)  [#? what this means #seg-1725]
-[2025-07-06T00:00:1724Z] (neutral) You haveÊPython 3.13 installed, but theÊdistutilsÊmodule isÊnot included by defaultÊin recent Python versions Ñ especially via Homebrew. [#system #seg-1725]
-[2025-07-06T00:00:1724Z] (neutral)  [#? what this means #seg-1725]
-[2025-07-06T00:00:1724Z] (neutral) You haveÊPython 3.13 installed, but theÊdistutilsÊmodule isÊnot included by defaultÊin recent Python versions Ñ especially via Homebrew. [#system #seg-1725]
-[2025-07-06T00:00:1724Z] (neutral)  [#? what this means #seg-1725]
-[2025-07-06T00:00:1724Z] (neutral) You haveÊPython 3.13 installed, but theÊdistutilsÊmodule isÊnot included by defaultÊin recent Python versions Ñ especially via Homebrew. [#system #seg-1725]

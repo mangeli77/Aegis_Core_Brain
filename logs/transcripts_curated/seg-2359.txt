@@ -1,6 +1,0 @@
-[2025-07-06T00:00:2358Z] (neutral) ??? vision/                   # (future camera or visual parsing) [#system #seg-2359]
-[2025-07-06T00:00:2358Z] (neutral) ?   ??? vision-intake.js [#system #seg-2359]
-[2025-07-06T00:00:2358Z] (neutral) ??? vision/                   # (future camera or visual parsing) [#system #seg-2359]
-[2025-07-06T00:00:2358Z] (neutral) ?   ??? vision-intake.js [#system #seg-2359]
-[2025-07-06T00:00:2358Z] (neutral) ??? vision/                   # (future camera or visual parsing) [#system #seg-2359]
-[2025-07-06T00:00:2358Z] (neutral) ?   ??? vision-intake.js [#system #seg-2359]

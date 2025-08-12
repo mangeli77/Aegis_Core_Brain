@@ -1,3 +1,0 @@
-[2025-07-06T00:00:1704Z] (neutral)  [#if everything shows green, launch the full voice pipeline #seg-1705]
-[2025-07-06T00:00:1704Z] (neutral)  [#if everything shows green, launch the full voice pipeline #seg-1705]
-[2025-07-06T00:00:1704Z] (neutral)  [#if everything shows green, launch the full voice pipeline #seg-1705]

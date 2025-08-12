@@ -1,2 +1,0 @@
-[2025-07-06T00:00:1640Z] (neutral)  [#* youõre importing vosk like it's a published package (import { model } from 'vosk') which will always fail unless #seg-1641]
-[2025-07-06T00:00:1640Z] (neutral)  [#* youõre importing vosk like it's a published package (import { model } from 'vosk') which will always fail unless #seg-1641]

@@ -1,3 +1,0 @@
-[2025-07-06T00:00:2456Z] (neutral) if you drop a new file inÊreflexes/, Aegis can automatically detect and use it. [#for example #seg-2457]
-[2025-07-06T00:00:2456Z] (neutral) if you drop a new file inÊreflexes/, Aegis can automatically detect and use it. [#for example #seg-2457]
-[2025-07-06T00:00:2456Z] (neutral) if you drop a new file inÊreflexes/, Aegis can automatically detect and use it. [#for example #seg-2457]

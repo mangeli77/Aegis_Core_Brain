@@ -1,6 +1,0 @@
-[2025-07-06T00:00:1656Z] (neutral) Êreal-time mic input ? Vosk STT ? SpeechBrain emotion/tone detection ? Aegis core pipeline. [#specifically #seg-1657]
-[2025-07-06T00:00:1980Z] (neutral)  [#specifically #seg-1981]
-[2025-07-06T00:00:1656Z] (neutral) Êreal-time mic input ? Vosk STT ? SpeechBrain emotion/tone detection ? Aegis core pipeline. [#specifically #seg-1657]
-[2025-07-06T00:00:1980Z] (neutral)  [#specifically #seg-1981]
-[2025-07-06T00:00:1656Z] (neutral) Êreal-time mic input ? Vosk STT ? SpeechBrain emotion/tone detection ? Aegis core pipeline. [#specifically #seg-1657]
-[2025-07-06T00:00:1980Z] (neutral)  [#specifically #seg-1981]

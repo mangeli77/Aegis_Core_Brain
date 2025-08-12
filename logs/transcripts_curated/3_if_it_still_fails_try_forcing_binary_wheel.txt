@@ -1,3 +1,0 @@
-[2025-07-06T00:00:1983Z] (neutral)  [#3. if it still fails, try forcing binary wheel #seg-1984]
-[2025-07-06T00:00:1983Z] (neutral)  [#3. if it still fails, try forcing binary wheel #seg-1984]
-[2025-07-06T00:00:1983Z] (neutral)  [#3. if it still fails, try forcing binary wheel #seg-1984]

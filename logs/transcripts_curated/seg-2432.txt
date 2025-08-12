@@ -1,6 +1,0 @@
-[2025-07-06T00:00:2431Z] (anxious) ??? archive/                     # Retired soul versions, offloaded data [#system #seg-2432]
-[2025-07-06T00:00:2431Z] (neutral) ?   ??? soul-core-v0.3.legacy.js [#system #seg-2432]
-[2025-07-06T00:00:2431Z] (anxious) ??? archive/                     # Retired soul versions, offloaded data [#system #seg-2432]
-[2025-07-06T00:00:2431Z] (neutral) ?   ??? soul-core-v0.3.legacy.js [#system #seg-2432]
-[2025-07-06T00:00:2431Z] (anxious) ??? archive/                     # Retired soul versions, offloaded data [#system #seg-2432]
-[2025-07-06T00:00:2431Z] (neutral) ?   ??? soul-core-v0.3.legacy.js [#system #seg-2432]

@@ -1,6 +1,0 @@
-[2025-07-06T00:00:1620Z] (neutral)  [#chatgpt said #seg-1621]
-[2025-07-06T00:00:1620Z] (neutral) That error confirms it's still defaulting to SSH instead of HTTPS Ñ even though the command looks right. [#system #seg-1621]
-[2025-07-06T00:00:1620Z] (neutral)  [#chatgpt said #seg-1621]
-[2025-07-06T00:00:1620Z] (neutral) That error confirms it's still defaulting to SSH instead of HTTPS Ñ even though the command looks right. [#system #seg-1621]
-[2025-07-06T00:00:1620Z] (neutral)  [#chatgpt said #seg-1621]
-[2025-07-06T00:00:1620Z] (neutral) That error confirms it's still defaulting to SSH instead of HTTPS Ñ even though the command looks right. [#system #seg-1621]

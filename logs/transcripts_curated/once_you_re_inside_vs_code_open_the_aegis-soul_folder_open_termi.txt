@@ -1,2 +1,0 @@
-[2025-07-06T00:00:1377Z] (neutral)  [#* once you're inside vs code,êopen the aegis-soul folder, open terminal, and run #seg-1378]
-[2025-07-06T00:00:1377Z] (neutral)  [#* once you're inside vs code,êopen the aegis-soul folder, open terminal, and run #seg-1378]

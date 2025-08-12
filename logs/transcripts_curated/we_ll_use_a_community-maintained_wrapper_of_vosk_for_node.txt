@@ -1,3 +1,0 @@
-[2025-07-06T00:00:1310Z] (neutral)  [#weõll use a community-maintained wrapper of vosk for node #seg-1311]
-[2025-07-06T00:00:1310Z] (neutral)  [#weõll use a community-maintained wrapper of vosk for node #seg-1311]
-[2025-07-06T00:00:1310Z] (neutral)  [#weõll use a community-maintained wrapper of vosk for node #seg-1311]

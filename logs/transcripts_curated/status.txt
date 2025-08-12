@@ -1,6 +1,0 @@
-[2025-07-06T00:00:2377Z] (neutral)  [#status #seg-2378]
-[2025-07-06T00:00:2420Z] (neutral)  [#? status #seg-2421]
-[2025-07-06T00:00:2377Z] (neutral)  [#status #seg-2378]
-[2025-07-06T00:00:2420Z] (neutral)  [#? status #seg-2421]
-[2025-07-06T00:00:2377Z] (neutral)  [#status #seg-2378]
-[2025-07-06T00:00:2420Z] (neutral)  [#? status #seg-2421]

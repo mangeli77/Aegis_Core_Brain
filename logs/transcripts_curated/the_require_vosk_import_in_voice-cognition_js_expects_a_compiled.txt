@@ -1,2 +1,0 @@
-[2025-07-06T00:00:1711Z] (neutral)  [#theêrequire('vosk')êimport inêvoice-cognition.jsêexpects a compiled native module. if that module is missing, or not built for your architecture, it willêalways throw #seg-1712]
-[2025-07-06T00:00:1711Z] (neutral)  [#theêrequire('vosk')êimport inêvoice-cognition.jsêexpects a compiled native module. if that module is missing, or not built for your architecture, it willêalways throw #seg-1712]

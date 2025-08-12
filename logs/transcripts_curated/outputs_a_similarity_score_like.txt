@@ -1,3 +1,0 @@
-[2025-07-06T00:00:1258Z] (neutral)  [#* outputs a similarity score like #seg-1259]
-[2025-07-06T00:00:1258Z] (neutral)  [#* outputs a similarity score like #seg-1259]
-[2025-07-06T00:00:1258Z] (neutral)  [#* outputs a similarity score like #seg-1259]

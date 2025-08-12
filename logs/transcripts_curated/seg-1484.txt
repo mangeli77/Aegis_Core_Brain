@@ -1,6 +1,0 @@
-[2025-07-06T00:00:1483Z] (neutral)  [#chatgpt said #seg-1484]
-[2025-07-06T00:00:1483Z] (neutral) You're extremely close, and your machine is now properly using Rosetta with the correct Node and NPM versionsÑbut the remaining failure is from a native dependency (ffi-napi) that is notoriously finicky when compiling from source, especially on Apple Silicon. HereÕs a clean, final sequence to resolve it. [#system #seg-1484]
-[2025-07-06T00:00:1483Z] (neutral)  [#chatgpt said #seg-1484]
-[2025-07-06T00:00:1483Z] (neutral) You're extremely close, and your machine is now properly using Rosetta with the correct Node and NPM versionsÑbut the remaining failure is from a native dependency (ffi-napi) that is notoriously finicky when compiling from source, especially on Apple Silicon. HereÕs a clean, final sequence to resolve it. [#system #seg-1484]
-[2025-07-06T00:00:1483Z] (neutral)  [#chatgpt said #seg-1484]
-[2025-07-06T00:00:1483Z] (neutral) You're extremely close, and your machine is now properly using Rosetta with the correct Node and NPM versionsÑbut the remaining failure is from a native dependency (ffi-napi) that is notoriously finicky when compiling from source, especially on Apple Silicon. HereÕs a clean, final sequence to resolve it. [#system #seg-1484]

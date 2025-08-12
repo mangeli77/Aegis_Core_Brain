@@ -1,6 +1,0 @@
-[2025-07-06T00:00:1344Z] (neutral)  [#chatgpt said #seg-1345]
-[2025-07-06T00:00:1344Z] (neutral) Got itÑyour new system is aÊ2021 MacBook Pro (16") with an M1 Pro chip, 32 GB RAM, andÊmacOS Sequoia 15.5. ThatÕs more than capable of running Aegis fully local, including real-time voice cognition with Vosk + SpeechBrain. [#system #seg-1345]
-[2025-07-06T00:00:1344Z] (neutral)  [#chatgpt said #seg-1345]
-[2025-07-06T00:00:1344Z] (neutral) Got itÑyour new system is aÊ2021 MacBook Pro (16") with an M1 Pro chip, 32 GB RAM, andÊmacOS Sequoia 15.5. ThatÕs more than capable of running Aegis fully local, including real-time voice cognition with Vosk + SpeechBrain. [#system #seg-1345]
-[2025-07-06T00:00:1344Z] (neutral)  [#chatgpt said #seg-1345]
-[2025-07-06T00:00:1344Z] (neutral) Got itÑyour new system is aÊ2021 MacBook Pro (16") with an M1 Pro chip, 32 GB RAM, andÊmacOS Sequoia 15.5. ThatÕs more than capable of running Aegis fully local, including real-time voice cognition with Vosk + SpeechBrain. [#system #seg-1345]

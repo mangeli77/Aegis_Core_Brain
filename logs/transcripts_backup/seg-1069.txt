@@ -1,6 +1,0 @@
-[2025-07-06T00:00:1068Z] (neutral) Don't executeÊcore-memory.jsÊdirectly from prep [#? option b #memory #seg-1069]
-[2025-07-06T00:00:1068Z] (neutral) Only execute it once the user explicitly wants to Òbring AEGIS fully onlineÓ (e.g., a separateÊboot-core.js). [#system #seg-1069]
-[2025-07-06T00:00:1068Z] (neutral) Don't executeÊcore-memory.jsÊdirectly from prep [#? option b #memory #seg-1069]
-[2025-07-06T00:00:1068Z] (neutral) Only execute it once the user explicitly wants to Òbring AEGIS fully onlineÓ (e.g., a separateÊboot-core.js). [#system #seg-1069]
-[2025-07-06T00:00:1068Z] (neutral) Don't executeÊcore-memory.jsÊdirectly from prep [#? option b #memory #seg-1069]
-[2025-07-06T00:00:1068Z] (neutral) Only execute it once the user explicitly wants to Òbring AEGIS fully onlineÓ (e.g., a separateÊboot-core.js). [#system #seg-1069]

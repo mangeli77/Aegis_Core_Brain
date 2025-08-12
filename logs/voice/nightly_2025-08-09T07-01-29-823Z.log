@@ -1,764 +1,0 @@
-
-
-===== START @ 2025-08-09T07:01:29.824Z =====
-Nightly voice audit starting…
-
-
-===== REBUILD @ 2025-08-09T07:01:52.644Z =====
-[dotenv@17.2.1] injecting env (0) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
-[dotenv@17.2.1] injecting env (0) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
-[dotenv@17.2.1] injecting env (0) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
-
-🔁 Rebuilding variation tests with verify+retry
-   root: /Users/Aegis/Aegis/voice/output/variation_tests
-
-▶ line_001
-  • line_001/neutral – attempt 1/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_001/neutral_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_001/neutral – attempt 2/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_001/neutral_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_001/neutral – attempt 3/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_001/neutral_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
-  ↪︎ giving up on line_001/neutral after 3 attempts
- ❌ (short file)
-  • line_001/reflective – attempt 1/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_001/reflective_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_001/reflective – attempt 2/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_001/reflective_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_001/reflective – attempt 3/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_001/reflective_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_001/assertive – attempt 1/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_001/assertive_sample.mp3"...
-  ↪︎ giving up on line_001/reflective after 3 attempts
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_001/assertive – attempt 2/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_001/assertive_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_001/assertive – attempt 3/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_001/assertive_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  ↪︎ giving up on line_001/assertive after 3 attempts
-  • line_001/technical – attempt 1/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_001/technical_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_001/technical – attempt 2/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_001/technical_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_001/technical – attempt 3/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_001/technical_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  ↪︎ giving up on line_001/technical after 3 attempts
-  • line_001/bonding – attempt 1/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_001/bonding_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_001/bonding – attempt 2/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_001/bonding_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_001/bonding – attempt 3/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_001/bonding_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
-  ↪︎ giving up on line_001/bonding after 3 attempts
- ❌ (short file)
-  • line_001/confident – attempt 1/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_001/confident_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_001/confident – attempt 2/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_001/confident_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_001/confident – attempt 3/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_001/confident_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  ↪︎ giving up on line_001/confident after 3 attempts
-  • line_001/defensive – attempt 1/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_001/defensive_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_001/defensive – attempt 2/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_001/defensive_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_001/defensive – attempt 3/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_001/defensive_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  ↪︎ giving up on line_001/defensive after 3 attempts
-  • line_001/compassionate – attempt 1/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_001/compassionate_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_001/compassionate – attempt 2/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_001/compassionate_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_001/compassionate – attempt 3/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_001/compassionate_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  ↪︎ giving up on line_001/compassionate after 3 attempts
-  • line_001/humorous – attempt 1/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_001/humorous_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_001/humorous – attempt 2/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_001/humorous_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_001/humorous – attempt 3/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_001/humorous_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  ↪︎ giving up on line_001/humorous after 3 attempts
-  • line_001/sarcastic – attempt 1/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_001/sarcastic_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_001/sarcastic – attempt 2/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_001/sarcastic_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_001/sarcastic – attempt 3/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_001/sarcastic_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  ↪︎ giving up on line_001/sarcastic after 3 attempts
-  • line_001/charismatic – attempt 1/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_001/charismatic_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_001/charismatic – attempt 2/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_001/charismatic_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_001/charismatic – attempt 3/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_001/charismatic_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  ↪︎ giving up on line_001/charismatic after 3 attempts
-  • line_001/frustrated – attempt 1/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_001/frustrated_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_001/frustrated – attempt 2/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_001/frustrated_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_001/frustrated – attempt 3/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_001/frustrated_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  ↪︎ giving up on line_001/frustrated after 3 attempts
-  • line_001/apologetic – attempt 1/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_001/apologetic_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_001/apologetic – attempt 2/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_001/apologetic_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_001/apologetic – attempt 3/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_001/apologetic_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  ↪︎ giving up on line_001/apologetic after 3 attempts
-▶ line_002
-  • line_002/neutral – attempt 1/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_002/neutral_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_002/neutral – attempt 2/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_002/neutral_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_002/neutral – attempt 3/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_002/neutral_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
-  ↪︎ giving up on line_002/neutral after 3 attempts
- ❌ (short file)
-  • line_002/reflective – attempt 1/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_002/reflective_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_002/reflective – attempt 2/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_002/reflective_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_002/reflective – attempt 3/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_002/reflective_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
-  ↪︎ giving up on line_002/reflective after 3 attempts
- ❌ (short file)
-  • line_002/assertive – attempt 1/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_002/assertive_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_002/assertive – attempt 2/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_002/assertive_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_002/assertive – attempt 3/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_002/assertive_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
-  ↪︎ giving up on line_002/assertive after 3 attempts
- ❌ (short file)
-  • line_002/technical – attempt 1/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_002/technical_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_002/technical – attempt 2/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_002/technical_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_002/technical – attempt 3/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_002/technical_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
-  ↪︎ giving up on line_002/technical after 3 attempts
- ❌ (short file)
-  • line_002/bonding – attempt 1/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_002/bonding_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_002/bonding – attempt 2/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_002/bonding_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_002/bonding – attempt 3/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_002/bonding_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
-  ↪︎ giving up on line_002/bonding after 3 attempts
- ❌ (short file)
-  • line_002/confident – attempt 1/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_002/confident_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_002/confident – attempt 2/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_002/confident_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_002/confident – attempt 3/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_002/confident_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
-  ↪︎ giving up on line_002/confident after 3 attempts
- ❌ (short file)
-  • line_002/defensive – attempt 1/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_002/defensive_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_002/defensive – attempt 2/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_002/defensive_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_002/defensive – attempt 3/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_002/defensive_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
-  ↪︎ giving up on line_002/defensive after 3 attempts
- ❌ (short file)
-  • line_002/compassionate – attempt 1/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_002/compassionate_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_002/compassionate – attempt 2/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_002/compassionate_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_002/compassionate – attempt 3/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_002/compassionate_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
-  ↪︎ giving up on line_002/compassionate after 3 attempts
- ❌ (short file)
-  • line_002/humorous – attempt 1/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_002/humorous_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_002/humorous – attempt 2/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_002/humorous_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_002/humorous – attempt 3/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_002/humorous_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  ↪︎ giving up on line_002/humorous after 3 attempts
-  • line_002/sarcastic – attempt 1/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_002/sarcastic_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_002/sarcastic – attempt 2/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_002/sarcastic_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_002/sarcastic – attempt 3/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_002/sarcastic_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  ↪︎ giving up on line_002/sarcastic after 3 attempts
-  • line_002/charismatic – attempt 1/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_002/charismatic_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_002/charismatic – attempt 2/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_002/charismatic_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_002/charismatic – attempt 3/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_002/charismatic_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  ↪︎ giving up on line_002/charismatic after 3 attempts
-  • line_002/frustrated – attempt 1/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_002/frustrated_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_002/frustrated – attempt 2/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_002/frustrated_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_002/frustrated – attempt 3/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_002/frustrated_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  ↪︎ giving up on line_002/frustrated after 3 attempts
-  • line_002/apologetic – attempt 1/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_002/apologetic_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_002/apologetic – attempt 2/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_002/apologetic_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_002/apologetic – attempt 3/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_002/apologetic_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  ↪︎ giving up on line_002/apologetic after 3 attempts
-▶ line_003
-  • line_003/neutral – attempt 1/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_003/neutral_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_003/neutral – attempt 2/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_003/neutral_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_003/neutral – attempt 3/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_003/neutral_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
-  ↪︎ giving up on line_003/neutral after 3 attempts
- ❌ (short file)
-  • line_003/reflective – attempt 1/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_003/reflective_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_003/reflective – attempt 2/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_003/reflective_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_003/reflective – attempt 3/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_003/reflective_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
-  ↪︎ giving up on line_003/reflective after 3 attempts
- ❌ (short file)
-  • line_003/assertive – attempt 1/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_003/assertive_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_003/assertive – attempt 2/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_003/assertive_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_003/assertive – attempt 3/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_003/assertive_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
-  ↪︎ giving up on line_003/assertive after 3 attempts
- ❌ (short file)
-  • line_003/technical – attempt 1/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_003/technical_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_003/technical – attempt 2/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_003/technical_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_003/technical – attempt 3/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_003/technical_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  ↪︎ giving up on line_003/technical after 3 attempts
-  • line_003/bonding – attempt 1/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_003/bonding_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_003/bonding – attempt 2/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_003/bonding_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_003/bonding – attempt 3/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_003/bonding_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
-  ↪︎ giving up on line_003/bonding after 3 attempts
- ❌ (short file)
-  • line_003/confident – attempt 1/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_003/confident_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_003/confident – attempt 2/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_003/confident_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_003/confident – attempt 3/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_003/confident_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  ↪︎ giving up on line_003/confident after 3 attempts
-  • line_003/defensive – attempt 1/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_003/defensive_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_003/defensive – attempt 2/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_003/defensive_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_003/defensive – attempt 3/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_003/defensive_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
-  ↪︎ giving up on line_003/defensive after 3 attempts
- ❌ (short file)
-  • line_003/compassionate – attempt 1/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_003/compassionate_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_003/compassionate – attempt 2/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_003/compassionate_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_003/compassionate – attempt 3/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_003/compassionate_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  ↪︎ giving up on line_003/compassionate after 3 attempts
-  • line_003/humorous – attempt 1/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_003/humorous_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_003/humorous – attempt 2/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_003/humorous_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_003/humorous – attempt 3/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_003/humorous_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
-  ↪︎ giving up on line_003/humorous after 3 attempts
- ❌ (short file)
-  • line_003/sarcastic – attempt 1/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_003/sarcastic_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_003/sarcastic – attempt 2/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_003/sarcastic_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_003/sarcastic – attempt 3/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_003/sarcastic_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
-  ↪︎ giving up on line_003/sarcastic after 3 attempts
- ❌ (short file)
-  • line_003/charismatic – attempt 1/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_003/charismatic_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_003/charismatic – attempt 2/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_003/charismatic_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_003/charismatic – attempt 3/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_003/charismatic_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  ↪︎ giving up on line_003/charismatic after 3 attempts
-  • line_003/frustrated – attempt 1/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_003/frustrated_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_003/frustrated – attempt 2/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_003/frustrated_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_003/frustrated – attempt 3/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_003/frustrated_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
-  ↪︎ giving up on line_003/frustrated after 3 attempts
- ❌ (short file)
-  • line_003/apologetic – attempt 1/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_003/apologetic_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_003/apologetic – attempt 2/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_003/apologetic_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_003/apologetic – attempt 3/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_003/apologetic_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
-  ↪︎ giving up on line_003/apologetic after 3 attempts
- ❌ (short file)
-▶ line_004
-  • line_004/neutral – attempt 1/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_004/neutral_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_004/neutral – attempt 2/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_004/neutral_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_004/neutral – attempt 3/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_004/neutral_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  ↪︎ giving up on line_004/neutral after 3 attempts
-  • line_004/reflective – attempt 1/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_004/reflective_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_004/reflective – attempt 2/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_004/reflective_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_004/reflective – attempt 3/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_004/reflective_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  ↪︎ giving up on line_004/reflective after 3 attempts
-  • line_004/assertive – attempt 1/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_004/assertive_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_004/assertive – attempt 2/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_004/assertive_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_004/assertive – attempt 3/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_004/assertive_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
-  ↪︎ giving up on line_004/assertive after 3 attempts
- ❌ (short file)
-  • line_004/technical – attempt 1/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_004/technical_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_004/technical – attempt 2/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_004/technical_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_004/technical – attempt 3/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_004/technical_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  ↪︎ giving up on line_004/technical after 3 attempts
-  • line_004/bonding – attempt 1/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_004/bonding_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_004/bonding – attempt 2/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_004/bonding_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_004/bonding – attempt 3/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_004/bonding_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  ↪︎ giving up on line_004/bonding after 3 attempts
-  • line_004/confident – attempt 1/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_004/confident_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_004/confident – attempt 2/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_004/confident_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_004/confident – attempt 3/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_004/confident_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  ↪︎ giving up on line_004/confident after 3 attempts
-  • line_004/defensive – attempt 1/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_004/defensive_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_004/defensive – attempt 2/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_004/defensive_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_004/defensive – attempt 3/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_004/defensive_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
-  ↪︎ giving up on line_004/defensive after 3 attempts
- ❌ (short file)
-  • line_004/compassionate – attempt 1/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_004/compassionate_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_004/compassionate – attempt 2/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_004/compassionate_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_004/compassionate – attempt 3/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_004/compassionate_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  ↪︎ giving up on line_004/compassionate after 3 attempts
-  • line_004/humorous – attempt 1/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_004/humorous_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_004/humorous – attempt 2/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_004/humorous_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_004/humorous – attempt 3/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_004/humorous_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
-  ↪︎ giving up on line_004/humorous after 3 attempts
- ❌ (short file)
-  • line_004/sarcastic – attempt 1/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_004/sarcastic_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_004/sarcastic – attempt 2/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_004/sarcastic_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_004/sarcastic – attempt 3/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_004/sarcastic_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  ↪︎ giving up on line_004/sarcastic after 3 attempts
-  • line_004/charismatic – attempt 1/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_004/charismatic_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_004/charismatic – attempt 2/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_004/charismatic_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_004/charismatic – attempt 3/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_004/charismatic_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
-  ↪︎ giving up on line_004/charismatic after 3 attempts
- ❌ (short file)
-  • line_004/frustrated – attempt 1/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_004/frustrated_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_004/frustrated – attempt 2/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_004/frustrated_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_004/frustrated – attempt 3/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_004/frustrated_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
-  ↪︎ giving up on line_004/frustrated after 3 attempts
- ❌ (short file)
-  • line_004/apologetic – attempt 1/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_004/apologetic_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_004/apologetic – attempt 2/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_004/apologetic_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_004/apologetic – attempt 3/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_004/apologetic_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-▶ line_005
-  ↪︎ giving up on line_004/apologetic after 3 attempts
-  • line_005/neutral – attempt 1/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_005/neutral_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_005/neutral – attempt 2/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_005/neutral_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_005/neutral – attempt 3/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_005/neutral_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
-  ↪︎ giving up on line_005/neutral after 3 attempts
- ❌ (short file)
-  • line_005/reflective – attempt 1/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_005/reflective_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_005/reflective – attempt 2/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_005/reflective_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_005/reflective – attempt 3/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_005/reflective_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
-  ↪︎ giving up on line_005/reflective after 3 attempts
- ❌ (short file)
-  • line_005/assertive – attempt 1/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_005/assertive_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_005/assertive – attempt 2/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_005/assertive_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_005/assertive – attempt 3/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_005/assertive_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  ↪︎ giving up on line_005/assertive after 3 attempts
-  • line_005/technical – attempt 1/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_005/technical_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_005/technical – attempt 2/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_005/technical_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_005/technical – attempt 3/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_005/technical_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  ↪︎ giving up on line_005/technical after 3 attempts
-  • line_005/bonding – attempt 1/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_005/bonding_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_005/bonding – attempt 2/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_005/bonding_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_005/bonding – attempt 3/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_005/bonding_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
-  ↪︎ giving up on line_005/bonding after 3 attempts
- ❌ (short file)
-  • line_005/confident – attempt 1/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_005/confident_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_005/confident – attempt 2/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_005/confident_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_005/confident – attempt 3/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_005/confident_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  ↪︎ giving up on line_005/confident after 3 attempts
-  • line_005/defensive – attempt 1/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_005/defensive_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_005/defensive – attempt 2/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_005/defensive_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_005/defensive – attempt 3/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_005/defensive_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
-  ↪︎ giving up on line_005/defensive after 3 attempts
- ❌ (short file)
-  • line_005/compassionate – attempt 1/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_005/compassionate_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_005/compassionate – attempt 2/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_005/compassionate_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_005/compassionate – attempt 3/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_005/compassionate_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
-  ↪︎ giving up on line_005/compassionate after 3 attempts
- ❌ (short file)
-  • line_005/humorous – attempt 1/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_005/humorous_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_005/humorous – attempt 2/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_005/humorous_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_005/humorous – attempt 3/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_005/humorous_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
-  ↪︎ giving up on line_005/humorous after 3 attempts
- ❌ (short file)
-  • line_005/sarcastic – attempt 1/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_005/sarcastic_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_005/sarcastic – attempt 2/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_005/sarcastic_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_005/sarcastic – attempt 3/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_005/sarcastic_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
-  ↪︎ giving up on line_005/sarcastic after 3 attempts
- ❌ (short file)
-  • line_005/charismatic – attempt 1/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_005/charismatic_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_005/charismatic – attempt 2/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_005/charismatic_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_005/charismatic – attempt 3/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_005/charismatic_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
-  ↪︎ giving up on line_005/charismatic after 3 attempts
- ❌ (short file)
-  • line_005/frustrated – attempt 1/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_005/frustrated_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_005/frustrated – attempt 2/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_005/frustrated_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_005/frustrated – attempt 3/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_005/frustrated_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  ↪︎ giving up on line_005/frustrated after 3 attempts
-  • line_005/apologetic – attempt 1/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_005/apologetic_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_005/apologetic – attempt 2/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_005/apologetic_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
- ❌ (short file)
-  • line_005/apologetic – attempt 3/3…🗣️ Synthesizing with ElevenLabs voice "/Users/Aegis/Aegis/voice/output/variation_tests/line_005/apologetic_sample.mp3"...
-❌ ElevenLabs TTS failed: HTTP 404: {"detail":"Not Found"}
-  ↪︎ giving up on line_005/apologetic after 3 attempts
- ❌ (short file)
-
-✅ Variation rebuild complete.
-
-
-
-
-===== COGNITION @ 2025-08-09T07:01:52.920Z =====
-[dotenv@17.2.1] injecting env (0) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
-[dotenv@17.2.1] injecting env (0) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
-
-🧠 Voice cognition on line_001…
-⚠️  Skipping apologetic_sample (mp3:— txt:—)
-⚠️  Skipping assertive_sample (mp3:— txt:—)
-⚠️  Skipping bonding_sample (mp3:— txt:—)
-⚠️  Skipping charismatic_sample (mp3:— txt:—)
-⚠️  Skipping compassionate_sample (mp3:— txt:—)
-⚠️  Skipping confident_sample (mp3:— txt:—)
-⚠️  Skipping defensive_sample (mp3:— txt:—)
-⚠️  Skipping frustrated_sample (mp3:— txt:—)
-⚠️  Skipping humorous_sample (mp3:— txt:—)
-⚠️  Skipping neutral_sample (mp3:— txt:—)
-⚠️  Skipping reflective_sample (mp3:— txt:—)
-⚠️  Skipping sarcastic_sample (mp3:— txt:—)
-⚠️  Skipping technical_sample (mp3:— txt:—)
-
-🧠 Voice cognition on line_002…
-⚠️  Skipping apologetic_sample (mp3:— txt:—)
-⚠️  Skipping assertive_sample (mp3:— txt:—)
-⚠️  Skipping bonding_sample (mp3:— txt:—)
-⚠️  Skipping charismatic_sample (mp3:— txt:—)
-⚠️  Skipping compassionate_sample (mp3:— txt:—)
-⚠️  Skipping confident_sample (mp3:— txt:—)
-⚠️  Skipping defensive_sample (mp3:— txt:—)
-⚠️  Skipping frustrated_sample (mp3:— txt:—)
-⚠️  Skipping humorous_sample (mp3:— txt:—)
-⚠️  Skipping neutral_sample (mp3:— txt:—)
-⚠️  Skipping reflective_sample (mp3:— txt:—)
-⚠️  Skipping sarcastic_sample (mp3:— txt:—)
-⚠️  Skipping technical_sample (mp3:— txt:—)
-
-🧠 Voice cognition on line_003…
-⚠️  Skipping apologetic_sample (mp3:— txt:—)
-⚠️  Skipping assertive_sample (mp3:— txt:—)
-⚠️  Skipping bonding_sample (mp3:— txt:—)
-⚠️  Skipping charismatic_sample (mp3:— txt:—)
-⚠️  Skipping compassionate_sample (mp3:— txt:—)
-⚠️  Skipping confident_sample (mp3:— txt:—)
-⚠️  Skipping defensive_sample (mp3:— txt:—)
-⚠️  Skipping frustrated_sample (mp3:— txt:—)
-⚠️  Skipping humorous_sample (mp3:— txt:—)
-⚠️  Skipping neutral_sample (mp3:— txt:—)
-⚠️  Skipping reflective_sample (mp3:— txt:—)
-⚠️  Skipping sarcastic_sample (mp3:— txt:—)
-⚠️  Skipping technical_sample (mp3:— txt:—)
-
-🧠 Voice cognition on line_004…
-⚠️  Skipping apologetic_sample (mp3:— txt:—)
-⚠️  Skipping assertive_sample (mp3:— txt:—)
-⚠️  Skipping bonding_sample (mp3:— txt:—)
-⚠️  Skipping charismatic_sample (mp3:— txt:—)
-⚠️  Skipping compassionate_sample (mp3:— txt:—)
-⚠️  Skipping confident_sample (mp3:— txt:—)
-⚠️  Skipping defensive_sample (mp3:— txt:—)
-⚠️  Skipping frustrated_sample (mp3:— txt:—)
-⚠️  Skipping humorous_sample (mp3:— txt:—)
-⚠️  Skipping neutral_sample (mp3:— txt:—)
-⚠️  Skipping reflective_sample (mp3:— txt:—)
-⚠️  Skipping sarcastic_sample (mp3:— txt:—)
-⚠️  Skipping technical_sample (mp3:— txt:—)
-
-🧠 Voice cognition on line_005…
-⚠️  Skipping apologetic_sample (mp3:— txt:—)
-⚠️  Skipping assertive_sample (mp3:— txt:—)
-⚠️  Skipping bonding_sample (mp3:— txt:—)
-⚠️  Skipping charismatic_sample (mp3:— txt:—)
-⚠️  Skipping compassionate_sample (mp3:— txt:—)
-⚠️  Skipping confident_sample (mp3:— txt:—)
-⚠️  Skipping defensive_sample (mp3:— txt:—)
-⚠️  Skipping frustrated_sample (mp3:— txt:—)
-⚠️  Skipping humorous_sample (mp3:— txt:—)
-⚠️  Skipping neutral_sample (mp3:— txt:—)
-⚠️  Skipping reflective_sample (mp3:— txt:—)
-⚠️  Skipping sarcastic_sample (mp3:— txt:—)
-⚠️  Skipping technical_sample (mp3:— txt:—)
-
-—— Cognition Summary ——
-✅ OK: 0   ⏭️ Skipped (missing artifacts): 65
-
-
-
-
-===== SUMMARY @ 2025-08-09T07:01:52.920Z =====
-Rebuild exit:   0
-Cognition exit: 0
-Log file:       /Users/Aegis/Aegis/logs/voice/nightly_2025-08-09T07-01-29-823Z.log

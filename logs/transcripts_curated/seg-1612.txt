@@ -1,6 +1,0 @@
-[2025-07-06T00:00:1611Z] (neutral)  [#chatgpt said #seg-1612]
-[2025-07-06T00:00:1611Z] (neutral) Perfect Ñ I see theÊvosk-api-mainÊfolder is currently sittingÊinsideÊnode_modules/vosk/ÊÑ but it needs to beÊflattenedÊto work properly. [#system #seg-1612]
-[2025-07-06T00:00:1611Z] (neutral)  [#chatgpt said #seg-1612]
-[2025-07-06T00:00:1611Z] (neutral) Perfect Ñ I see theÊvosk-api-mainÊfolder is currently sittingÊinsideÊnode_modules/vosk/ÊÑ but it needs to beÊflattenedÊto work properly. [#system #seg-1612]
-[2025-07-06T00:00:1611Z] (neutral)  [#chatgpt said #seg-1612]
-[2025-07-06T00:00:1611Z] (neutral) Perfect Ñ I see theÊvosk-api-mainÊfolder is currently sittingÊinsideÊnode_modules/vosk/ÊÑ but it needs to beÊflattenedÊto work properly. [#system #seg-1612]

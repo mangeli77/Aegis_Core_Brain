@@ -1,3 +1,0 @@
-[2025-07-06T00:00:646Z] (neutral) //localhost:11434 [#ollama running on http #seg-647]
-[2025-07-06T00:00:646Z] (neutral) //localhost:11434 [#ollama running on http #seg-647]
-[2025-07-06T00:00:646Z] (neutral) //localhost:11434 [#ollama running on http #seg-647]

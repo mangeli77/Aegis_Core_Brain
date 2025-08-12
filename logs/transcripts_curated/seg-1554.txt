@@ -1,6 +1,0 @@
-[2025-07-06T00:00:1553Z] (neutral) SkipÊffi-napiÊaltogether by switching Vosk to WASM (WebAssembly) [#? final move #seg-1554]
-[2025-07-06T00:00:1553Z] (neutral) Rather than wrestle native bindings on Apple Silicon, weÕll use theÊWASM-based Vosk API wrapperdesigned for Node.js. [#system #seg-1554]
-[2025-07-06T00:00:1553Z] (neutral) SkipÊffi-napiÊaltogether by switching Vosk to WASM (WebAssembly) [#? final move #seg-1554]
-[2025-07-06T00:00:1553Z] (neutral) Rather than wrestle native bindings on Apple Silicon, weÕll use theÊWASM-based Vosk API wrapperdesigned for Node.js. [#system #seg-1554]
-[2025-07-06T00:00:1553Z] (neutral) SkipÊffi-napiÊaltogether by switching Vosk to WASM (WebAssembly) [#? final move #seg-1554]
-[2025-07-06T00:00:1553Z] (neutral) Rather than wrestle native bindings on Apple Silicon, weÕll use theÊWASM-based Vosk API wrapperdesigned for Node.js. [#system #seg-1554]

@@ -1,6 +1,0 @@
-[2025-07-06T00:00:1659Z] (neutral)  [#??êwe identified the problem #seg-1660]
-[2025-07-06T00:00:1659Z] (neutral) TheÊVosk npm module depends on ffi-napi, whichÊdoes not work reliably on Apple Silicon (M1), especially when built from source withÊnode-gyp. [#system #seg-1660]
-[2025-07-06T00:00:1659Z] (neutral)  [#??êwe identified the problem #seg-1660]
-[2025-07-06T00:00:1659Z] (neutral) TheÊVosk npm module depends on ffi-napi, whichÊdoes not work reliably on Apple Silicon (M1), especially when built from source withÊnode-gyp. [#system #seg-1660]
-[2025-07-06T00:00:1659Z] (neutral)  [#??êwe identified the problem #seg-1660]
-[2025-07-06T00:00:1659Z] (neutral) TheÊVosk npm module depends on ffi-napi, whichÊdoes not work reliably on Apple Silicon (M1), especially when built from source withÊnode-gyp. [#system #seg-1660]

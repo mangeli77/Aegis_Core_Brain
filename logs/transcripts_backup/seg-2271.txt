@@ -1,6 +1,0 @@
-[2025-07-06T00:00:2270Z] (neutral) Let me know when you're ready to proceed withÊreorganizingÊscripts/Êand restructuring by purpose (core/,Êtest/,Êbootstrap/, etc.). This is how we elevate the architecture. [#system #seg-2271]
-[2025-07-06T00:00:2270Z] (neutral)  [#you said #seg-2271]
-[2025-07-06T00:00:2270Z] (neutral) Let me know when you're ready to proceed withÊreorganizingÊscripts/Êand restructuring by purpose (core/,Êtest/,Êbootstrap/, etc.). This is how we elevate the architecture. [#system #seg-2271]
-[2025-07-06T00:00:2270Z] (neutral)  [#you said #seg-2271]
-[2025-07-06T00:00:2270Z] (neutral) Let me know when you're ready to proceed withÊreorganizingÊscripts/Êand restructuring by purpose (core/,Êtest/,Êbootstrap/, etc.). This is how we elevate the architecture. [#system #seg-2271]
-[2025-07-06T00:00:2270Z] (neutral)  [#you said #seg-2271]

@@ -1,6 +1,0 @@
-[2025-07-06T00:00:974Z] (neutral)  [#chatgpt said #seg-975]
-[2025-07-06T00:00:974Z] (neutral) You're almost there Ñ the issue is that JavaScript doesn't allow placeholders likeÊ[...]Êoutside specific patterns (like arrays or actual destructuring). [#system #seg-975]
-[2025-07-06T00:00:974Z] (neutral)  [#chatgpt said #seg-975]
-[2025-07-06T00:00:974Z] (neutral) You're almost there Ñ the issue is that JavaScript doesn't allow placeholders likeÊ[...]Êoutside specific patterns (like arrays or actual destructuring). [#system #seg-975]
-[2025-07-06T00:00:974Z] (neutral)  [#chatgpt said #seg-975]
-[2025-07-06T00:00:974Z] (neutral) You're almost there Ñ the issue is that JavaScript doesn't allow placeholders likeÊ[...]Êoutside specific patterns (like arrays or actual destructuring). [#system #seg-975]

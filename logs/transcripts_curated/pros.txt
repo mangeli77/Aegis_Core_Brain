@@ -1,6 +1,0 @@
-[2025-07-06T00:00:125Z] (neutral)  [#pros #seg-126]
-[2025-07-06T00:00:126Z] (neutral)  [#pros #seg-127]
-[2025-07-06T00:00:125Z] (neutral)  [#pros #seg-126]
-[2025-07-06T00:00:126Z] (neutral)  [#pros #seg-127]
-[2025-07-06T00:00:125Z] (neutral)  [#pros #seg-126]
-[2025-07-06T00:00:126Z] (neutral)  [#pros #seg-127]

@@ -1,6 +1,0 @@
-[2025-07-06T00:00:1765Z] (neutral)  [#2. then link it #seg-1766]
-[2025-07-06T00:00:1765Z] (neutral) arch -x86_64 /usr/local/bin/brew link python@3.11 --force [#system #seg-1766]
-[2025-07-06T00:00:1765Z] (neutral)  [#2. then link it #seg-1766]
-[2025-07-06T00:00:1765Z] (neutral) arch -x86_64 /usr/local/bin/brew link python@3.11 --force [#system #seg-1766]
-[2025-07-06T00:00:1765Z] (neutral)  [#2. then link it #seg-1766]
-[2025-07-06T00:00:1765Z] (neutral) arch -x86_64 /usr/local/bin/brew link python@3.11 --force [#system #seg-1766]

@@ -1,6 +1,0 @@
-[2025-07-06T00:00:1457Z] (neutral) Pin Node version for project [#?? optional (but smart) #seg-1458]
-[2025-07-06T00:00:1675Z] (neutral) Add aÊtypesÊfield toÊpackage.jsonÊinÊvosk-apiÊ(for autocompletion) [#optional but smart #seg-1676]
-[2025-07-06T00:00:1457Z] (neutral) Pin Node version for project [#?? optional (but smart) #seg-1458]
-[2025-07-06T00:00:1675Z] (neutral) Add aÊtypesÊfield toÊpackage.jsonÊinÊvosk-apiÊ(for autocompletion) [#optional but smart #seg-1676]
-[2025-07-06T00:00:1457Z] (neutral) Pin Node version for project [#?? optional (but smart) #seg-1458]
-[2025-07-06T00:00:1675Z] (neutral) Add aÊtypesÊfield toÊpackage.jsonÊinÊvosk-apiÊ(for autocompletion) [#optional but smart #seg-1676]

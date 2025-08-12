@@ -1,6 +1,0 @@
-[2025-07-06T00:00:1466Z] (neutral) ?ÊUse the regular Terminal or VS Code Terminal (Apple Silicon) [#system #seg-1467]
-[2025-07-06T00:00:1466Z] (neutral) YouÊdo NOTÊneed to use Rosetta Terminal unless a package explicitly requires Intel emulation ÑÊvosk,Êffi-napi,Ênode-gyp, and all core modules work natively on M1 with Node 16.20.x and Python 3.11 via Homebrew. [#system #seg-1467]
-[2025-07-06T00:00:1466Z] (neutral) ?ÊUse the regular Terminal or VS Code Terminal (Apple Silicon) [#system #seg-1467]
-[2025-07-06T00:00:1466Z] (neutral) YouÊdo NOTÊneed to use Rosetta Terminal unless a package explicitly requires Intel emulation ÑÊvosk,Êffi-napi,Ênode-gyp, and all core modules work natively on M1 with Node 16.20.x and Python 3.11 via Homebrew. [#system #seg-1467]
-[2025-07-06T00:00:1466Z] (neutral) ?ÊUse the regular Terminal or VS Code Terminal (Apple Silicon) [#system #seg-1467]
-[2025-07-06T00:00:1466Z] (neutral) YouÊdo NOTÊneed to use Rosetta Terminal unless a package explicitly requires Intel emulation ÑÊvosk,Êffi-napi,Ênode-gyp, and all core modules work natively on M1 with Node 16.20.x and Python 3.11 via Homebrew. [#system #seg-1467]

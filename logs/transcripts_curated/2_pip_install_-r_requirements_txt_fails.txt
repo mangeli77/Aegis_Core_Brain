@@ -1,3 +1,0 @@
-[2025-07-06T00:00:1986Z] (neutral)  [#? 2.êpip install -r requirements.txtêfails #seg-1987]
-[2025-07-06T00:00:1986Z] (neutral)  [#? 2.êpip install -r requirements.txtêfails #seg-1987]
-[2025-07-06T00:00:1986Z] (neutral)  [#? 2.êpip install -r requirements.txtêfails #seg-1987]

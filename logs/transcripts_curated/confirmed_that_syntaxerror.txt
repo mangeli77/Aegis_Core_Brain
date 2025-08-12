@@ -1,3 +1,0 @@
-[2025-07-06T00:00:1435Z] (neutral) Cannot use import statement outside a moduleÊmeans your Node.js runtime is treatingÊsoul-entry.jsÊas a CommonJS file ÑÊbut it's usingÊimportÊsyntax, which requires ES module support. [#confirmed. thatêsyntaxerror #seg-1436]
-[2025-07-06T00:00:1435Z] (neutral) Cannot use import statement outside a moduleÊmeans your Node.js runtime is treatingÊsoul-entry.jsÊas a CommonJS file ÑÊbut it's usingÊimportÊsyntax, which requires ES module support. [#confirmed. thatêsyntaxerror #seg-1436]
-[2025-07-06T00:00:1435Z] (neutral) Cannot use import statement outside a moduleÊmeans your Node.js runtime is treatingÊsoul-entry.jsÊas a CommonJS file ÑÊbut it's usingÊimportÊsyntax, which requires ES module support. [#confirmed. thatêsyntaxerror #seg-1436]

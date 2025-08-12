@@ -1,6 +1,0 @@
-[2025-07-06T00:00:445Z] (neutral) Êaegis-soul/DEV_GUIDE.md [#* location #seg-446]
-[2025-07-06T00:00:2051Z] (neutral) /Users/Aegis/ae.../.aegis-venv/lib/python3.13/site-packages [#location #seg-2052]
-[2025-07-06T00:00:445Z] (neutral) Êaegis-soul/DEV_GUIDE.md [#* location #seg-446]
-[2025-07-06T00:00:2051Z] (neutral) /Users/Aegis/ae.../.aegis-venv/lib/python3.13/site-packages [#location #seg-2052]
-[2025-07-06T00:00:445Z] (neutral) Êaegis-soul/DEV_GUIDE.md [#* location #seg-446]
-[2025-07-06T00:00:2051Z] (neutral) /Users/Aegis/ae.../.aegis-venv/lib/python3.13/site-packages [#location #seg-2052]

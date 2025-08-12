@@ -1,6 +1,0 @@
-[2025-07-06T00:00:651Z] (neutral) fine-tune with logs, sentiment, memory feedback [#future #memory #seg-652]
-[2025-07-06T00:00:2354Z] (neutral) camera input, gesture, servo control, expression waveforms [#* future #seg-2355]
-[2025-07-06T00:00:651Z] (neutral) fine-tune with logs, sentiment, memory feedback [#future #memory #seg-652]
-[2025-07-06T00:00:2354Z] (neutral) camera input, gesture, servo control, expression waveforms [#* future #seg-2355]
-[2025-07-06T00:00:651Z] (neutral) fine-tune with logs, sentiment, memory feedback [#future #memory #seg-652]
-[2025-07-06T00:00:2354Z] (neutral) camera input, gesture, servo control, expression waveforms [#* future #seg-2355]

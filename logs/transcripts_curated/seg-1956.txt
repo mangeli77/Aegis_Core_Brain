@@ -1,6 +1,0 @@
-[2025-07-06T00:00:1955Z] (neutral) ÊFileNotFoundErrorÊÑ Python can't find: [#? error #seg-1956]
-[2025-07-06T00:00:1955Z] (neutral) /Users/Aegis/aegis-soul/scripts/speechbrain-core.py [#system #seg-1956]
-[2025-07-06T00:00:1955Z] (neutral) ÊFileNotFoundErrorÊÑ Python can't find: [#? error #seg-1956]
-[2025-07-06T00:00:1955Z] (neutral) /Users/Aegis/aegis-soul/scripts/speechbrain-core.py [#system #seg-1956]
-[2025-07-06T00:00:1955Z] (neutral) ÊFileNotFoundErrorÊÑ Python can't find: [#? error #seg-1956]
-[2025-07-06T00:00:1955Z] (neutral) /Users/Aegis/aegis-soul/scripts/speechbrain-core.py [#system #seg-1956]

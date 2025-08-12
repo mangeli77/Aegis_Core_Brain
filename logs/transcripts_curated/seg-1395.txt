@@ -1,6 +1,0 @@
-[2025-07-06T00:00:1394Z] (neutral)  [#then, install nvm via homebrew #seg-1395]
-[2025-07-06T00:00:1394Z] (neutral) brew install nvm [#system #seg-1395]
-[2025-07-06T00:00:1394Z] (neutral)  [#then, install nvm via homebrew #seg-1395]
-[2025-07-06T00:00:1394Z] (neutral) brew install nvm [#system #seg-1395]
-[2025-07-06T00:00:1394Z] (neutral)  [#then, install nvm via homebrew #seg-1395]
-[2025-07-06T00:00:1394Z] (neutral) brew install nvm [#system #seg-1395]

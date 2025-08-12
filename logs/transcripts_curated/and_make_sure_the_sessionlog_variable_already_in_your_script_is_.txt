@@ -1,2 +1,0 @@
-[2025-07-06T00:00:1224Z] (neutral)  [#and make sure theêsessionlogêvariable (already in your script) is passed on session close #seg-1225]
-[2025-07-06T00:00:1224Z] (neutral)  [#and make sure theêsessionlogêvariable (already in your script) is passed on session close #seg-1225]

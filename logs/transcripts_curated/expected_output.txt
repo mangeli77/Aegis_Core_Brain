@@ -1,6 +1,0 @@
-[2025-07-06T00:00:2103Z] (neutral)  [#expected output #seg-2104]
-[2025-07-06T00:00:2109Z] (neutral)  [#expected output #seg-2110]
-[2025-07-06T00:00:2103Z] (neutral)  [#expected output #seg-2104]
-[2025-07-06T00:00:2109Z] (neutral)  [#expected output #seg-2110]
-[2025-07-06T00:00:2103Z] (neutral)  [#expected output #seg-2104]
-[2025-07-06T00:00:2109Z] (neutral)  [#expected output #seg-2110]

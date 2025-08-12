@@ -1,6 +1,0 @@
-[2025-07-06T00:00:1360Z] (neutral) Start Aegis Locally [#?êphase 5 #seg-1361]
-[2025-07-06T00:00:2168Z] (productive) Adaptive Planning & Learning Loop [#* phase 5 #seg-2169]
-[2025-07-06T00:00:1360Z] (neutral) Start Aegis Locally [#?êphase 5 #seg-1361]
-[2025-07-06T00:00:2168Z] (productive) Adaptive Planning & Learning Loop [#* phase 5 #seg-2169]
-[2025-07-06T00:00:1360Z] (neutral) Start Aegis Locally [#?êphase 5 #seg-1361]
-[2025-07-06T00:00:2168Z] (productive) Adaptive Planning & Learning Loop [#* phase 5 #seg-2169]

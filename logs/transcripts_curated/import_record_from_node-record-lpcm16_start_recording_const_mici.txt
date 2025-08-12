@@ -1,2 +1,0 @@
-[2025-07-06T00:00:1862Z] (neutral) 16000, threshold: 0, verbose: true, }); micInputStream.on('data', async (data) => { // pipe to vosk here... }); [#import record from 'node-record-lpcm16'; // start recording const micinputstream = record.start({ samplerate #seg-1863]
-[2025-07-06T00:00:1862Z] (neutral) 16000, threshold: 0, verbose: true, }); micInputStream.on('data', async (data) => { // pipe to vosk here... }); [#import record from 'node-record-lpcm16'; // start recording const micinputstream = record.start({ samplerate #seg-1863]

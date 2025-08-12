@@ -1,2 +1,0 @@
-[2025-07-06T00:00:1111Z] (neutral) "${input}". I'm listening, Marcus.`; } [#// scripts/test-llama-query.js export async function createllamaprompt(input) { // placeholder logic for now return `you said #seg-1112]
-[2025-07-06T00:00:1111Z] (neutral) "${input}". I'm listening, Marcus.`; } [#// scripts/test-llama-query.js export async function createllamaprompt(input) { // placeholder logic for now return `you said #seg-1112]

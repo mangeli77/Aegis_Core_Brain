@@ -1,6 +1,0 @@
-[2025-07-06T00:00:1965Z] (neutral) Would you like me to include a testÊ.wavÊgenerator or fallback mic debug logger in case live input stalls again? [#system #seg-1966]
-[2025-07-06T00:00:1965Z] (neutral)  [#you said #seg-1966]
-[2025-07-06T00:00:1965Z] (neutral) Would you like me to include a testÊ.wavÊgenerator or fallback mic debug logger in case live input stalls again? [#system #seg-1966]
-[2025-07-06T00:00:1965Z] (neutral)  [#you said #seg-1966]
-[2025-07-06T00:00:1965Z] (neutral) Would you like me to include a testÊ.wavÊgenerator or fallback mic debug logger in case live input stalls again? [#system #seg-1966]
-[2025-07-06T00:00:1965Z] (neutral)  [#you said #seg-1966]

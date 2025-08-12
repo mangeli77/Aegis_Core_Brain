@@ -1,3 +1,0 @@
-[2025-07-06T00:00:1985Z] (neutral)  [#? 1.êsource .venv/bin/activateêfails #seg-1986]
-[2025-07-06T00:00:1985Z] (neutral)  [#? 1.êsource .venv/bin/activateêfails #seg-1986]
-[2025-07-06T00:00:1985Z] (neutral)  [#? 1.êsource .venv/bin/activateêfails #seg-1986]

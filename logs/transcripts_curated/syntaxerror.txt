@@ -1,6 +1,0 @@
-[2025-07-06T00:00:1572Z] (neutral) The requested module './utils/speechbrain.js' does not provide an export named 'analyzeEmotion' [#syntaxerror #seg-1573]
-[2025-07-06T00:00:2058Z] (neutral) invalid syntax [#syntaxerror #seg-2059]
-[2025-07-06T00:00:1572Z] (neutral) The requested module './utils/speechbrain.js' does not provide an export named 'analyzeEmotion' [#syntaxerror #seg-1573]
-[2025-07-06T00:00:2058Z] (neutral) invalid syntax [#syntaxerror #seg-2059]
-[2025-07-06T00:00:1572Z] (neutral) The requested module './utils/speechbrain.js' does not provide an export named 'analyzeEmotion' [#syntaxerror #seg-1573]
-[2025-07-06T00:00:2058Z] (neutral) invalid syntax [#syntaxerror #seg-2059]

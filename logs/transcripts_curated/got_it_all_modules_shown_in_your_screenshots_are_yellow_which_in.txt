@@ -1,2 +1,0 @@
-[2025-07-06T00:00:1017Z] (neutral)  [#got it. all modules shown in your screenshots are yellow, which indicates that vs code has detected them as modified or untracked depending on your git state. this isnõt necessarily a problem as long as #seg-1018]
-[2025-07-06T00:00:1017Z] (neutral)  [#got it. all modules shown in your screenshots are yellow, which indicates that vs code has detected them as modified or untracked depending on your git state. this isnõt necessarily a problem as long as #seg-1018]

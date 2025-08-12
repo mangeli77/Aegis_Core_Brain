@@ -1,2 +1,0 @@
-[2025-07-06T00:00:1066Z] (neutral)  [#3. youõre usingêexecsyncêto callêcore-memory.js, and ifêcore-memory.jsêimports or calls any logic that re-triggersêlaunch-core-prep.js, it creates a loop #seg-1067]
-[2025-07-06T00:00:1066Z] (neutral)  [#3. youõre usingêexecsyncêto callêcore-memory.js, and ifêcore-memory.jsêimports or calls any logic that re-triggersêlaunch-core-prep.js, it creates a loop #seg-1067]

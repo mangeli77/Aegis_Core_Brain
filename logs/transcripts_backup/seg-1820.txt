@@ -1,6 +1,0 @@
-[2025-07-06T00:00:1819Z] (neutral) 6. ?? Install build tools forÊffi-napiÊ(only if not already) [#system #seg-1820]
-[2025-07-06T00:00:1819Z] (neutral) brew install pkg-config npm install -g node-gyp [#system #seg-1820]
-[2025-07-06T00:00:1819Z] (neutral) 6. ?? Install build tools forÊffi-napiÊ(only if not already) [#system #seg-1820]
-[2025-07-06T00:00:1819Z] (neutral) brew install pkg-config npm install -g node-gyp [#system #seg-1820]
-[2025-07-06T00:00:1819Z] (neutral) 6. ?? Install build tools forÊffi-napiÊ(only if not already) [#system #seg-1820]
-[2025-07-06T00:00:1819Z] (neutral) brew install pkg-config npm install -g node-gyp [#system #seg-1820]

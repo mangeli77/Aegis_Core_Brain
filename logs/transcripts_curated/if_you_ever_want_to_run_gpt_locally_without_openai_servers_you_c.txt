@@ -1,2 +1,0 @@
-[2025-07-06T00:00:611Z] (neutral)  [#if you ever want to run gpt locally (without openai servers), you could install #seg-612]
-[2025-07-06T00:00:611Z] (neutral)  [#if you ever want to run gpt locally (without openai servers), you could install #seg-612]

@@ -1,3 +1,0 @@
-[2025-07-06T00:00:389Z] (neutral) command not found: nodeÊmeansÊNode.js isn't installed or isn't linked to your terminal environment. [#thanks for the screenshot ñ you're almost there. the errorêzsh #seg-390]
-[2025-07-06T00:00:389Z] (neutral) command not found: nodeÊmeansÊNode.js isn't installed or isn't linked to your terminal environment. [#thanks for the screenshot ñ you're almost there. the errorêzsh #seg-390]
-[2025-07-06T00:00:389Z] (neutral) command not found: nodeÊmeansÊNode.js isn't installed or isn't linked to your terminal environment. [#thanks for the screenshot ñ you're almost there. the errorêzsh #seg-390]

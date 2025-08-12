@@ -1,6 +1,0 @@
-[2025-07-06T00:00:2233Z] (neutral) ? 1.ÊCreate a Clean Folder [#system #seg-2234]
-[2025-07-06T00:00:2233Z] (neutral) mkdir ~/core cd ~/core python3 -m venv .aegis-venv source .aegis-venv/bin/activate [#system #seg-2234]
-[2025-07-06T00:00:2233Z] (neutral) ? 1.ÊCreate a Clean Folder [#system #seg-2234]
-[2025-07-06T00:00:2233Z] (neutral) mkdir ~/core cd ~/core python3 -m venv .aegis-venv source .aegis-venv/bin/activate [#system #seg-2234]
-[2025-07-06T00:00:2233Z] (neutral) ? 1.ÊCreate a Clean Folder [#system #seg-2234]
-[2025-07-06T00:00:2233Z] (neutral) mkdir ~/core cd ~/core python3 -m venv .aegis-venv source .aegis-venv/bin/activate [#system #seg-2234]

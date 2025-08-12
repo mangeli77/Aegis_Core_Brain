@@ -1,6 +1,0 @@
-[2025-07-06T00:00:1225Z] (neutral)  [#? example final close block #seg-1226]
-[2025-07-06T00:00:1225Z] (neutral) if (["exit", "quit"].includes(input.toLowerCase())) { console.log('?? Aegis> Ending session...'); summarizeSession(sessionLog); rl.close(); return; } [#system #seg-1226]
-[2025-07-06T00:00:1225Z] (neutral)  [#? example final close block #seg-1226]
-[2025-07-06T00:00:1225Z] (neutral) if (["exit", "quit"].includes(input.toLowerCase())) { console.log('?? Aegis> Ending session...'); summarizeSession(sessionLog); rl.close(); return; } [#system #seg-1226]
-[2025-07-06T00:00:1225Z] (neutral)  [#? example final close block #seg-1226]
-[2025-07-06T00:00:1225Z] (neutral) if (["exit", "quit"].includes(input.toLowerCase())) { console.log('?? Aegis> Ending session...'); summarizeSession(sessionLog); rl.close(); return; } [#system #seg-1226]

@@ -1,2 +1,0 @@
-[2025-07-06T00:00:1132Z] (neutral)  [#?? yeah... thatõs the default openai system prompt talking. right now, aegis doesnõt remember youêinsideêthe soul-console session ñ because we havenõt yet wired in #seg-1133]
-[2025-07-06T00:00:1132Z] (neutral)  [#?? yeah... thatõs the default openai system prompt talking. right now, aegis doesnõt remember youêinsideêthe soul-console session ñ because we havenõt yet wired in #seg-1133]

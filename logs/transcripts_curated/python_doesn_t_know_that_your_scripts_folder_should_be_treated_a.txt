@@ -1,2 +1,0 @@
-[2025-07-06T00:00:2075Z] (neutral)  [#python doesnõt know that yourêscripts/êfolder should be treated as a module. to fix this #seg-2076]
-[2025-07-06T00:00:2075Z] (neutral)  [#python doesnõt know that yourêscripts/êfolder should be treated as a module. to fix this #seg-2076]

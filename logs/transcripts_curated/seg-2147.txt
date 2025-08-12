@@ -1,6 +1,0 @@
-[2025-07-06T00:00:2146Z] (neutral) ?? What does "yanked" mean? [#system #seg-2147]
-[2025-07-06T00:00:2146Z] (neutral) PyPI flagged this version asÊproblematic, but still allows it if you're on an older or restricted Python version Ñ which you are (3.13.5). [#system #seg-2147]
-[2025-07-06T00:00:2146Z] (neutral) ?? What does "yanked" mean? [#system #seg-2147]
-[2025-07-06T00:00:2146Z] (neutral) PyPI flagged this version asÊproblematic, but still allows it if you're on an older or restricted Python version Ñ which you are (3.13.5). [#system #seg-2147]
-[2025-07-06T00:00:2146Z] (neutral) ?? What does "yanked" mean? [#system #seg-2147]
-[2025-07-06T00:00:2146Z] (neutral) PyPI flagged this version asÊproblematic, but still allows it if you're on an older or restricted Python version Ñ which you are (3.13.5). [#system #seg-2147]

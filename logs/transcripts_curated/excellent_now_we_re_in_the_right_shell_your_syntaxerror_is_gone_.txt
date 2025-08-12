@@ -1,2 +1,0 @@
-[2025-07-06T00:00:2061Z] (neutral)  [#excellent ñ now weõre in the right shell. yourêsyntaxerrorêis gone. the remaining issue is simply this #seg-2062]
-[2025-07-06T00:00:2061Z] (neutral)  [#excellent ñ now weõre in the right shell. yourêsyntaxerrorêis gone. the remaining issue is simply this #seg-2062]

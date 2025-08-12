@@ -1,6 +1,0 @@
-[2025-07-06T00:00:670Z] (neutral) Feed prompt via STDIN instead [#?? fast fix #seg-671]
-[2025-07-06T00:00:670Z] (neutral) Instead of passing the whole prompt inside the command line string, weÕllÊpipe it into Ollama. [#system #seg-671]
-[2025-07-06T00:00:670Z] (neutral) Feed prompt via STDIN instead [#?? fast fix #seg-671]
-[2025-07-06T00:00:670Z] (neutral) Instead of passing the whole prompt inside the command line string, weÕllÊpipe it into Ollama. [#system #seg-671]
-[2025-07-06T00:00:670Z] (neutral) Feed prompt via STDIN instead [#?? fast fix #seg-671]
-[2025-07-06T00:00:670Z] (neutral) Instead of passing the whole prompt inside the command line string, weÕllÊpipe it into Ollama. [#system #seg-671]

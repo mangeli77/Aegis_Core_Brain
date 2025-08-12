@@ -1,3 +1,0 @@
-[2025-07-06T00:00:1670Z] (neutral) alphacep/vosk-api [#1. vosk is not installing correctly viaênpm install github #seg-1671]
-[2025-07-06T00:00:1670Z] (neutral) alphacep/vosk-api [#1. vosk is not installing correctly viaênpm install github #seg-1671]
-[2025-07-06T00:00:1670Z] (neutral) alphacep/vosk-api [#1. vosk is not installing correctly viaênpm install github #seg-1671]

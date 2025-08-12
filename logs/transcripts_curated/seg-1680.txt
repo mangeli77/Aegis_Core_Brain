@@ -1,6 +1,0 @@
-[2025-07-06T00:00:1679Z] (neutral) ? Should I install the Python extension? [#system #seg-1680]
-[2025-07-06T00:00:1679Z] (neutral) Yes Ñ if you want full syntax highlighting, linting, and debugging in VS Code forÊspeechbrain-core.py, clickÊ"Install"Êin the Python extension banner. This is optional for execution, but helpful. [#system #seg-1680]
-[2025-07-06T00:00:1679Z] (neutral) ? Should I install the Python extension? [#system #seg-1680]
-[2025-07-06T00:00:1679Z] (neutral) Yes Ñ if you want full syntax highlighting, linting, and debugging in VS Code forÊspeechbrain-core.py, clickÊ"Install"Êin the Python extension banner. This is optional for execution, but helpful. [#system #seg-1680]
-[2025-07-06T00:00:1679Z] (neutral) ? Should I install the Python extension? [#system #seg-1680]
-[2025-07-06T00:00:1679Z] (neutral) Yes Ñ if you want full syntax highlighting, linting, and debugging in VS Code forÊspeechbrain-core.py, clickÊ"Install"Êin the Python extension banner. This is optional for execution, but helpful. [#system #seg-1680]

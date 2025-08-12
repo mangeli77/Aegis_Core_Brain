@@ -1,1 +1,0 @@
-[2025-07-06T00:00:1887Z] (neutral)  [#absolutely. here's a streamlined, working pipeline for calling yourêspeechbrain-core.pyêfrom javascript usingêchild_process.spawn. this assumes #seg-1888]

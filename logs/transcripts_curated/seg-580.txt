@@ -1,6 +1,0 @@
-[2025-07-06T00:00:579Z] (neutral)  [#? to run #seg-580]
-[2025-07-06T00:00:579Z] (neutral) node scripts/import-genesis.js [#system #seg-580]
-[2025-07-06T00:00:579Z] (neutral)  [#? to run #seg-580]
-[2025-07-06T00:00:579Z] (neutral) node scripts/import-genesis.js [#system #seg-580]
-[2025-07-06T00:00:579Z] (neutral)  [#? to run #seg-580]
-[2025-07-06T00:00:579Z] (neutral) node scripts/import-genesis.js [#system #seg-580]

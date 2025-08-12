@@ -1,2 +1,0 @@
-[2025-07-06T00:00:972Z] (neutral) //127.0.0.1:11434 USER_ALIAS=Marcus [#openai_api_key=***REMOVED***xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx elevenlabs_api_key=***REMOVED***xxxxxxxxxxxxxxxxxxxxxxxx elevenlabs_voice_id=fg350wlfm2hdwtst4q7i ollama_host=http #seg-973]
-[2025-07-06T00:00:972Z] (neutral) //127.0.0.1:11434 USER_ALIAS=Marcus [#openai_api_key=***REMOVED***xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx elevenlabs_api_key=***REMOVED***xxxxxxxxxxxxxxxxxxxxxxxx elevenlabs_voice_id=fg350wlfm2hdwtst4q7i ollama_host=http #seg-973]

@@ -1,3 +1,0 @@
-[2025-07-06T00:00:2018Z] (neutral) No module named 'sounddevice'means the PythonÊsounddeviceÊmodule isn't installed in your current virtual environment (.aegis-venv). [#thanks for the screenshot ñ the errorêmodulenotfounderror #seg-2019]
-[2025-07-06T00:00:2018Z] (neutral) No module named 'sounddevice'means the PythonÊsounddeviceÊmodule isn't installed in your current virtual environment (.aegis-venv). [#thanks for the screenshot ñ the errorêmodulenotfounderror #seg-2019]
-[2025-07-06T00:00:2018Z] (neutral) No module named 'sounddevice'means the PythonÊsounddeviceÊmodule isn't installed in your current virtual environment (.aegis-venv). [#thanks for the screenshot ñ the errorêmodulenotfounderror #seg-2019]

@@ -1,6 +1,0 @@
-[2025-07-06T00:00:571Z] (neutral)  [#? to run #seg-572]
-[2025-07-06T00:00:571Z] (neutral) node scripts/export-genesis.js [#system #seg-572]
-[2025-07-06T00:00:571Z] (neutral)  [#? to run #seg-572]
-[2025-07-06T00:00:571Z] (neutral) node scripts/export-genesis.js [#system #seg-572]
-[2025-07-06T00:00:571Z] (neutral)  [#? to run #seg-572]
-[2025-07-06T00:00:571Z] (neutral) node scripts/export-genesis.js [#system #seg-572]

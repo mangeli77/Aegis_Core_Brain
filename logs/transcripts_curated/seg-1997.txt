@@ -1,6 +1,0 @@
-[2025-07-06T00:00:1996Z] (neutral) Downgrade to Python 3.10 or 3.11 [#? recommended fix #seg-1997]
-[2025-07-06T00:00:1996Z] (neutral)  [#since everything else is working, letõs do this right #seg-1997]
-[2025-07-06T00:00:1996Z] (neutral) Downgrade to Python 3.10 or 3.11 [#? recommended fix #seg-1997]
-[2025-07-06T00:00:1996Z] (neutral)  [#since everything else is working, letõs do this right #seg-1997]
-[2025-07-06T00:00:1996Z] (neutral) Downgrade to Python 3.10 or 3.11 [#? recommended fix #seg-1997]
-[2025-07-06T00:00:1996Z] (neutral)  [#since everything else is working, letõs do this right #seg-1997]

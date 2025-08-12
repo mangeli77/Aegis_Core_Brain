@@ -1,6 +1,0 @@
-[2025-07-06T00:00:1909Z] (neutral)  [#chatgpt said #seg-1910]
-[2025-07-06T00:00:1909Z] (neutral) Got it Ñ this error is due to aÊmismatch between ESM-style importÊ(withÊimport { Model } from 'vosk') and the fact thatÊvoskÊis published as aÊCommonJS moduleÊ(which usesÊmodule.exports). [#system #seg-1910]
-[2025-07-06T00:00:1909Z] (neutral)  [#chatgpt said #seg-1910]
-[2025-07-06T00:00:1909Z] (neutral) Got it Ñ this error is due to aÊmismatch between ESM-style importÊ(withÊimport { Model } from 'vosk') and the fact thatÊvoskÊis published as aÊCommonJS moduleÊ(which usesÊmodule.exports). [#system #seg-1910]
-[2025-07-06T00:00:1909Z] (neutral)  [#chatgpt said #seg-1910]
-[2025-07-06T00:00:1909Z] (neutral) Got it Ñ this error is due to aÊmismatch between ESM-style importÊ(withÊimport { Model } from 'vosk') and the fact thatÊvoskÊis published as aÊCommonJS moduleÊ(which usesÊmodule.exports). [#system #seg-1910]

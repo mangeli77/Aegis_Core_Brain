@@ -1,1 +1,0 @@
-[2025-07-06T00:00:1877Z] (neutral)  [#you can now begin testing full voice interactions using your internal mic. if you speak while the pipeline is running (viaêsoul-entry.js), aegis should #seg-1878]

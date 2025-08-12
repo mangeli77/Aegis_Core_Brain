@@ -1,6 +1,0 @@
-[2025-07-06T00:00:1325Z] (neutral) ÊSwitch to Node.js v18 LTS [#? here's how to fix it #seg-1326]
-[2025-07-06T00:00:1325Z] (neutral) Node 24 is bleeding edge. Native modules likeÊffi-napi,Ênode-gyp, andÊvoskÊare still stabilizing for it. [#system #seg-1326]
-[2025-07-06T00:00:1325Z] (neutral) ÊSwitch to Node.js v18 LTS [#? here's how to fix it #seg-1326]
-[2025-07-06T00:00:1325Z] (neutral) Node 24 is bleeding edge. Native modules likeÊffi-napi,Ênode-gyp, andÊvoskÊare still stabilizing for it. [#system #seg-1326]
-[2025-07-06T00:00:1325Z] (neutral) ÊSwitch to Node.js v18 LTS [#? here's how to fix it #seg-1326]
-[2025-07-06T00:00:1325Z] (neutral) Node 24 is bleeding edge. Native modules likeÊffi-napi,Ênode-gyp, andÊvoskÊare still stabilizing for it. [#system #seg-1326]

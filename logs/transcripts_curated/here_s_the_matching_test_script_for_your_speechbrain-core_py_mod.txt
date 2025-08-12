@@ -1,2 +1,0 @@
-[2025-07-06T00:00:1927Z] (neutral)  [#hereõs the matching test script for yourêspeechbrain-core.pyêmodule. this will simulate speaker verification and emotion detection using two test audio files (reference and input), as expected by your system #seg-1928]
-[2025-07-06T00:00:1927Z] (neutral)  [#hereõs the matching test script for yourêspeechbrain-core.pyêmodule. this will simulate speaker verification and emotion detection using two test audio files (reference and input), as expected by your system #seg-1928]

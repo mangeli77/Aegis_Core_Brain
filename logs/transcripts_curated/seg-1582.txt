@@ -1,6 +1,0 @@
-[2025-07-06T00:00:1581Z] (neutral) Would you like me to regenerateÊspeechbrain.jsÊandÊsoul-core.jsÊfrom scratch with minimal working handlers based on what your system expects? [#system #seg-1582]
-[2025-07-06T00:00:1581Z] (neutral)  [#you said #seg-1582]
-[2025-07-06T00:00:1581Z] (neutral) Would you like me to regenerateÊspeechbrain.jsÊandÊsoul-core.jsÊfrom scratch with minimal working handlers based on what your system expects? [#system #seg-1582]
-[2025-07-06T00:00:1581Z] (neutral)  [#you said #seg-1582]
-[2025-07-06T00:00:1581Z] (neutral) Would you like me to regenerateÊspeechbrain.jsÊandÊsoul-core.jsÊfrom scratch with minimal working handlers based on what your system expects? [#system #seg-1582]
-[2025-07-06T00:00:1581Z] (neutral)  [#you said #seg-1582]

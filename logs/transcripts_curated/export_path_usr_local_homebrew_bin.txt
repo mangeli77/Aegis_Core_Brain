@@ -1,6 +1,0 @@
-[2025-07-06T00:00:1744Z] (neutral) $PATH" [#export path="/usr/local/homebrew/bin #seg-1745]
-[2025-07-06T00:00:1791Z] (neutral) $PATH" [#export path="/usr/local/homebrew/bin #seg-1792]
-[2025-07-06T00:00:1744Z] (neutral) $PATH" [#export path="/usr/local/homebrew/bin #seg-1745]
-[2025-07-06T00:00:1791Z] (neutral) $PATH" [#export path="/usr/local/homebrew/bin #seg-1792]
-[2025-07-06T00:00:1744Z] (neutral) $PATH" [#export path="/usr/local/homebrew/bin #seg-1745]
-[2025-07-06T00:00:1791Z] (neutral) $PATH" [#export path="/usr/local/homebrew/bin #seg-1792]

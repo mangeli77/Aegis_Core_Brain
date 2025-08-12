@@ -1,2 +1,0 @@
-[2025-07-06T00:00:1524Z] (neutral)  [#use this command to install the correct node-compatible vosk wrapper #seg-1525]
-[2025-07-06T00:00:1524Z] (neutral)  [#use this command to install the correct node-compatible vosk wrapper #seg-1525]

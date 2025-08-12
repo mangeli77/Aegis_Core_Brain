@@ -1,3 +1,0 @@
-[2025-07-06T00:00:1884Z] (neutral) true, "emotion": "calm" } [#{ "verified" #seg-1885]
-[2025-07-06T00:00:1884Z] (neutral) true, "emotion": "calm" } [#{ "verified" #seg-1885]
-[2025-07-06T00:00:1884Z] (neutral) true, "emotion": "calm" } [#{ "verified" #seg-1885]

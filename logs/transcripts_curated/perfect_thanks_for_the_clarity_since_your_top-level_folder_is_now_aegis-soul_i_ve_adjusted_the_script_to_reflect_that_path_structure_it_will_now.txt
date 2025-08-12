@@ -1,1 +1,0 @@
-[2025-07-06T00:00:437Z] (neutral)  [#perfect ñ thanks for the clarity. since yourêtop-level folder is nowêaegis-soul/, iõve adjusted the script to reflect that path structure. it will now #seg-438]

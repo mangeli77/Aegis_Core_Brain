@@ -1,2 +1,0 @@
-[2025-07-06T00:00:1592Z] (neutral) ', transcript); } [#export async function handleinput(transcript) { console.log('?? soul received #seg-1593]
-[2025-07-06T00:00:1592Z] (neutral) ', transcript); } [#export async function handleinput(transcript) { console.log('?? soul received #seg-1593]

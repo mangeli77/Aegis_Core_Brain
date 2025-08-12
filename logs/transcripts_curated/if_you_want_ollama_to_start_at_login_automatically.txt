@@ -1,3 +1,0 @@
-[2025-07-06T00:00:647Z] (neutral)  [#if you want ollama to start at login automatically #seg-648]
-[2025-07-06T00:00:647Z] (neutral)  [#if you want ollama to start at login automatically #seg-648]
-[2025-07-06T00:00:647Z] (neutral)  [#if you want ollama to start at login automatically #seg-648]

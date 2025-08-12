@@ -1,6 +1,0 @@
-[2025-07-06T00:00:499Z] (neutral)  [#? to run #seg-500]
-[2025-07-06T00:00:499Z] (neutral) node scripts/stub-perception-modules.js [#system #seg-500]
-[2025-07-06T00:00:499Z] (neutral)  [#? to run #seg-500]
-[2025-07-06T00:00:499Z] (neutral) node scripts/stub-perception-modules.js [#system #seg-500]
-[2025-07-06T00:00:499Z] (neutral)  [#? to run #seg-500]
-[2025-07-06T00:00:499Z] (neutral) node scripts/stub-perception-modules.js [#system #seg-500]

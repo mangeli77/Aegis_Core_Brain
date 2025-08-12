@@ -1,1 +1,0 @@
-[2025-07-06T00:00:1742Z] (neutral)  [#this means youõre trying to execute anêarm-native binary under rosetta, and itõs not compatible. in plain english #seg-1743]

@@ -1,3 +1,0 @@
-[2025-07-06T00:00:1742Z] (neutral) ÒNope, wrong CPU type.Ó ? [#* rosetta says #seg-1743]
-[2025-07-06T00:00:1742Z] (neutral) ÒNope, wrong CPU type.Ó ? [#* rosetta says #seg-1743]
-[2025-07-06T00:00:1742Z] (neutral) ÒNope, wrong CPU type.Ó ? [#* rosetta says #seg-1743]

@@ -1,6 +1,0 @@
-[2025-07-06T00:00:1595Z] (neutral)  [#??êsend me a screenshot or text copy of that output. iõll verify architecture, node version, python, and brew alignment before we move to #seg-1596]
-[2025-07-06T00:00:1595Z] (neutral) Ênpm install voskÊ(successfully, with correct native bindings) [#? step 2 #seg-1596]
-[2025-07-06T00:00:1595Z] (neutral)  [#??êsend me a screenshot or text copy of that output. iõll verify architecture, node version, python, and brew alignment before we move to #seg-1596]
-[2025-07-06T00:00:1595Z] (neutral) Ênpm install voskÊ(successfully, with correct native bindings) [#? step 2 #seg-1596]
-[2025-07-06T00:00:1595Z] (neutral)  [#??êsend me a screenshot or text copy of that output. iõll verify architecture, node version, python, and brew alignment before we move to #seg-1596]
-[2025-07-06T00:00:1595Z] (neutral) Ênpm install voskÊ(successfully, with correct native bindings) [#? step 2 #seg-1596]

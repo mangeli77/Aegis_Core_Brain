@@ -1,3 +1,0 @@
-[2025-07-06T00:00:1219Z] (neutral)  [#before sending any message to openai, aegis will now check #seg-1220]
-[2025-07-06T00:00:1219Z] (neutral)  [#before sending any message to openai, aegis will now check #seg-1220]
-[2025-07-06T00:00:1219Z] (neutral)  [#before sending any message to openai, aegis will now check #seg-1220]

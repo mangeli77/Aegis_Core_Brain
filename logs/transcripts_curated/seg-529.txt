@@ -1,6 +1,0 @@
-[2025-07-06T00:00:528Z] (neutral)  [#? to run #seg-529]
-[2025-07-06T00:00:528Z] (neutral) node scripts/link-perception-to-core.js [#system #seg-529]
-[2025-07-06T00:00:528Z] (neutral)  [#? to run #seg-529]
-[2025-07-06T00:00:528Z] (neutral) node scripts/link-perception-to-core.js [#system #seg-529]
-[2025-07-06T00:00:528Z] (neutral)  [#? to run #seg-529]
-[2025-07-06T00:00:528Z] (neutral) node scripts/link-perception-to-core.js [#system #seg-529]

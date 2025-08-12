@@ -1,6 +1,0 @@
-[2025-07-06T00:00:196Z] (neutral)  [#?? scenario #seg-197]
-[2025-07-06T00:00:196Z] (neutral) You travel toÊProxima Centauri (4.24 light-years away)ÊatÊ? the speed of light (0.5c), and return at the same speed. [#system #seg-197]
-[2025-07-06T00:00:196Z] (neutral)  [#?? scenario #seg-197]
-[2025-07-06T00:00:196Z] (neutral) You travel toÊProxima Centauri (4.24 light-years away)ÊatÊ? the speed of light (0.5c), and return at the same speed. [#system #seg-197]
-[2025-07-06T00:00:196Z] (neutral)  [#?? scenario #seg-197]
-[2025-07-06T00:00:196Z] (neutral) You travel toÊProxima Centauri (4.24 light-years away)ÊatÊ? the speed of light (0.5c), and return at the same speed. [#system #seg-197]

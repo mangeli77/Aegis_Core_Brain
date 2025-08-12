@@ -1,1 +1,0 @@
-[2025-07-06T00:00:618Z] (neutral) ', err); callback(stdout.trim()); }); } [#const { exec } = require('child_process'); function querysoullocally(prompt, callback) { exec(`ollama run mistral "${prompt}"`, (err, stdout) => { if (err) return callback('error #seg-619]

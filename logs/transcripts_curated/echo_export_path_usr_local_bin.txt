@@ -1,6 +1,0 @@
-[2025-07-06T00:00:1755Z] (neutral) $PATH"' >> ~/.zshrc source ~/.zshrc [#echo 'export path="/usr/local/bin #seg-1756]
-[2025-07-06T00:00:1769Z] (neutral) $PATH"' >> ~/.zshrc && source ~/.zshrc [#echo 'export path="/usr/local/bin #seg-1770]
-[2025-07-06T00:00:1755Z] (neutral) $PATH"' >> ~/.zshrc source ~/.zshrc [#echo 'export path="/usr/local/bin #seg-1756]
-[2025-07-06T00:00:1769Z] (neutral) $PATH"' >> ~/.zshrc && source ~/.zshrc [#echo 'export path="/usr/local/bin #seg-1770]
-[2025-07-06T00:00:1755Z] (neutral) $PATH"' >> ~/.zshrc source ~/.zshrc [#echo 'export path="/usr/local/bin #seg-1756]
-[2025-07-06T00:00:1769Z] (neutral) $PATH"' >> ~/.zshrc && source ~/.zshrc [#echo 'export path="/usr/local/bin #seg-1770]

@@ -1,6 +1,0 @@
-[2025-07-06T00:00:508Z] (neutral) 47:51.932Z | State: engaged | Mood: warm | Presence: true [#perception  2025-07-01t20 #seg-509]
-[2025-07-06T00:00:508Z] (neutral) 47:51.934Z | [signal] waveform: engaged [#visual      2025-07-01t20 #seg-509]
-[2025-07-06T00:00:508Z] (neutral) 47:51.932Z | State: engaged | Mood: warm | Presence: true [#perception  2025-07-01t20 #seg-509]
-[2025-07-06T00:00:508Z] (neutral) 47:51.934Z | [signal] waveform: engaged [#visual      2025-07-01t20 #seg-509]
-[2025-07-06T00:00:508Z] (neutral) 47:51.932Z | State: engaged | Mood: warm | Presence: true [#perception  2025-07-01t20 #seg-509]
-[2025-07-06T00:00:508Z] (neutral) 47:51.934Z | [signal] waveform: engaged [#visual      2025-07-01t20 #seg-509]

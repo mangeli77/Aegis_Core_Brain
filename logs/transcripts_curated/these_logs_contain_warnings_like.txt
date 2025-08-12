@@ -1,3 +1,0 @@
-[2025-07-06T00:00:1300Z] (neutral)  [#these logs contain warnings like #seg-1301]
-[2025-07-06T00:00:1300Z] (neutral)  [#these logs contain warnings like #seg-1301]
-[2025-07-06T00:00:1300Z] (neutral)  [#these logs contain warnings like #seg-1301]

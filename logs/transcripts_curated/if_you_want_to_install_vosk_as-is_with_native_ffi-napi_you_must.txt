@@ -1,3 +1,0 @@
-[2025-07-06T00:00:1538Z] (neutral)  [#if you want to install vosk as-is (with nativeêffi-napi),êyouêmust #seg-1539]
-[2025-07-06T00:00:1538Z] (neutral)  [#if you want to install vosk as-is (with nativeêffi-napi),êyouêmust #seg-1539]
-[2025-07-06T00:00:1538Z] (neutral)  [#if you want to install vosk as-is (with nativeêffi-napi),êyouêmust #seg-1539]

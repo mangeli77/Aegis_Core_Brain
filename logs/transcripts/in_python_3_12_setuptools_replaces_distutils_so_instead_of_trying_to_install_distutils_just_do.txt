@@ -1,1 +1,0 @@
-[2025-07-06T00:00:1844Z] (neutral)  [#in python 3.12+,êsetuptoolsêreplacesêdistutils. so instead of trying to installêdistutils, just do #seg-1845]

@@ -1,1 +1,0 @@
-[2025-07-06T00:00:1983Z] (neutral)  [#? here's a cleanêrequirements.txtêfile that includes all essential python dependencies aegis needs for speech recognition, emotion detection, and diagnostics #seg-1984]

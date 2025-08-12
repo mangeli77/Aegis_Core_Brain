@@ -14,3 +14,22 @@ _archive/remote_pipeline/
 
 # Archived remote/GPU pipeline
 _archive/remote_pipeline/
+
+# ---- Aegis local-only build ignores ----
+# archived remote/GPU bits
+_archive/remote_pipeline/
+
+# generated audio & training artifacts
+core/voice/output/
+core/voice/output/**/*
+
+# datasets & bundles
+dataset/local_ljs_*/
+voice2_ljs.tgz
+
+# logs
+logs/
+Library/Logs/Aegis/
+
+# macOS noise
+.DS_Store

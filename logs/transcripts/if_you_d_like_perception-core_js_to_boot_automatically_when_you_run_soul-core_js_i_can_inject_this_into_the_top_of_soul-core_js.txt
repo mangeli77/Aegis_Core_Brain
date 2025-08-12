@@ -1,1 +1,0 @@
-[2025-07-06T00:00:522Z] (neutral)  [#if you'd likeêperception-core.jsêto boot automatically when you runêsoul-core.js, i can inject this into the top ofêsoul-core.js #seg-523]
