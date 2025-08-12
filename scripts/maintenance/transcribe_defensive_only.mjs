@@ -1,12 +1,12 @@
-import { requireEnv } from '../../core/voice/utils/env_guard.mjs';
+import { requireEnv } from "#voice-utils/env_guard.mjs";
 import '../../_env.mjs';
 
 // scripts/maintenance/transcribe_defensive_only.mjs
 
 import fs from 'fs';
 import path from 'path';
-import { speak } from '../../core/voice/utils/tts_router.mjs';
-import { transcribeWav } from '../../core/voice/utils/whisper_transcriber.mjs';
+import { speak } from "#voice-utils/tts_router.mjs";
+import { transcribeWav } from "#voice-utils/whisper_transcriber.mjs";
 
 const FOLDER = 'voice/wav_training/defensive';
 

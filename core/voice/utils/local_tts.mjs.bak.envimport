@@ -6,7 +6,7 @@ import path from 'path';
 import dotenv from 'dotenv';
 dotenv.config();
 
-const VOICE_OUTPUT = process.env.VOICE_OUTPUT_PATH || 'voice/output/test.wav';
+const VOICE_OUTPUT = process.env.VOICE_OUTPUT_PATH || 'core/voice/output/test.wav';
 const TTS_BIN = '/Users/Aegis/Aegis/aegis-tts-env/bin/tts'; // ✅ full path to `tts`
 
 const MODEL = 'tts_models/en/ljspeech/glow-tts';

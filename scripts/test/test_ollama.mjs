@@ -1,5 +1,5 @@
 // scripts/test/test_ollama.mjs
-import { requireEnv } from '../../core/voice/utils/env_guard.mjs';
+import { requireEnv } from "#voice-utils/env_guard.mjs";
 
 async function main() {
   // Pull required vars and provide safe defaults if you like

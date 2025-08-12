@@ -1,4 +1,4 @@
-import { requireEnv } from '../../core/voice/utils/env_guard.mjs';
+import { requireEnv } from "#voice-utils/env_guard.mjs";
 // scripts/test/test_openai.mjs
 import '../_env.mjs';
 import OpenAI from 'openai';

@@ -1,4 +1,4 @@
-import { requireEnv } from '../voice/utils/env_guard.mjs';
+import { requireEnv } from "../voice/utils/env_guard.mjs";
 // Daily Schedule – Rev 5
 export const dailyRhythm = {
   "06:15": "System wake + cognition boot",

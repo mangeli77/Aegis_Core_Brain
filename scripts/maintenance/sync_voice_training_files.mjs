@@ -1,11 +1,11 @@
-import { requireEnv } from '../../core/voice/utils/env_guard.mjs';
+import { requireEnv } from "#voice-utils/env_guard.mjs";
 import fs from 'fs';
 import path from 'path';
 import { createRequire } from 'module';
 const require = createRequire(import.meta.url);
 
-import { speak } from '../../core/voice/utils/tts_router.mjs';
-import { transcribeWav } from '../../core/voice/utils/whisper_transcriber.mjs';
+import { speak } from "#voice-utils/tts_router.mjs";
+import { transcribeWav } from "#voice-utils/whisper_transcriber.mjs";
 
 const baseDir = path.resolve('./voice/wav_training');
 const emotions = fs.readdirSync(baseDir).filter(name => !name.startsWith('.') && fs.statSync(path.join(baseDir, name)).isDirectory());

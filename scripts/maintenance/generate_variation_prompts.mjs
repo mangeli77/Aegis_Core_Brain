@@ -1,10 +1,10 @@
-import { requireEnv } from '../../core/voice/utils/env_guard.mjs';
+import { requireEnv } from "#voice-utils/env_guard.mjs";
 // scripts/maintenance/generate_variation_prompts.mjs
 
 import fs from 'fs';
 import path from 'path';
 
-const VARIATION_DIR = path.resolve('voice/output/variation_tests');
+const VARIATION_DIR = path.resolve('core/voice/output/variation_tests');
 const PLACEHOLDER_TEXT = 'This is a placeholder line for emotional variation.';
 
 function ensurePromptFile(folderPath) {

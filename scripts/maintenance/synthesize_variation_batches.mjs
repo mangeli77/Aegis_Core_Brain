@@ -1,13 +1,13 @@
-import { requireEnv } from '../../core/voice/utils/env_guard.mjs';
+import { requireEnv } from "#voice-utils/env_guard.mjs";
 import '../../_env.mjs';
 
 // scripts/maintenance/synthesize_variation_batches.mjs
 
 import fs from 'fs';
 import path from 'path';
-import { speak } from '../../core/voice/utils/tts_router.mjs';
+import { speak } from "#voice-utils/tts_router.mjs";
 
-const BASE_DIR = path.resolve('voice/output/variation_tests');
+const BASE_DIR = path.resolve('core/voice/output/variation_tests');
 const EMOTIONS = [
   'neutral',
   'reflective',

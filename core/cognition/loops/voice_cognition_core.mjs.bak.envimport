@@ -18,7 +18,7 @@ import { analyzeTone } from "../../voice/utils/emotion_weights.mjs";      // you
 import { injectMemory } from "../../core/memory/memory_injector.mjs";     // your injector
 
 // ─── Config ────────────────────────────────────────────────────────────────
-const ROOT = path.resolve(__dirname, "../../voice/output/variation_tests");
+const ROOT = path.resolve(__dirname, "../../core/voice/output/variation_tests");
 const MIN_MP3_BYTES = 2048;
 const MIN_TXT_BYTES = 8;
 

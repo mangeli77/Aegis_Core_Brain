@@ -1,4 +1,4 @@
-import { requireEnv } from '../../core/voice/utils/env_guard.mjs';
+import { requireEnv } from "#voice-utils/env_guard.mjs";
 // scripts/maintenance/generate_voice_training_script.mjs
 
 import fs from 'fs';

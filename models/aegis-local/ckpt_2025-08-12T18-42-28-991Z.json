@@ -1,0 +1,6 @@
+{
+  "created": "2025-08-12T18:42:28.992Z",
+  "manifest": "dataset/voice_manifest.jsonl",
+  "samples": 423,
+  "note": "Mock checkpoint (no trainer script found). Provide core/voice/train/run_local_trainer.sh to enable real training."
+}

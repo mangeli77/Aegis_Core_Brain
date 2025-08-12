@@ -3,27 +3,44 @@
   "version": "1.0.0",
   "description": "Aegis voice + cognition system",
   "main": "index.js",
+  "type": "module",
+  "imports": {
+    "#core/*": "./core/*",
+    "#cognition/*": "./core/cognition/*",
+    "#voice/*": "./core/voice/*",
+    "#voice-utils/*": "./core/voice/utils/*",
+    "#tools/*": "./tools/*"
+  },
   "scripts": {
-    "start": "node core.mjs",
-    "fix:env-guards": "node tools/fix_all_env_guard_paths.mjs",
-    "audit:env-guards": "rg -n --no-ignore -g '!node_modules' -g '!.git' -g '!logs' -g '!core/cognition/learning/voice/raw_scripts' -g '!tools/fix_*env_guard*_paths.mjs' -g '!*_env.mjs.bak.*' \"(from|import\\()\\s*['\\\"][^'\\\"]*env_guard\\.mjs\" | rg -v \"\\./env_guard\\.mjs|voice/utils/env_guard\\.mjs\" || true",
-    "fix_env_guard_paths": "node tools/fix_env_guard_paths.mjs",
-    "verify-imports": "node tools/verify-imports.mjs",
-    "build": "echo \"Build step not required (ESM)\" && exit 0",
-    "diagnostics": "node tools/repo_status.mjs || true",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "test:ollama": "node scripts/test/test_ollama.mjs",
+    "format": "prettier -w .",
+    "lint": "eslint . --ext .js,.mjs,.ts || true",
+
+    "audit:imports": "node tools/audits/import_audit.mjs",
+    "guard:invariants": "node tools/guards/invariants.mjs",
+    "doctor": "node tools/doctor.mjs",
     "doctor1": "bash scripts/diagnostics/run_doctor.sh",
     "doctor:quiet": "NODE_NO_WARNINGS=1 QUIET=1 scripts/diagnostics/run_doctor.sh",
     "doctor:all": "scripts/diagnostics/run_doctor.sh",
+
+    "attic_restore": "node scripts/maintenance/attic_restore.mjs",
+    "audit:paths": "node scripts/diagnostics/audit_paths.mjs",
+    "fix:env-guards": "node tools/fix_all_env_guard_paths.mjs",
+    "audit:env-guards": "rg -n --no-ignore -g '!node_modules' -g '!.git' -g '!logs' -g '!core/cognition/learning/voice/raw_scripts' -g '!tools/fix_*env_guard*_paths.mjs' -g '!*_env.mjs.bak.*' \"(from|import\\()\\s*['\\\"][^'\\\"]*env_guard\\.mjs\" | rg -v \"\\./env_guard\\.mjs|voice/utils/env_guard\\.mjs\" || true",
+    "fix_env_guard_paths": "node tools/fix_env_guard_paths.mjs",
+
+    "build": "echo \"Build step not required (ESM)\" && exit 0",
+    "diagnostics": "node tools/repo_status.mjs || true",
+    "start": "node core.mjs",
+
     "full:pipeline": "bash scripts/diagnostics/full_voice_pipeline_check.sh && bash scripts/diagnostics/rotate_logs.sh logs/voice/full_pipeline 10",
     "checkpoint": "bash scripts/diagnostics/run_checkpoint.sh",
     "checkpoint:push": "PUSH_TAG=1 bash scripts/diagnostics/run_checkpoint.sh",
     "restore:latest": "bash scripts/diagnostics/restore_checkpoint.sh $(ls -t checkpoints/*.zip | head -n 1)",
-    "clean:smoke": "rm -rf voice/output/_smoke",
-    "clean:batch": "rm -rf voice/output/batch_*",
+
+    "clean:smoke": "rm -rf core/voice/output/_smoke",
+    "clean:batch": "rm -rf core/voice/output/batch_*",
     "clean:all": "npm run clean:smoke && npm run clean:batch",
-    "validate-and-checkpoint": "npm run full:pipeline && npm run checkpoint",
+
     "syscheck": "node scripts/diagnostics/run_system_check.mjs",
     "syscheck:CI": "QUIET=1 FAIL_FAST=1 node scripts/diagnostics/run_system_check.mjs",
     "baseline": "bash scripts/diagnostics/make_baseline.sh",
@@ -31,7 +48,29 @@
     "patch:env-guard-calls:dry": "DRY=1 bash scripts/patches/upgrade_env_guard_calls.sh",
     "tree": "node scripts/diagnostics/print_repo_tree.mjs",
     "tree:deep": "node scripts/diagnostics/print_repo_tree.mjs --depth=12",
-    "tree:png": "node scripts/diagnostics/print_repo_tree.mjs --png=true"
+    "tree:png": "node scripts/diagnostics/print_repo_tree.mjs --png=true",
+    "prepare": "husky",
+    "check:runtime": "node tools/audits/runtime_invariants.mjs",
+    "smoke:runtime": "node jobs/smoke_runtime.mjs",
+
+    "demo:tts": "node core/voice/utils/tts_router.mjs",
+    "demo:asr": "node core/voice/utils/noop_transcriber.mjs",
+    "demo:full": "OUT=core/voice/output/ghost_ops.wav npm run -s demo:tts -- \"hello from aegis\" && npm run -s demo:asr -- \"core/voice/output/ghost_ops.wav\" && node core/voice/utils/noop_transcriber.mjs \"core/voice/output/ghost_ops.wav\"",
+
+    "voice:tts": "node jobs/tts_demo.mjs",
+    "voice:asr": "node jobs/asr_demo.mjs",
+    "voice:record": "node core/voice/input/record_cli.mjs",
+    "voice:turn": "node jobs/voice_turn.mjs",
+    "turn": "node jobs/voice_turn.mjs",
+    "train:10": "node -e \"let i=0;const {spawn}=require('node:child_process');function run(){if(i>=10)return;const t='seed '+i++;spawn('node',['jobs/voice_turn.mjs',t,'train'],{stdio:'inherit'}).on('close',run)}run()\"",
+
+    "voice:el": "launchctl kickstart -k gui/$(id -u)/com.aegis.voice.elevenlabs && tail -f $HOME/Library/Logs/Aegis/voice_elevenlabs.out.log $HOME/Library/Logs/Aegis/voice_elevenlabs.err.log",
+    "voice:score": "node jobs/score_batch.mjs core/voice/output/batch logs/voice/score",
+    "voice:curate:last": "node jobs/curate_voice.mjs \"$(ls -t logs/voice/score/score_*.jsonl | head -n 1)\"",
+    "train:auto": "node jobs/train_from_curated.mjs",       
+   
+    "voice:grow": "node jobs/voice_grow.mjs",
+    "voice:manifest:refresh": "node core/voice/utils/build_styles_manifest.mjs && cat dataset/voice2_manifest.jsonl dataset/voice2_styles_manifest.jsonl > dataset/voice2_all_manifest.jsonl && ln -sf voice2_all_manifest.jsonl dataset/voice_manifest.jsonl"
   },
   "keywords": [],
   "author": "",
@@ -42,10 +81,13 @@
     "openai": "^5.11.0"
   },
   "devDependencies": {
+    "acorn": "^8.12.1",
+    "acorn-walk": "^8.3.2",
+    "prettier": "^3.3.3",
+    "eslint": "^9.9.0",
+    "husky": "^9.1.7",
     "dependency-cruiser": "^16.10.4",
     "graphviz": "^0.0.9",
-    "husky": "^9.1.7",
     "jscodeshift": "^17.3.0"
-  },
-  "type": "module"
+  }
 }

@@ -30,7 +30,7 @@ SLIM="$OUTDIR/aegis_slim_${STAMP}.zip"
 zip -rq "$SLIM" \
   Aegis voice cognition core logs scripts package.json package-lock.json .env \
   -x '*.git*' '*.DS_Store' '__pycache__/*' '*.pyc' \
-  -x 'node_modules/*' 'aegis-tts-env/*' 'checkpoints/*' 'voice/output/**'
+  -x 'node_modules/*' 'aegis-tts-env/*' 'checkpoints/*' 'core/voice/output/**'
 
 # include the manifest
 zip -q "$SLIM" "$MAN"

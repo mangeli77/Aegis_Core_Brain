@@ -1,4 +1,4 @@
-import { requireEnv } from '../../voice/utils/env_guard.mjs';
+import { requireEnv } from "../../voice/utils/env_guard.mjs";
 // cognition/loops/run_voice_crossover_pipeline.mjs
 
 import path from 'path';
@@ -6,9 +6,9 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 // === Module Imports ===
-import { linkVoiceToMemory } from '../learning/link_voice_to_memory.mjs';
-import { reflectOnToneMismatch } from '../learning/reflect_on_failed_tone.mjs';
-import { runSelfTest } from '../learning/self_test_emotion_synthesis.mjs';
+import { linkVoiceToMemory } from '../../learning/link_voice_to_memory.mjs';
+import { reflectOnToneMismatch } from '../../learning/reflect_on_failed_tone.mjs';
+import { runSelfTest } from '../../learning/self_test_emotion_synthesis.mjs';
 
 // === Voice-Cognition Crossover Pipeline ===
 async function runVoiceCrossoverPipeline() {

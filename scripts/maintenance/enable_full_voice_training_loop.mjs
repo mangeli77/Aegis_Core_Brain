@@ -1,4 +1,4 @@
-import { requireEnv } from '../../core/voice/utils/env_guard.mjs';
+import { requireEnv } from "#voice-utils/env_guard.mjs";
 // scripts/maintenance/enable_full_voice_training_loop.mjs
 
 import fs from 'fs';
@@ -15,7 +15,7 @@ const cronJob = `0 4 * * * /opt/homebrew/bin/node ${loopPath} >> ${logPath} 2>&1
 function ensureDailyLoopScript() {
   const content = `// ${loopScript}
 
-import { speak } from '../../voice/utils/elevenlabs_tts.mjs';
+import { speak } from "../../core/voice/utils/elevenlabs_tts.mjs";
 import { execSync } from 'child_process';
 
 async function run() {

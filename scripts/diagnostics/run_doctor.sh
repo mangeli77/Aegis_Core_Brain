@@ -43,8 +43,8 @@ DISK=$(df -h . | awk 'NR==2{print $4}')
 ok "Disk space OK ($DISK free)"
 
 # Clean only smoke output; leave batch history intact
-if [[ -d voice/output/_smoke ]]; then
-  rm -rf voice/output/_smoke || true
+if [[ -d core/voice/output/_smoke ]]; then
+  rm -rf core/voice/output/_smoke || true
 fi
 ok "Old outputs cleaned"
 
@@ -75,7 +75,7 @@ fi
 head "Tiny TTS (skips if no VOICE_ID)"
 # This script already handles VOICE_ID presence and prints where it saved
 if quiet_run node scripts/test/tts_router_smoke.mjs; then
-  ok "tiny saved: voice/output/_smoke/el_test.mp3"
+  ok "tiny saved: core/voice/output/_smoke/el_test.mp3"
 else
   fail "Tiny TTS smoke failed"
   [[ "$FAIL_FAST" == "1" ]] && exit 1
@@ -86,7 +86,7 @@ head "Batch test"
 if quiet_run node scripts/test/tts_router_batch.mjs; then
   ok "batch test OK"
   # Print last results
-  LAST="$(ls -t voice/output/batch_* 2>/dev/null | head -n 1 || true)"
+  LAST="$(ls -t core/voice/output/batch_* 2>/dev/null | head -n 1 || true)"
   if [[ -n "$LAST" ]]; then
     info "Done. Output folder: ${LAST}"
     ls -lh "${LAST}"/sample_*.mp3 2>/dev/null || true

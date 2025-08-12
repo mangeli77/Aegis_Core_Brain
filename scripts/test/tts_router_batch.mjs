@@ -1,13 +1,13 @@
-import { requireEnv } from '../../core/voice/utils/env_guard.mjs';
+import { requireEnv } from "#voice-utils/env_guard.mjs";
 // scripts/test/tts_router_batch.mjs
 import fs from 'node:fs/promises';
 import path from 'node:path';
 
 // ✅ Correct relative path for your repo
 import '../../_env.mjs';
-import { speak } from '../../core/voice/utils/tts_router.mjs';
+import { speak } from "#voice-utils/tts_router.mjs";
 
-const outDir = `voice/output/batch_${new Date().toISOString().replace(/[:.]/g, '-')}`;
+const outDir = `core/voice/output/batch_${new Date().toISOString().replace(/[:.]/g, '-')}`;
 await fs.mkdir(outDir, { recursive: true });
 
 const lines = [

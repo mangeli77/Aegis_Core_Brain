@@ -1,4 +1,4 @@
-import { requireEnv } from '../../core/voice/utils/env_guard.mjs';
+import { requireEnv } from "#voice-utils/env_guard.mjs";
 // scripts/test/probe_elevenlabs_auth.mjs
 import 'dotenv/config';
 import fs from 'node:fs/promises';

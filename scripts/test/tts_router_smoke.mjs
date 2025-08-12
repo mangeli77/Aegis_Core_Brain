@@ -1,10 +1,10 @@
-import { requireEnv } from '../../core/voice/utils/env_guard.mjs';
+import { requireEnv } from "#voice-utils/env_guard.mjs";
 // scripts/test/tts_router_smoke.mjs
 // Quick sanity test for voice/utils/tts_router.mjs
 
-import { speak } from '../../core/voice/utils/tts_router.mjs';
+import { speak } from "#voice-utils/tts_router.mjs";
 
-const outPath = 'voice/output/_smoke/el_test.mp3';
+const outPath = 'core/voice/output/_smoke/el_test.mp3';
 const text = 'Router smoke test — one two three.';
 
 // Optional: force provider via env, e.g. SMOKE_PROVIDER=local

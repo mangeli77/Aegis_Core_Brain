@@ -1,4 +1,4 @@
-import { requireEnv } from '../../voice/utils/env_guard.mjs';
+import { requireEnv } from "../../voice/utils/env_guard.mjs";
 import { readdir, readFile } from 'fs/promises';
 import path from 'path';
 

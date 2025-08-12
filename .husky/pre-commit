@@ -1,0 +1,3 @@
+-e npm run format
+npm run audit:imports
+npm run guard:invariants

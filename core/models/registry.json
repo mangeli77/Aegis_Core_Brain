@@ -1,0 +1,26 @@
+{
+  "models": {
+    "local_tts": {
+      "type": "tts",
+      "min_caps": {
+        "memGB": 0
+      },
+      "quality": [
+        1
+      ],
+      "path": "core/voice/utils/tts_router.mjs",
+      "sha256": ""
+    },
+    "local_asr": {
+      "type": "asr",
+      "min_caps": {
+        "memGB": 0
+      },
+      "quality": [
+        1
+      ],
+      "path": "core/voice/utils/noop_transcriber.mjs",
+      "sha256": ""
+    }
+  }
+}

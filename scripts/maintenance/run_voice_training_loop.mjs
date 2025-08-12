@@ -1,8 +1,8 @@
-import { requireEnv } from '../../core/voice/utils/env_guard.mjs';
+import { requireEnv } from "#voice-utils/env_guard.mjs";
 // scripts/maintenance/run_voice_training_loop.mjs
 
 import { execSync } from 'child_process';
-import { speak } from '../../core/voice/utils/tts_router.mjs';
+import { speak } from "#voice-utils/tts_router.mjs";
 
 async function run() {
   console.log('🌀 Running full voice training loop...');

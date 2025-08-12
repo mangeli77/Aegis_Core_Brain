@@ -1,9 +1,9 @@
-import { requireEnv } from '../../core/voice/utils/env_guard.mjs';
+import { requireEnv } from "#voice-utils/env_guard.mjs";
 // scripts/maintenance/generate_emotional_batch.mjs
 
 import fs from 'fs';
 import path from 'path';
-import { speak } from '../../core/voice/utils/tts_router.mjs';
+import { speak } from "#voice-utils/tts_router.mjs";
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
 
@@ -16,7 +16,7 @@ const EMOTIONS = [
   'charismatic', 'frustrated', 'apologetic'
 ];
 
-const OUTPUT_DIR = path.resolve(__dirname, '../../voice/output/emotional_training');
+const OUTPUT_DIR = path.resolve(__dirname, '../../core/voice/output/emotional_training');
 const LOG_FILE = path.resolve(__dirname, '../../core/memory/Reflection/self_teach_voice.md');
 
 function ensureDir(dir) {

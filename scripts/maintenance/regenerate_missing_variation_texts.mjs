@@ -1,10 +1,10 @@
-import { requireEnv } from '../../core/voice/utils/env_guard.mjs';
+import { requireEnv } from "#voice-utils/env_guard.mjs";
 // scripts/maintenance/regenerate_missing_variation_texts.mjs
 
 import fs from 'fs';
 import path from 'path';
 
-const ROOT = path.resolve('voice/output/variation_tests');
+const ROOT = path.resolve('core/voice/output/variation_tests');
 const EMOTIONS = [
   'neutral', 'reflective', 'assertive', 'technical', 'bonding',
   'confident', 'defensive', 'compassionate', 'humorous',

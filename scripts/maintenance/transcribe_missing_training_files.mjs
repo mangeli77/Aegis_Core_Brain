@@ -1,9 +1,9 @@
-import { requireEnv } from '../../core/voice/utils/env_guard.mjs';
+import { requireEnv } from "#voice-utils/env_guard.mjs";
 // scripts/maintenance/transcribe_missing_training_files.mjs
 
 import fs from 'fs';
 import path from 'path';
-import { transcribeWav } from '../../core/voice/utils/whisper_transcriber.mjs';
+import { transcribeWav } from "#voice-utils/whisper_transcriber.mjs";
 
 const baseDir = path.resolve('./voice/wav_training');
 const categories = ['assertive', 'bonding', 'neutral', 'reflective', 'technical'];

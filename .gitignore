@@ -1,2 +1,13 @@
 node_modules
 node_modules/
+/voice/
+!voice
+logs/
+core/voice/output/
+data/
+.env
+voice
+# === archived remote/GPU pipeline (kept for reference) ===
+_archive/remote_pipeline/
+# safety: ignore any future remote-pipeline scratch dirs
+**/_archive/remote_pipeline/**

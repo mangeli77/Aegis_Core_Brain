@@ -46,7 +46,7 @@ run node cognition/loops/voice_cognition_core.mjs
 echo "" | tee -a "$log_file"
 echo "🔎 Pair sanity check (mp3 ↔ txt)" | tee -a "$log_file"
 bash -lc '
-ROOT="voice/output/variation_tests"
+ROOT="core/voice/output/variation_tests"
 missing=0
 for d in $(find "$ROOT" -type d -maxdepth 1 -name "line_*" | sort); do
   for b in apologetic assertive bonding charismatic compassionate confident defensive frustrated humorous neutral reflective sarcastic technical; do

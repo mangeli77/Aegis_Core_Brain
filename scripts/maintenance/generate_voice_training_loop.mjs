@@ -1,16 +1,16 @@
-import { requireEnv } from '../../core/voice/utils/env_guard.mjs';
+import { requireEnv } from "#voice-utils/env_guard.mjs";
 // scripts/maintenance/generate_voice_training_loop.mjs
 
 import fs from 'fs';
 import path from 'path';
-import { speak } from '../../core/voice/utils/tts_router.mjs';
+import { speak } from "#voice-utils/tts_router.mjs";
 import fetch from 'node-fetch';
 import { createRequire } from 'module';
 const require = createRequire(import.meta.url);
 
 const RAW_DIR = path.resolve('./cognition/learning/voice/raw_scripts');
 const SUMMARY_LOG = path.resolve('./core/memory/Reflection/voice_training_autosummary.md');
-const OUTPUT_PATH = path.resolve('./voice/output');
+const OUTPUT_PATH = path.resolve('./core/voice/output');
 
 function ensureDir(dir) {
   if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });

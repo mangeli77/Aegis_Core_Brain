@@ -1,4 +1,4 @@
-import { requireEnv } from '../../core/voice/utils/env_guard.mjs';
+import { requireEnv } from "#voice-utils/env_guard.mjs";
 // scripts/maintenance/transcribe_variation_tests.mjs
 // Transcribes any .mp3 in variation_tests to .txt via the `whisper` CLI (local).
 // Skips files that already have a .txt next to them.
@@ -8,7 +8,7 @@ import path from "node:path";
 import { execFile } from "node:child_process";
 import { promisify } from "node:util";
 
-const ROOT = path.resolve("voice/output/variation_tests");
+const ROOT = path.resolve("core/voice/output/variation_tests");
 const EMOTIONS = [
   "neutral","reflective","assertive","technical","bonding",
   "confident","defensive","compassionate","humorous",

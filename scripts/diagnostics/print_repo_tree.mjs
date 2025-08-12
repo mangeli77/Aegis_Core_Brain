@@ -32,7 +32,7 @@ const defaultExcludes = [
   ".idea",
   ".vscode",
   "logs/output",
-  "voice/output",
+  "core/voice/output",
   "voice/trained",
   "voice/wav_training/_unsorted",
   ".venv",

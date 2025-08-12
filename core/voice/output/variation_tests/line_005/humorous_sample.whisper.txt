@@ -1,1 +1,0 @@
-I tried to run diagnostics, but apparently Sark has amiss an official error code.

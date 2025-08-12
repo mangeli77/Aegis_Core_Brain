@@ -1,11 +1,11 @@
-import { requireEnv } from '../../core/voice/utils/env_guard.mjs';
+import { requireEnv } from "#voice-utils/env_guard.mjs";
 // scripts/maintenance/transcribe_missing_variation_files.mjs
 
 import fs from 'fs';
 import path from 'path';
-import { transcribeWav } from '../../core/voice/utils/whisper_transcriber.mjs';
+import { transcribeWav } from "#voice-utils/whisper_transcriber.mjs";
 
-const VARIATION_DIR = 'voice/output/variation_tests';
+const VARIATION_DIR = 'core/voice/output/variation_tests';
 
 function findAllMp3Files(dir) {
   const folders = fs.readdirSync(dir).filter(f => f.startsWith('line_'));

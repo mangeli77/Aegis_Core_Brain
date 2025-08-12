@@ -1,4 +1,4 @@
-import { requireEnv } from '../../core/voice/utils/env_guard.mjs';
+import { requireEnv } from "#voice-utils/env_guard.mjs";
 // scripts/maintenance/nightly_voice_audit.mjs
 import { spawn } from "node:child_process";
 import fs from "node:fs/promises";

@@ -1,1 +1,0 @@
-The signal was inverted due to a phase mismatch during processing.

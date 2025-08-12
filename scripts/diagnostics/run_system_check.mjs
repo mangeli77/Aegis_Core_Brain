@@ -1,5 +1,5 @@
 // scripts/diagnostics/run_system_check.mjs
-import { requireEnv, summarizeEnv } from '../../core/voice/utils/env_guard.mjs';
+import { requireEnv, summarizeEnv } from "#voice-utils/env_guard.mjs";
 import chalk from 'chalk';
 
 // Load/validate the env we need for this check
