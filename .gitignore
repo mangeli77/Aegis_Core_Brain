@@ -33,3 +33,41 @@ Library/Logs/Aegis/
 
 # macOS noise
 .DS_Store
+
+# Local-only vendor component
+vendor/whisper.cpp
+
+# === Aegis Lean & Mean ===
+# Datasets / manifests / archives
+dataset/**
+!dataset/.gitkeep
+voice2_ljs.tgz
+
+# Generated audio, pairs, transcripts, styles, scoring, etc.
+core/voice/output/**
+!core/voice/output/.gitkeep
+
+# Logs of any kind
+logs/**
+!logs/.gitkeep
+
+# Local vendor builds (keep instructions only)
+vendor/**
+!vendor/.gitkeep
+!vendor/README.md
+
+# Local tools/cache/build junk
+.DS_Store
+*.tmp
+*.bak
+*.swp
+*.log
+
+# Node & env
+node_modules/
+!.npmrc
+.env.local
+.env.*.local
+
+# Ignore dataset files
+dataset/**
