@@ -1,0 +1,57 @@
+#!/usr/bin/env node
+import fs from 'node:fs';
+import os from 'node:os';
+import path from 'node:path';
+
+// Import the same way as say.mjs
+import { synth } from '../../core/voice/synth/index.mjs';
+
+const outFile = path.join(os.tmpdir(), 'aegis_health.mp3');
+
+async function main() {
+  const report = {
+    ok: false,
+    stage: 'init',
+    env: {
+      ELEVENLABS_API_KEY: !!process.env.ELEVENLABS_API_KEY,
+      ELEVENLABS_VOICE_ID: !!process.env.ELEVENLABS_VOICE_ID,
+      VOICE_MODE: process.env.VOICE_MODE || null,
+    },
+  };
+
+  try {
+    // basic env sanity
+    report.stage = 'env';
+    if (!report.env.ELEVENLABS_API_KEY || !report.env.ELEVENLABS_VOICE_ID) {
+      report.error = 'Missing ELEVENLABS_API_KEY or ELEVENLABS_VOICE_ID';
+      return done(report);
+    }
+
+    // synth
+    report.stage = 'synth';
+    const bytes = await synth('Aegis health check synthesis OK.', { out: outFile });
+    report.synth = { ok: !!bytes, bytes, out: outFile };
+
+    // file exists?
+    report.stage = 'file';
+    const stat = fs.statSync(outFile);
+    report.file = { ok: stat.size > 0, size: stat.size };
+
+    // success
+    report.stage = 'done';
+    report.ok = true;
+    return done(report);
+  } catch (err) {
+    report.ok = false;
+    report.error = `${err.name || 'Error'}: ${err.message}`;
+    report.stack = err.stack;
+    return done(report);
+  }
+}
+
+function done(obj) {
+  console.log(JSON.stringify(obj, null, 2));
+}
+
+main();
+EOF
