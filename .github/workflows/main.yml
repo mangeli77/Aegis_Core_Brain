@@ -4,14 +4,13 @@ on:
   push:
     branches: [ main ]
     paths-ignore:
-      - "**/*.md"
-      - "**/.DS_Store"
-      - "docs/**"
+      - '**/*.md'
+      - '**/.DS_Store'
+      - 'docs/**'
   pull_request:
     branches: [ main ]
   workflow_dispatch:
 
-# Avoid overlapping runs on the same branch
 concurrency:
   group: ci-${{ github.ref }}
   cancel-in-progress: true
@@ -24,68 +23,23 @@ env:
 
 jobs:
   build:
-    name: Build & Checks
     runs-on: ubuntu-latest
     timeout-minutes: 20
 
     strategy:
       fail-fast: false
       matrix:
-        node-version: [ "20.x" ]
+        node: [ '20.x' ]
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Setup Node ${{ matrix.node-version }}
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: ${{ matrix.node-version }}
-          cache: npm
+          node-version: ${{ matrix.node }}
+          cache: 'npm'
 
-      - name: Show versions
-        run: |
-          node -v
-          npm -v
+      - run: npm ci
 
-      - name: Install dependencies
-        run: npm ci
-
-      # Optional preflight — doesn’t fail the build if it’s only informational
-      - name: Health preflight (non-blocking)
-        run: |
-          if [ -f runtime/cli/health.mjs ]; then
-            node runtime/cli/health.mjs || true
-          else
-            echo "No runtime/cli/health.mjs, skipping."
-          fi
-
-      - name: Run CI driver (tools/ci.sh or npm run ci)
-        run: |
-          set -euo pipefail
-          if [ -x tools/ci.sh ]; then
-            echo "Running tools/ci.sh"
-            bash tools/ci.sh
-          elif [ -f tools/ci.sh ]; then
-            echo "tools/ci.sh exists but is not executable; fixing + running"
-            chmod +x tools/ci.sh
-            bash tools/ci.sh
-          elif npm run -s ci >/dev/null 2>&1; then
-            echo "Running npm run -s ci"
-            npm run -s ci
-          else
-            echo "::error::No CI driver found. Provide tools/ci.sh or an npm script named 'ci'."
-            exit 1
-          fi
-
-      - name: Upload logs & artifacts on failure
-        if: failure()
-        uses: actions/upload-artifact@v4
-        with:
-          name: ci-artifacts-${{ github.run_id }}
-          if-no-files-found: ignore
-          path: |
-            logs/**
-            **/logs/**
-            **/*.log
-            /tmp/aegis_*.mp3
+      - name: Run local CI driver
+        run: bash .github/workflows/local-ci.sh

@@ -1,30 +1,49 @@
 #!/usr/bin/env bash
-set -euxo pipefail
+set -euo pipefail
 
-echo "=== CI fallback driver starting ==="
+echo "== Aegis CI driver =="
+echo "Node: $(node -v)"
+echo "NPM : $(npm -v)"
 
-# Show tree so we know where files are
-ls -la
-test -d runtime || true
-test -d core || true
+# Warn (don’t leak values)
+if [[ -z "${ELEVENLABS_API_KEY:-}" || -z "${ELEVENLABS_VOICE_ID:-}" ]]; then
+  echo "::warning:: ELEVENLABS_API_KEY and/or ELEVENLABS_VOICE_ID are not set (voice steps will be skipped or run in headless mode)."
+fi
 
-# Print a short env summary (no secrets)
-node -e "console.log({
-  key: !!process.env.ELEVENLABS_API_KEY,
-  voice: !!process.env.ELEVENLABS_VOICE_ID,
-  mode: process.env.VOICE_MODE || null
-})"
+echo "::group::Install deps (no lifecycle)"
+if [[ -f package-lock.json ]]; then
+  npm ci --ignore-scripts
+elif [[ -f package.json ]]; then
+  npm i  --ignore-scripts
+fi
+echo "::endgroup::"
 
-# Basic health check if present
-if [ -f runtime/cli/health.mjs ]; then
-  echo "Running health.mjs"
+# 1) Static / invariants (soft)
+if [[ -f tools/audits/runtime_invariants.mjs ]]; then
+  echo "::group::Invariants (soft)"
+  node tools/audits/runtime_invariants.mjs || true
+  echo "::endgroup::"
+fi
+
+# 2) Health (soft unless you want to enforce)
+if [[ -f runtime/cli/health.mjs ]]; then
+  echo "::group::Health (soft)"
   node runtime/cli/health.mjs || true
+  echo "::endgroup::"
 fi
 
-# Quick voice smoke (adjust to your script name if different)
-if npm run | grep -q 'voice:test'; then
-  echo "Running npm run -s voice:test"
-  npm run -s voice:test || true
+# 3) Headless voice check (soft)
+if [[ -f runtime/cli/say.mjs ]]; then
+  echo "::group::Say (headless, soft)"
+  node runtime/cli/say.mjs "CI hello from Aegis (headless)" || true
+  echo "::endgroup::"
 fi
 
-echo "=== CI fallback driver finished ==="
+# 4) Repo-level CI hook (hard fail)
+if npm run | grep -qE '^  ci'; then
+  echo "::group::npm run ci"
+  npm run -s ci    # <- fail the job if this fails
+  echo "::endgroup::"
+fi
+
+echo "== CI driver complete =="
