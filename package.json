@@ -52,6 +52,7 @@
     "voice:tts": "node jobs/tts_demo.mjs",
     "voice:asr": "node jobs/asr_demo.mjs",
     "voice:record": "node core/voice/input/record_cli.mjs",
+    "voice:test": "npm run -s speak -- \"Voice check passed. All systems nominal.\"",
     "voice:turn": "node jobs/voice_turn.mjs",
     "turn": "node jobs/voice_turn.mjs",
     "train:10": "node -e \"let i=0;const {spawn}=require('node:child_process');function run(){if(i>=10)return;const t='seed '+i++;spawn('node',['jobs/voice_turn.mjs',t,'train'],{stdio:'inherit'}).on('close',run)}run()\"",
@@ -62,9 +63,12 @@
     "voice:grow": "node jobs/voice_grow.mjs",
     "voice:manifest:refresh": "node core/voice/utils/build_styles_manifest.mjs && cat dataset/voice2_manifest.jsonl dataset/voice2_styles_manifest.jsonl > dataset/voice2_all_manifest.jsonl && ln -sf voice2_all_manifest.jsonl dataset/voice_manifest.jsonl",
     "speak": "node runtime/cli/say.mjs",
-    "health": "node tools/health.mjs",
+    "health": "node runtime/cli/health.mjs",
     "voice:play:one": "node -e \"import(\\\"./core/voice/synth/index.mjs\\\").then(async m=>{const b=await m.synth(process.argv.slice(2).join(\\\" \\\"));const fs=await import(\\\"node:fs\\\");fs.writeFileSync(\\\"/tmp/voice_one.mp3\\\",b);});\"",
-    "fix:voice-paths": "node -e \"console.log(\\\"fix:voice-paths noop (paths already good)\\\")\""
+    "fix:voice-paths": "node -e \"console.log(\\\"fix:voice-paths noop (paths already good)\\\")\"",
+    "check:all": "npm run -s voice:test && npm run -s health && npm run -s voice:smoke && npm run -s smoke:runtime",
+    "health:full": "node runtime/cli/fullcheck.mjs",
+    "health:quick": "npm run -s voice:test && npm run -s health"
   },
   "keywords": [],
   "author": "",
