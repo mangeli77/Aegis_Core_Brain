@@ -68,7 +68,10 @@
     "fix:voice-paths": "node -e \"console.log(\\\"fix:voice-paths noop (paths already good)\\\")\"",
     "check:all": "npm run -s voice:test && npm run -s health && npm run -s voice:smoke && npm run -s smoke:runtime",
     "health:full": "node runtime/cli/fullcheck.mjs",
-    "health:quick": "npm run -s voice:test && npm run -s health"
+    "health:quick": "npm run -s voice:test && npm run -s health",
+    "voice:smoke": "node jobs/voice_smoke.mjs",
+    "runtime:smoke": "node tools/audits/runtime_invariants.mjs",
+    "fullcheck": "npm run -s voice:test && npm run -s health && npm run -s voice:smoke && npm run -s runtime:smoke"
   },
   "keywords": [],
   "author": "",
