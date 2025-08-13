@@ -1,13 +1,21 @@
 name: ci
-on: [push, pull_request]
+
+on:
+  push:
+    branches: [ "*" ]
+  pull_request:
+
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+      ELEVENLABS_VOICE_ID: ${{ secrets.ELEVENLABS_VOICE_ID }}
+      VOICE_MODE: elevenlabs
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
-        with: { node-version: '20' }
-      - run: npm ci
-      - run: npm run audit:imports
-      - run: npm run guard:invariants
-      - run: npm run doctor
+        with:
+          node-version: '20'   # use 18 if you truly need it, but 20 is fine
+      - name: Run CI
+        run: npm run ci

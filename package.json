@@ -12,6 +12,8 @@
     "#tools/*": "./tools/*"
   },
   "scripts": {
+    "ci": "bash tools/ci.sh",
+    "health:ci": "node runtime/cli/health.mjs || true",
     "format": "prettier -w .",
     "lint": "eslint . --ext .js,.mjs,.ts || true",
     "audit:imports": "node tools/audits/import_audit.mjs",
