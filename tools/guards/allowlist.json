@@ -1,0 +1,12 @@
+{
+  "ok": [
+    "core/**",
+    "runtime/**",
+    "datasets/**",
+    "dataset/**",
+    "logs/**",
+    "scripts/**",
+    "tools/**",
+    "vendor/**"
+  ]
+}
