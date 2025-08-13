@@ -1,119 +1,60 @@
 #!/usr/bin/env node
-// jobs/voice_turn.mjs
+import 'dotenv/config';
 import fs from 'node:fs';
-import path from 'node:path';
+import readline from 'node:readline';
+import { spawn, spawnSync } from 'node:child_process';
+import { synth } from '../core/voice/synth/index.mjs';
 
-// ---------- tiny utils ----------
-const ROOT = process.cwd();
-const OUT_DIR = path.join(ROOT, 'core/voice/output');
-const LOG_DIR = path.join(ROOT, 'logs/turns');
-fs.mkdirSync(OUT_DIR, { recursive: true });
-fs.mkdirSync(LOG_DIR, { recursive: true });
+const rl = readline.createInterface({ input: process.stdin, output: process.stdout });
+const ask = (q) => new Promise(res => rl.question(q, res));
 
-const nowISO = () => new Date().toISOString();
-const hrtimeMs = () => Number(process.hrtime.bigint() / 1000000n);
+const WHISPER_BIN = process.env.WHISPER_BIN || './vendor/whisper.cpp/main';
+const MODEL_PATH  = process.env.WHISPER_MODEL_PATH || '';
+const TMP         = '/tmp';
+const WAV         = `${TMP}/aegis_turn.wav`;
+const TXT_BASE    = `${TMP}/aegis_turn_out`;
+const TXT         = `${TXT_BASE}.txt`;
 
-// Robust loader that tolerates default/named exports or function module
-async function loadCallable(modPath, candidates = []) {
-  const m = await import(modPath);
-  if (typeof m === 'function') return m;
-  if (typeof m.default === 'function') return m.default;
-  for (const name of candidates) {
-    if (typeof m[name] === 'function') return m[name];
+function startRecording(outWav) {
+  if (spawnSync('which', ['rec']).status === 0) {
+    return spawn('rec', [outWav, 'channels', '1', 'rate', '16000', 'bit', '16'], { stdio: 'inherit' });
   }
-  throw new Error(
-    `Module ${modPath} has no callable export (saw keys: ${Object.keys(m)})`
-  );
-}
-
-// ---------- configuration ----------
-const TEXT         = process.argv[2] ?? 'ghost ops';
-const BASENAME     = process.env.BASENAME || 'ghost_ops';
-const TRANSCRIBER  = (process.env.TRANSCRIBER || 'noop').toLowerCase(); // 'noop' | 'whisper'
-const TTS_ROUTER   = path.join(ROOT, 'core/voice/utils/tts_router.mjs');
-const NOOP_ASR     = path.join(ROOT, 'core/voice/utils/noop_transcriber.mjs');
-const WHISPER_ASR  = path.join(ROOT, 'core/voice/utils/whisper_transcriber.mjs');
-
-const ts     = nowISO().replace(/[:.]/g, '-');
-const outWav = path.join(OUT_DIR, `${BASENAME}.wav`);
-const outMeta = outWav.replace(/\.wav$/i, '.meta.json');
-const turnLog = path.join(LOG_DIR, `turn-${ts}.json`);
-
-// ---------- tts -> wav (via router) ----------
-async function synthesize(text, wavPath, metaPath) {
-  const speak = await loadCallable(TTS_ROUTER, ['speak']);
-  const t0 = hrtimeMs();
-  const r = await speak(text, wavPath);
-  const t1 = hrtimeMs();
-
-  // Ensure meta JSON exists (router usually writes it; we backfill just in case)
-  if (!fs.existsSync(metaPath)) {
-    const meta = r?.meta ?? {
-      text, sampleRate: 16000, ms: 1000, type: 'beep', created: nowISO()
-    };
-    fs.writeFileSync(metaPath, JSON.stringify(meta, null, 2));
+  if (spawnSync('which', ['ffmpeg']).status === 0) {
+    return spawn('ffmpeg', ['-hide_banner','-loglevel','error','-f','avfoundation','-i',':0','-ac','1','-ar','16000','-y', outWav], { stdio: 'inherit' });
   }
-  return {
-    ok: true,
-    outPath: wavPath,
-    metaPath,
-    elapsed_ms: t1 - t0,
-    router_result: r ?? null
-  };
+  throw new Error('Neither sox nor ffmpeg available for recording.');
+}
+function runWhisper(wav, base, model) {
+  if (!model) throw new Error('WHISPER_MODEL_PATH is not set.');
+  const args = ['-m', model, '-f', wav, '-otxt', '-of', base];
+  const r = spawnSync(WHISPER_BIN, args, { stdio: 'inherit' });
+  if (r.status !== 0) throw new Error(`whisper.cpp failed (code ${r.status})`);
 }
 
-// ---------- wav -> text (transcriber) ----------
-async function runASR(wavPath, metaPath) {
-  const modPath = TRANSCRIBER === 'whisper' ? WHISPER_ASR : NOOP_ASR;
-  const transcribe = await loadCallable(modPath, ['transcribe']);
-
-  const t0 = hrtimeMs();
-  const r = await transcribe(wavPath, metaPath);
-  const t1 = hrtimeMs();
-
-  return {
-    ok: !!r?.ok || true,
-    text: r?.text ?? '',
-    source: r?.source ?? (TRANSCRIBER === 'whisper' ? 'whisper' : 'meta|rms'),
-    elapsed_ms: t1 - t0,
-    raw: r
-  };
-}
-
-// ---------- main ----------
 async function main() {
-  const started = nowISO();
-
-  const synth = await synthesize(TEXT, outWav, outMeta);
-  const asr   = await runASR(outWav, outMeta);
-
-  const turn = {
-    started,
-    finished: nowISO(),
-    input: { prompt: TEXT },
-    tts: {
-      outPath: synth.outPath,
-      metaPath: synth.metaPath,
-      elapsed_ms: synth.elapsed_ms,
-      router_result: synth.router_result
-    },
-    asr: {
-      text: asr.text,
-      source: asr.source,
-      elapsed_ms: asr.elapsed_ms
-    },
-    env: {
-      TRANSCRIBER,
-      PID: process.pid,
-      cwd: ROOT
-    }
-  };
-
-  fs.writeFileSync(turnLog, JSON.stringify(turn, null, 2));
-  console.log(JSON.stringify({ ok: true, turnLog, text: asr.text }, null, 2));
+  console.log('\nAegis voice loop ready.');
+  console.log('Press <Enter> to record, <Enter> again to stop. Type "q" + <Enter> to quit.\n');
+  for (;;) {
+    const cmd = await ask('> ');
+    if (cmd.trim().toLowerCase() === 'q') break;
+    console.log('Recording... (press <Enter> to stop)');
+    let rec = startRecording(WAV);
+    await ask('');
+    try { rec.kill('SIGINT'); } catch {}
+    console.log('Recording stopped.');
+    try { fs.unlinkSync(TXT); } catch {}
+    runWhisper(WAV, TXT_BASE, MODEL_PATH);
+    if (!fs.existsSync(TXT)) { console.error('No transcript'); continue; }
+    const text = fs.readFileSync(TXT, 'utf8').trim();
+    console.log(`Transcript: "${text}"`);
+    if (!text) continue;
+    try {
+      const buf = await synth(text);
+      const out = '/tmp/aegis_turn_reply.mp3';
+      fs.writeFileSync(out, buf);
+      try { spawnSync('afplay', [out], { stdio: 'ignore' }); } catch {}
+    } catch (e) { console.error('synth error:', e); }
+  }
+  rl.close(); console.log('Goodbye.');
 }
-
-main().catch(e => {
-  console.error('voice_turn error:', e?.stack || String(e));
-  process.exit(1);
-});
+main().catch(e => { console.error(e); process.exit(1); });
