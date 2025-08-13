@@ -2,20 +2,71 @@ name: ci
 
 on:
   push:
-    branches: [ "*" ]
-  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+env:
+  # Voice pipeline needs these (set them as repo "Actions secrets"):
+  ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+  ELEVENLABS_VOICE_ID: ${{ secrets.ELEVENLABS_VOICE_ID }}
+  VOICE_MODE: elevenlabs
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
-      ELEVENLABS_VOICE_ID: ${{ secrets.ELEVENLABS_VOICE_ID }}
-      VOICE_MODE: elevenlabs
+
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
-          node-version: '20'   # use 18 if you truly need it, but 20 is fine
-      - name: Run CI
-        run: npm run ci
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install deps (clean)
+        run: |
+          corepack enable || true
+          npm ci
+
+      - name: Normalize line endings (LF) and ensure executables
+        run: |
+          git config --global core.autocrlf input
+          # Ensure our CI driver is executable if it exists
+          if [ -f tools/ci.sh ]; then chmod +x tools/ci.sh; fi
+          if [ -f scripts/setup_voice_loop.sh ]; then chmod +x scripts/setup_voice_loop.sh; fi
+
+      - name: Run CI driver (verbose)
+        env:
+          # Pass secrets down explicitly as well
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+          ELEVENLABS_VOICE_ID: ${{ secrets.ELEVENLABS_VOICE_ID }}
+        run: |
+          set -euxo pipefail
+          echo "Node:"; node -v
+          echo "NPM:"; npm -v
+          echo "Repo root:"; pwd; ls -la
+          # Quick sanity print (masks value length only)
+          node -e "console.log('ELEVENLABS_API_KEY set:', !!process.env.ELEVENLABS_API_KEY, 'ELEVENLABS_VOICE_ID set:', !!process.env.ELEVENLABS_VOICE_ID, 'VOICE_MODE:', process.env.VOICE_MODE||null)"
+
+          # Prefer your repo’s driver; fall back to a local one
+          if [ -f tools/ci.sh ]; then
+            bash -x tools/ci.sh
+          else
+            bash -x .github/workflows/local-ci.sh
+          fi
+
+      - name: Upload logs on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ci-logs
+          path: |
+            logs/**
+            **/aegis*.mp3
+            npm-debug.log*
+            ./**/runtime_smoke.json
+          if-no-files-found: ignore
